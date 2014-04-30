@@ -179,7 +179,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= config.app %>/styles',
-                    src: ['*.scss'],
+                    src: ['*.scss','*.sass'],
                     dest: '.tmp/styles',
                     ext: '.css'
                 }]
