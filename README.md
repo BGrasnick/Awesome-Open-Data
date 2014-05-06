@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/BGrasnick/Awesome-Open-Data.png)](https://codeclimate.com/github/BGrasnick/Awesome-Open-Data)
 Awesome-Open-Data
 =================
 
