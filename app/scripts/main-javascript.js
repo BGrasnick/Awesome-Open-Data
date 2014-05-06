@@ -47,7 +47,7 @@ svg.append("path")
     .attr("class", "graticule")
     .attr("d", path);
 
-d3.json("world-110m.json", function(error, world) {
+d3.json("data/world-110m.json", function(error, world) {
   var countries = topojson.feature(world, world.objects.countries).features,
       neighbors = topojson.neighbors(world.objects.countries.geometries);
  
