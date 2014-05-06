@@ -25,7 +25,7 @@ opendata.Views = opendata.Views || {};
             this.$el.empty()
 
             var width = this.$el.outerWidth(),
-                height = this.$el.outerHeight();
+                height = this.$el.outerHeight() - 3;
 
             var color = d3.scale.category10();
 
@@ -58,7 +58,8 @@ opendata.Views = opendata.Views || {};
                 .attr("class", "graticule")
                 .attr("d", path);
 
-            d3.json("data/world-110m.json", function(error, world) {
+
+            d3.json("data/world.json", function(error, world) {
                 var countries = topojson.feature(world, world.objects.countries).features,
                     neighbors = topojson.neighbors(world.objects.countries.geometries);
 
@@ -68,7 +69,7 @@ opendata.Views = opendata.Views || {};
                     .attr("class", "country")
                     .attr("country-id", function(d) { return d.id; })
                     .attr("d", path)
-                    .style("fill", function(d, i) { return color(d.color = d3.max(neighbors[i], function(n) { return countries[n].color; }) + 1 | 0); });
+                    .style("fill", opendata.Views.Map.prototype.getCountryColor);
 
                 svg.insert("path", ".graticule")
                     .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
@@ -79,6 +80,14 @@ opendata.Views = opendata.Views || {};
 
             d3.select(self.frameElement).style("height", height + "px");
 
+        },
+
+        getCountryColor: function( d ){
+
+            var country = opendata.CountryHelper.getCountryByID( d.id );
+            var config = window.opendata.Config;
+
+            return country && country.detail ? config.detailAvailableColor : config.detailUnavailableColor;
         }
 
     });

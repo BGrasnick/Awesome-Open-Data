@@ -2,22 +2,20 @@
 
     CountryHelper = (function(){
 
-        function CountryHelper(data){
-            this.data = data;
+        function CountryHelper(arg1){
+            this.countries = arg1;
         }
 
-        CountryHelper.prototype.getCountryByID = function(iso){
+        CountryHelper.prototype.getCountryByID = function(id){
+
+            var result = null;
 
             // see http://underscorejs.org/#find
-            var result = _.find( this.data , function( country ){
-               return iso == country['country-code'];
-            })
+            result = _.find( this.countries , function( country ){
+                return id == country['country-code'];
+            });
 
-            if( result ){
-                return result.name;
-            }else{
-                return null;
-            }
+            return result;
 
         };
 
@@ -25,8 +23,8 @@
 
     })();
 
-    $.get('./data/countries.json', function(resp){
-        opendata.CountryHelper = new CountryHelper(resp);
+    $.get('./data/countries.json', function( response ){
+        opendata.CountryHelper = new CountryHelper( response );
     });
 
 })();

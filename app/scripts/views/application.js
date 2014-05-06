@@ -19,7 +19,7 @@ opendata.Views = opendata.Views || {};
         },
 
         goToCountry: function ( id ){
-            console.log("Now showing info for county " + opendata.CountryHelper.getCountryByID(id) );
+            console.log("Now showing info for county " + opendata.CountryHelper.getCountryByID(id).name );
         }
     });
 
