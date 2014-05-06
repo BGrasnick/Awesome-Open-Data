@@ -1,15 +1,5 @@
 console.log('\'Allo \'Allo from Javascript!');
 
-//var data = [4, 8, 15, 16, 23, 42];
-// d3.select(".chart")
-//   .selectAll("div")
-//     .data(data)
-//   .enter().append("div")
-//     .style("width", function(d) { return d * 10 + "px"; })
-//     .style("background-color", "#469d44")
-//     .style("color", "white")
-//     .text(function(d) { return d; });
-
 var width = 960,
     height = 580;
  
@@ -25,7 +15,7 @@ var path = d3.geo.path()
  
 var graticule = d3.geo.graticule();
  
-var svg = d3.select(".chart").append("svg")
+var svg = d3.select("#map").append("svg")
     .attr("width", width)
     .attr("height", height);
  
@@ -50,7 +40,7 @@ svg.append("path")
 d3.json("data/world-110m.json", function(error, world) {
   var countries = topojson.feature(world, world.objects.countries).features,
       neighbors = topojson.neighbors(world.objects.countries.geometries);
- 
+
   svg.selectAll(".country")
       .data(countries)
     .enter().insert("path", ".graticule")
@@ -62,6 +52,7 @@ d3.json("data/world-110m.json", function(error, world) {
       .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
       .attr("class", "boundary")
       .attr("d", path);
+
 });
  
 d3.select(self.frameElement).style("height", height + "px");
