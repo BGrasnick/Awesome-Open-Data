@@ -4,9 +4,8 @@ window.opendata = {
     Views: {},
     Routers: {},
     init: function(){
-        Backbone.history.start()
-
-        window.opendata.Map = new opendata.Views.Map()
+        Backbone.history.start();
+        window.opendata.App = new opendata.Views.App()
     }
 }
 

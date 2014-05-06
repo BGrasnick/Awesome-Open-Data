@@ -3,8 +3,6 @@
     CountryHelper = (function(){
 
         function CountryHelper(data){
-            console.log("init helper");
-
             this.data = data;
         }
 
@@ -21,7 +19,7 @@
                 return null;
             }
 
-        }
+        };
 
         return CountryHelper
 
