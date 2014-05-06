@@ -66,6 +66,7 @@ opendata.Views = opendata.Views || {};
                     .data(countries)
                     .enter().insert("path", ".graticule")
                     .attr("class", "country")
+                    .attr("country-id", function(d) { return d.id; })
                     .attr("d", path)
                     .style("fill", function(d, i) { return color(d.color = d3.max(neighbors[i], function(n) { return countries[n].color; }) + 1 | 0); });
 

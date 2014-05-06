@@ -6,7 +6,7 @@ window.opendata = {
     init: function(){
         Backbone.history.start()
 
-        opendata.Map = new opendata.Views.Map()
+        window.opendata.Map = new opendata.Views.Map()
     }
 }
 
