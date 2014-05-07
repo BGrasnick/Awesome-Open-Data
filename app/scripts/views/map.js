@@ -26,8 +26,10 @@ opendata.Views = opendata.Views || {};
             var $country = $(evt.target);
             if( $country ){
                 var country = opendata.CountryHelper.getCountryByID($country.attr("country-id"))
-                if( country && country.name && country['sub-region-code'])
-                    console.log( country.name + "/" + country['sub-region-code']);
+
+                if( country && country.name )
+                    opendata.App.nav.render(country.name)
+
             }
 
         },

@@ -8,6 +8,7 @@ opendata.Views = opendata.Views || {};
         el: 'body',
 
         map: null,
+        nav: null,
 
         initialize: function () {
 
@@ -15,6 +16,7 @@ opendata.Views = opendata.Views || {};
 
             this.render()
             this.map = new opendata.Views.Map()
+            this.nav = new opendata.Views.Navigation()
 
         },
 
