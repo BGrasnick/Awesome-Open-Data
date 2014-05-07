@@ -27,7 +27,8 @@ opendata.Views = opendata.Views || {};
             if( $country ){
                 var country = opendata.CountryHelper.getCountryByID($country.attr("country-id"))
                 if( country && country.name )
-                    console.log( country.name )
+                    opendata.App.nav.render(country.name)
+
             }
 
         },

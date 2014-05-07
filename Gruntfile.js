@@ -45,12 +45,18 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             sass: {
-                files: ['<%= config.app %>/styles/{,*/}*.{scss}'],
+                files: ['<%= config.app %>/styles/*.scss'],
                 tasks: ['sass:server', 'autoprefixer']
             },
             styles: {
                 files: ['<%= config.app %>/styles/{,*/}*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
+            },
+            jst: {
+                files: [
+                    '<%= config.app %>/scripts/templates/*.ejs'
+                ],
+                tasks: ['jst']
             },
             livereload: {
                 options: {
@@ -365,7 +371,13 @@ module.exports = function (grunt) {
                 uglify: true
             }
         },
-
+        jst: {
+            compile: {
+                files: {
+                    '.tmp/scripts/templates.js': ['<%= config.app %>/scripts/templates/*.ejs']
+                }
+            }
+        },
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
@@ -387,6 +399,9 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.registerTask('createDefaultTemplate', function () {
+        grunt.file.write('.tmp/scripts/templates.js', 'this.JST = this.JST || {};');
+    });
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
@@ -397,6 +412,8 @@ module.exports = function (grunt) {
             'clean:server',
             'concurrent:server',
             'autoprefixer',
+            'createDefaultTemplate',
+            'jst',
             'connect:livereload',
             'watch'
         ]);
