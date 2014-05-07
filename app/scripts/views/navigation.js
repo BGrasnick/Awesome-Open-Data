@@ -9,7 +9,16 @@ opendata.Views = opendata.Views || {};
 
         el: 'nav',
 
-        events: {},
+        events: {
+            'click.btn-primary' : 'setCountryFilter'
+        },
+
+        setCountryFilter: function ( evt ){
+            var $button = $(evt.target);
+
+            opendata.App.map.setRegionFilter( $button.data("filter") );
+
+        },
 
         initialize: function () {
             this.render()

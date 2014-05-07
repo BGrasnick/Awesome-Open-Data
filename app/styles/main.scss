@@ -22,7 +22,10 @@ nav{
   position: fixed;
   top: 0;
   width: 100%;
-  border: 1px solid red;
   height: 50px;
+
+  ul{
+    margin: 7px 0 0 10px !important;
+  }
 
 }

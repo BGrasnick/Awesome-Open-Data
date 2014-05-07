@@ -22,6 +22,13 @@ opendata.Views = opendata.Views || {};
             this.render()
         },
 
+        setRegionFilter: function (filter){;
+            this.filter = filter;
+            console.log("rerender map with filter " + filter);
+
+            this.render()
+        },
+
         handleMouseover: function( evt ){
             var $country = $(evt.target);
             if( $country ){
