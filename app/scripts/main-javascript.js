@@ -4,8 +4,8 @@ window.opendata = {
     Views: {},
     Routers: {},
     Config: {
-        detailAvailableColor: '#c0392b',
-        detailUnavailableColor: '#95a5a6'
+        detailAvailableColor   : '#c0392b',
+        detailUnavailableColor : '#95a5a6'
     },
     init: function(){
         Backbone.history.start();

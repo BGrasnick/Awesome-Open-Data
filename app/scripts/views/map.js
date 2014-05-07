@@ -7,7 +7,9 @@ opendata.Views = opendata.Views || {};
 
         el: '#map',
 
-        events: {},
+        events: {
+            'mouseover .country' : 'handleMouseover'
+        },
 
         initialize: function () {
 
@@ -18,6 +20,16 @@ opendata.Views = opendata.Views || {};
 
             // render the first time when the map is created
             this.render()
+        },
+
+        handleMouseover: function( evt ){
+            var $country = $(evt.target);
+            if( $country ){
+                var country = opendata.CountryHelper.getCountryByID($country.attr("country-id"))
+                if( country && country.name )
+                    console.log( country.name )
+            }
+
         },
 
         render: function () {
@@ -67,7 +79,7 @@ opendata.Views = opendata.Views || {};
                     .data(countries)
                     .enter().insert("path", ".graticule")
                     .attr("class", "country")
-                    .attr("country-id", function(d) { return d.id; })
+                    .attr("country-id", function( d ) { return d.id; })
                     .attr("d", path)
                     .style("fill", opendata.Views.Map.prototype.getCountryColor);
 
