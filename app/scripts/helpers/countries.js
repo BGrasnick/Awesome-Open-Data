@@ -1,8 +1,19 @@
 (function () {
 
-    CountryHelper = (function(){
+    var CountryHelper = (function(){
+
+        var detailCountries = [
+            "Germany",
+            "United States",
+            "Egypt"
+        ]
 
         function CountryHelper(arg1){
+            _.each( arg1 , function( country ){
+                if( _.contains( detailCountries, country.name ) ){
+                    country.detail = true;
+                }
+            })
             this.countries = arg1;
         }
 
@@ -12,14 +23,14 @@
 
             // see http://underscorejs.org/#find
             result = _.find( this.countries , function( country ){
-                return id == country['country-code'];
+                return country['country-code'] == id;
             });
 
             return result;
 
         };
 
-        return CountryHelper
+        return CountryHelper;
 
     })();
 
