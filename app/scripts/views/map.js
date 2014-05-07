@@ -26,8 +26,8 @@ opendata.Views = opendata.Views || {};
             var $country = $(evt.target);
             if( $country ){
                 var country = opendata.CountryHelper.getCountryByID($country.attr("country-id"))
-                if( country && country.name )
-                    console.log( country.name )
+                if( country && country.name && country['sub-region-code'])
+                    console.log( country.name + "/" + country['sub-region-code']);
             }
 
         },
@@ -39,7 +39,7 @@ opendata.Views = opendata.Views || {};
             var width = this.$el.outerWidth(),
                 height = this.$el.outerHeight() - 3;
 
-            var color = d3.scale.category10();
+            var color = d3.scale.category20();
 
             var projection = d3.geo.mercator()
                 .scale(170)
@@ -81,7 +81,8 @@ opendata.Views = opendata.Views || {};
                     .attr("class", "country")
                     .attr("country-id", function( d ) { return d.id; })
                     .attr("d", path)
-                    .style("fill", opendata.Views.Map.prototype.getCountryColor);
+                    .style("fill", function( d ) { if (d.id !== -99) return color(opendata.CountryHelper.getCountryByID(d.id)['sub-region-code']); });
+                    // .style("fill", opendata.Views.Map.prototype.getCountryColor);
 
                 svg.insert("path", ".graticule")
                     .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
