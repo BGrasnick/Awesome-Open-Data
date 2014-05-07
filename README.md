@@ -10,7 +10,14 @@ https://github.com/BGrasnick/Awesome-Open-Data
 
 # Libraries
 
+* Backbone *
+MVC: http://backbonejs.org/
+* Underscore *
+http://underscorejs.org/
+
 * http://d3js.org/
+
+
 * https://github.com/mbostock/topojson
 
 # Tutorials d3 + topojson + map
