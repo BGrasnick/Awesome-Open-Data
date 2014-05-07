@@ -13,6 +13,9 @@ opendata.Views = opendata.Views || {};
 
         initialize: function () {
 
+            this.filter = 'detail';
+            this.colorScale = d3.scale.category20();
+
             // When the user resizes the window:
             // only call render when he did not resize it anymore for 300 ms
             var debouncedRender = _.debounce(this.render, 300);
@@ -24,8 +27,6 @@ opendata.Views = opendata.Views || {};
 
         setRegionFilter: function (filter){;
             this.filter = filter;
-            console.log("rerender map with filter " + filter);
-
             this.render()
         },
 
@@ -47,8 +48,6 @@ opendata.Views = opendata.Views || {};
 
             var width = this.$el.outerWidth(),
                 height = this.$el.outerHeight() - 3;
-
-            var color = d3.scale.category20();
 
             var projection = d3.geo.mercator()
                 .scale(170)
@@ -81,6 +80,7 @@ opendata.Views = opendata.Views || {};
 
 
             d3.json("data/world.json", function(error, world) {
+
                 var countries = topojson.feature(world, world.objects.countries).features,
                     neighbors = topojson.neighbors(world.objects.countries.geometries);
 
@@ -90,8 +90,7 @@ opendata.Views = opendata.Views || {};
                     .attr("class", "country")
                     .attr("country-id", function( d ) { return d.id; })
                     .attr("d", path)
-                    .style("fill", function( d ) { if (d.id !== -99) return color(opendata.CountryHelper.getCountryByID(d.id)['sub-region-code']); });
-                    // .style("fill", opendata.Views.Map.prototype.getCountryColor);
+                    .style("fill", opendata.Views.Map.prototype.getCountryColor);
 
                 svg.insert("path", ".graticule")
                     .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
@@ -106,10 +105,26 @@ opendata.Views = opendata.Views || {};
 
         getCountryColor: function( d ){
 
-            var country = opendata.CountryHelper.getCountryByID( d.id );
-            var config = window.opendata.Config;
+            var currentFilter     = opendata.App.map.filter;
+            var currentColorScale = opendata.App.map.colorScale;
 
-            return country && country.detail ? config.detailAvailableColor : config.detailUnavailableColor;
+            if( currentFilter === 'detail'){
+                var country = opendata.CountryHelper.getCountryByID( d.id );
+                var config = window.opendata.Config;
+
+                return country && country.detail ? config.detailAvailableColor : config.detailUnavailableColor;
+            }
+            else{
+                if (d.id == -99)
+                    return "RGBA(255,255,255,0)";
+
+                var country = opendata.CountryHelper.getCountryByID(d.id);
+
+                var code = country[currentFilter];
+
+                return currentColorScale(code);
+            }
+
         }
 
     });
