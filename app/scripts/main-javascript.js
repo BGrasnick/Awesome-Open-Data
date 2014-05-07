@@ -12,9 +12,9 @@ window.opendata = {
         window.opendata.App = new opendata.Views.App()
     }
 
-}
+};
 
-$( function(){
+$(function(){
 
     opendata.init()
 

@@ -14,7 +14,7 @@ opendata.Views = opendata.Views || {};
             opendata.Router = new ApplicationRouter()
 
             this.render()
-            this.Map = new opendata.Views.Map()
+            this.map = new opendata.Views.Map()
 
         },
 

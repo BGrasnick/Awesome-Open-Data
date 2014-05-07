@@ -16,7 +16,7 @@ opendata.Views = opendata.Views || {};
             // When the user resizes the window:
             // only call render when he did not resize it anymore for 300 ms
             var debouncedRender = _.debounce(this.render, 300);
-            $(window).on("resize.rerender", _.bind(debouncedRender, this));
+            $(window).on( "resize.rerender" , _.bind( debouncedRender, this ) );
 
             // render the first time when the map is created
             this.render()

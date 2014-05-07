@@ -23,7 +23,7 @@
 
             // see http://underscorejs.org/#find
             result = _.find( this.countries , function( country ){
-                return country['country-code'] == id;
+                return parseInt( country['country-code'] ) == id;
             });
 
             return result;
