@@ -14,29 +14,30 @@ opendata.Views = opendata.Views || {};
         initialize: function () {
 
             this.filter = 'detail';
-            this.colorScale = d3.scale.category20();
+            this.colorScale = d3.scale.category20c();
+
+            _.bindAll(this, 'getCountryColor', 'render');
 
             // When the user resizes the window:
             // only call render when he did not resize it anymore for 300 ms
-            var debouncedRender = _.debounce(this.render, 300);
-            $(window).on( "resize.rerender" , _.bind( debouncedRender, this ) );
+            $(window).on( "resize.rerender" , _.debounce( this.render, 300 ));
 
             // render the first time when the map is created
             this.render()
         },
 
-        setRegionFilter: function (filter){;
+        setRegionFilter: function ( filter ){
             this.filter = filter;
-            this.render()
+            this.render();
         },
 
         handleMouseover: function( evt ){
-            var $country = $(evt.target);
-            if( $country ){
-                var country = opendata.CountryHelper.getCountryByID($country.attr("country-id"))
+            var $el = $( evt.target );
+            if( $el ){
+                var country = opendata.CountryHelper.getCountryByID( $el.attr("country-id") );
 
                 if( country && country.name )
-                    opendata.App.nav.render(country.name)
+                    opendata.App.nav.render( country.name );
 
             }
 
@@ -44,7 +45,9 @@ opendata.Views = opendata.Views || {};
 
         render: function () {
 
-            this.$el.empty()
+            this.$el.empty();
+
+            var that = this;
 
             var width = this.$el.outerWidth(),
                 height = this.$el.outerHeight() - 3;
@@ -52,7 +55,7 @@ opendata.Views = opendata.Views || {};
             var projection = d3.geo.mercator()
                 .scale(170)
                 .translate([width / 2, height / 2])
-                .precision(.1);
+                .precision(0.1);
 
             var path = d3.geo.path()
                 .projection(projection);
@@ -78,19 +81,18 @@ opendata.Views = opendata.Views || {};
                 .attr("class", "graticule")
                 .attr("d", path);
 
-
             d3.json("data/world.json", function(error, world) {
 
-                var countries = topojson.feature(world, world.objects.countries).features,
-                    neighbors = topojson.neighbors(world.objects.countries.geometries);
+                var countries = topojson.feature( world, world.objects.countries ).features,
+                    neighbors = topojson.neighbors( world.objects.countries.geometries);
 
                 svg.selectAll(".country")
                     .data(countries)
                     .enter().insert("path", ".graticule")
-                    .attr("class", "country")
-                    .attr("country-id", function( d ) { return d.id; })
+                    .attr("class", that.getClasses)
+                    .attr("country-id", function( d ) { return d.id })
                     .attr("d", path)
-                    .style("fill", opendata.Views.Map.prototype.getCountryColor);
+                    .style("fill", that.getCountryColor);
 
                 svg.insert("path", ".graticule")
                     .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
@@ -103,26 +105,36 @@ opendata.Views = opendata.Views || {};
 
         },
 
+        getClasses: function( d , index ){
+
+            var classes = "country "
+            var country = opendata.CountryHelper.getCountryByID( d.id )
+
+            if( country && country['alpha-2'])
+                classes += country['alpha-2']
+
+            return classes;
+        },
+
         getCountryColor: function( d ){
 
-            var currentFilter     = opendata.App.map.filter;
-            var currentColorScale = opendata.App.map.colorScale;
+            if (d.id < 0) //-99
+                return "RGBA(255,255,255,0)";
+
+            var currentFilter     = this.filter;
+            var currentColorScale = this.colorScale;
+
+            var country = opendata.CountryHelper.getCountryByID( d.id );
 
             if( currentFilter === 'detail'){
-                var country = opendata.CountryHelper.getCountryByID( d.id );
+
                 var config = window.opendata.Config;
 
                 return country && country.detail ? config.detailAvailableColor : config.detailUnavailableColor;
-            }
-            else{
-                if (d.id == -99)
-                    return "RGBA(255,255,255,0)";
 
-                var country = opendata.CountryHelper.getCountryByID(d.id);
+            } else {
 
-                var code = country[currentFilter];
-
-                return currentColorScale(code);
+                return currentColorScale( country[currentFilter] );
             }
 
         }
