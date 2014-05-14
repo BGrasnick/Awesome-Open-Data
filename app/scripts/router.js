@@ -3,17 +3,16 @@
     ApplicationRouter = Backbone.Router.extend({
 
         routes : {
-            "country/:id"   : "country",
-            "*path"   : "default"
+            "country/:id" : "country",
+            "*path"       : "default"
         },
 
-        default : function(path){
-
+        default : function( path ){
             console.log("default route triggered: " + path);
         },
 
-        country: function(id){
-            window.opendata.App.goToCountry(id);
+        country: function( id ){
+            window.opendata.App.goToCountry( id );
         }
 
     });
