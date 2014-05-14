@@ -9,6 +9,8 @@ opendata.Views = opendata.Views || {};
 
         map: null,
         nav: null,
+        // slider: null,
+        cdetail: null,
 
         initialize: function () {
 
@@ -17,6 +19,8 @@ opendata.Views = opendata.Views || {};
             this.render()
             this.map = new opendata.Views.Map()
             this.nav = new opendata.Views.Navigation()
+            // this.slider = new opendata.Views.Slider()
+            this.cdetail = new opendata.Views.Countrydetail()
 
         },
 
