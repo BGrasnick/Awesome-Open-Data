@@ -22,9 +22,11 @@ opendata.Views = opendata.Views || {};
             // this.slider = new opendata.Views.Slider()
             this.countrydetail = new opendata.Views.Countrydetail()
 
+            this.map.on('select:country', this.goToCountry);
         },
 
-        goToCountry: function ( id ){
+        goToCountry: function ( evt ){
+            var id = evt.id;
             console.log("Now showing info for county " + opendata.CountryHelper.getCountryByID(id).name );
         }
     });

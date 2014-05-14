@@ -121,7 +121,8 @@ opendata.Views = opendata.Views || {};
 
               svg.transition()
                   .duration(750)
-                  .call(zoom.translate(translate).scale(scale).event);
+                  .call(zoom.translate(translate).scale(scale).event)
+                  .each('end', function(){ that.trigger('select:country',{ id: d.id}) });
             }
 
             function reset() {
