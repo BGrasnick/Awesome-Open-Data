@@ -48,6 +48,12 @@ opendata.Views = opendata.Views || {};
                 .translate([width / 2, height / 2])
                 .precision(0.1);
 
+            var zoom = d3.behavior.zoom()
+                .translate([0, 0])
+                .scale(1)
+                .scaleExtent([1, 8])
+                .on("zoom", zoomed);
+
             var path = d3.geo.path()
                 .projection(projection);
 
@@ -96,18 +102,6 @@ opendata.Views = opendata.Views || {};
 
             d3.select(self.frameElement).style("height", height + "px");
 
-            //add scroll/zoom functions
-            var zoom = d3.behavior.zoom()
-                .on("zoom",function() {
-                    svg.attr("transform","translate("+ 
-                        d3.event.translate.join(",")+")scale("+d3.event.scale+")");
-                    svg.selectAll("path")  
-                        .attr("d", path.projection(projection)); 
-            });
-
-            svg.call(zoom)
-
-            //zoom in'n'out a specific country
             function clicked(d) {
               if (active.node() === this) return reset();
               active.classed("active", false);
@@ -118,13 +112,12 @@ opendata.Views = opendata.Views || {};
                   dy = bounds[1][1] - bounds[0][1],
                   x = (bounds[0][0] + bounds[1][0]) / 2,
                   y = (bounds[0][1] + bounds[1][1]) / 2,
-                  scale = .4 / Math.max(dx / width, dy / height),
+                  scale = .9 / Math.max(dx / width, dy / height),
                   translate = [width / 2 - scale * x, height / 2 - scale * y];
 
               svg.transition()
                   .duration(750)
-                  .style("stroke-width", 1.5 / scale + "px")
-                  .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
+                  .call(zoom.translate(translate).scale(scale).event);
             }
 
             function reset() {
@@ -133,8 +126,18 @@ opendata.Views = opendata.Views || {};
 
               svg.transition()
                   .duration(750)
-                  .style("stroke-width", "1.5px")
-                  .attr("transform", "");
+                  .call(zoom.translate([0, 0]).scale(1).event);
+            }
+
+            function zoomed() {
+              svg.style("stroke-width", 1.5 / d3.event.scale + "px");
+              svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+            }
+
+            // If the drag behavior prevents the default click,
+            // also stop propagation so we don’t click-to-zoom.
+            function stopped() {
+              if (d3.event.defaultPrevented) d3.event.stopPropagation();
             }
 
         },
