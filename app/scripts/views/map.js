@@ -112,7 +112,7 @@ opendata.Views = opendata.Views || {};
                   dy = bounds[1][1] - bounds[0][1],
                   x = (bounds[0][0] + bounds[1][0]) / 2,
                   y = (bounds[0][1] + bounds[1][1]) / 2,
-                  scale = .9 / Math.max(dx / width, dy / height),
+                  scale = .5 / Math.max(dx / width, dy / height),
                   translate = [width / 2 - scale * x, height / 2 - scale * y];
 
               svg.transition()
