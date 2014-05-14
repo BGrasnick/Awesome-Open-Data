@@ -37,8 +37,6 @@ opendata.Views = opendata.Views || {};
 
             var that = this;
 
-            var that = this;
-
             var width = this.$el.outerWidth(),
                 height = this.$el.outerHeight() - 3,
                 active = d3.select(null);
@@ -73,6 +71,11 @@ opendata.Views = opendata.Views || {};
                 .attr("class", "fill")
                 .attr("xlink:href", "#sphere");
 
+            var g = svg.append("g");
+
+            svg
+                .call(zoom) // delete this line to disable free zooming
+                .call(zoom.event);
 
             // svg.append("path")
             //     .datum(graticule)
@@ -84,7 +87,7 @@ opendata.Views = opendata.Views || {};
                 var countries = topojson.feature( world, world.objects.countries ).features,
                     neighbors = topojson.neighbors( world.objects.countries.geometries);
 
-                svg.selectAll(".country")
+                g.selectAll(".country")
                     .data(countries)
                     .enter().insert("path", ".graticule")
                     .attr("class", that.getClasses)
@@ -93,7 +96,7 @@ opendata.Views = opendata.Views || {};
                     .style("fill", that.getCountryColor)
                     .on("click", clicked);
 
-                svg.insert("path", ".graticule")
+                g.insert("path", ".graticule")
                     .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
                     .attr("class", "boundary")
                     .attr("d", path);
@@ -112,8 +115,9 @@ opendata.Views = opendata.Views || {};
                   dy = bounds[1][1] - bounds[0][1],
                   x = (bounds[0][0] + bounds[1][0]) / 2,
                   y = (bounds[0][1] + bounds[1][1]) / 2,
-                  scale = .9 / Math.max(dx / width, dy / height),
+                  scale = .5 / Math.max(dx / width, dy / height),
                   translate = [width / 2 - scale * x, height / 2 - scale * y];
+
 
               svg.transition()
                   .duration(750)
@@ -130,8 +134,8 @@ opendata.Views = opendata.Views || {};
             }
 
             function zoomed() {
-              svg.style("stroke-width", 1.5 / d3.event.scale + "px");
-              svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+              g.style("stroke-width", 1.5 / d3.event.scale + "px");
+              g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
             }
 
             // If the drag behavior prevents the default click,
