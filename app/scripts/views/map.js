@@ -108,18 +108,21 @@ opendata.Views = opendata.Views || {};
             d3.select(self.frameElement).style("height", height + "px");
 
             function clicked(d) {
-              if (active.node() === this) return reset();
-              active.classed("active", false);
-              active = d3.select(this).classed("active", true);
+                if (active.node() === this) return reset();
+                active.classed("active", false);
+                active = d3.select(this).classed("active", true);
 
-              var bounds = path.bounds(d),
-                  dx = bounds[1][0] - bounds[0][0],
-                  dy = bounds[1][1] - bounds[0][1],
-                  x = (bounds[0][0] + bounds[1][0]) / 2,
-                  y = (bounds[0][1] + bounds[1][1]) / 2,
-                  scale = .5 / Math.max(dx / width, dy / height),
-                  translate = [width / 2 - scale * x, height / 2 - scale * y];
+                var bounds = path.bounds(d),
+                    dx = bounds[1][0] - bounds[0][0],
+                    dy = bounds[1][1] - bounds[0][1];
 
+                // Sets a maximum zoom level
+                if(dx < 25) dx = 25;
+
+                var x = (bounds[0][0] + bounds[1][0]) / 2,
+                    y = (bounds[0][1] + bounds[1][1]) / 2,
+                    scale = .5 / Math.max(dx / width, dy / height),
+                    translate = [width / 2 - scale * x, height / 2 - scale * y];
 
               svg.transition()
                   .duration(750)
