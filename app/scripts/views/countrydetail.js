@@ -7,7 +7,7 @@ opendata.Views = opendata.Views || {};
 
         template: JST['app/scripts/templates/countrydetail.ejs'],
 
-        el: '#cdetail',
+        el: '#countrydetail',
 
         events: {},
 
