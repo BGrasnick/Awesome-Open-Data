@@ -73,6 +73,9 @@ opendata.Views = opendata.Views || {};
 
             var g = svg.append("g");
 
+            svg
+                .call(zoom) // delete this line to disable free zooming
+                .call(zoom.event);
 
             // svg.append("path")
             //     .datum(graticule)
