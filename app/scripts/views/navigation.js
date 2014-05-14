@@ -10,7 +10,7 @@ opendata.Views = opendata.Views || {};
         el: 'nav',
 
         events: {
-            'click.btn-primary' : 'setCountryFilter'
+            'click .btn-primary' : 'setCountryFilter'
         },
 
         setCountryFilter: function ( evt ){
