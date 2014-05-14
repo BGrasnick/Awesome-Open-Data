@@ -8,8 +8,7 @@ opendata.Views = opendata.Views || {};
         el: '#map',
 
         events: {
-            'click .country' : 'handleMouseover',
-            'mouseover .country' : 'effectMouseover'
+            //'mouseover   .country' : 'handleMouseover'
         },
 
         initialize: function () {
@@ -30,32 +29,6 @@ opendata.Views = opendata.Views || {};
         setRegionFilter: function ( filter ){
             this.filter = filter;
             this.render();
-        },
-
-        handleMouseover: function( evt ){
-            var $el = $( evt.target );
-            if( $el ){
-
-                var country = opendata.CountryHelper.getCountryByID( $el.attr("country-id") );
-
-                if( country && country.name )
-                    opendata.App.nav.render( country.name );
-
-            }
-
-        },
-
-        //############################## TODO ÜBERARBEITEN - läuft kacke ##############################
-        effectMouseover: function( evt ){
-            var $curr = evt.currentTarget;
-            $($curr).hover(function(){
-                $(this).attr('id', 'country-over');
-            }, function(){
-                $(this).removeAttr('id', 'country-over');
-            });
-            
-            
-            console.log($curr);
         },
 
         render: function () {
@@ -199,6 +172,19 @@ opendata.Views = opendata.Views || {};
             }
 
         }
+
+//        handleMouseover: function( evt ){
+//            var $el = $( evt.target );
+//            if( $el ){
+//
+//                var country = opendata.CountryHelper.getCountryByID( $el.attr("country-id") );
+//
+//                if( country && country.name )
+//                    opendata.App.nav.render( country.name );
+//
+//            }
+//
+//        }
 
     });
 
