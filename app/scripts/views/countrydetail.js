@@ -3,11 +3,11 @@ opendata.Views = opendata.Views || {};
 (function () {
     'use strict';
 
-    opendata.Views.Contrydetail = Backbone.View.extend({
+    opendata.Views.Countrydetail = Backbone.View.extend({
 
-        template: JST['app/scripts/templates/contrydetail.ejs'],
+        template: JST['app/scripts/templates/countrydetail.ejs'],
 
-        el: '#cdetail'
+        el: '#cdetail',
 
         events: {},
 

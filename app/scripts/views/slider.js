@@ -1,11 +1,11 @@
-/*global OpenData, Backbone, JST*/
+/*global opendata, Backbone, JST*/
 
-OpenData.Views = OpenData.Views || {};
+opendata.Views = opendata.Views || {};
 
 (function () {
     'use strict';
 
-    OpenData.Views.Slider = Backbone.View.extend({
+    opendata.Views.Slider = Backbone.View.extend({
 
         template: JST['app/scripts/templates/slider.ejs'],
 
