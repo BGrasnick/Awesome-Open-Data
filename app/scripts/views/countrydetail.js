@@ -19,8 +19,10 @@ opendata.Views = opendata.Views || {};
 
         render: function () {
 
-            if( ! this.currentCountry )
+            if( ! this.currentCountry ){
+                this.$el.empty();
                 return false;
+            }
 
             this.$el.html(this.template({
                 name: this.currentCountry.name
