@@ -16,13 +16,21 @@ opendata.Views = opendata.Views || {};
 
             var that = this;
 
-            opendata.Router = new ApplicationRouter()
+            opendata.Router = new ApplicationRouter();
 
-            this.render()
             this.map = new opendata.Views.Map();
             this.nav = new opendata.Views.Navigation();
             // this.slider = new opendata.Views.Slider();
             this.countrydetail = new opendata.Views.Countrydetail();
+
+            opendata.Countries = new opendata.Collections.Country();
+            opendata.Countries.fetch({
+                url: './data/drugs.json',
+                success: function(col, resp){
+                    opendata.CountryHelper.setDetailCountries( resp );
+                    that.map.render();
+                }
+            });
 
             this.map.on( 'select:country', function ( evt ) {      
                 var id = evt.id;
@@ -31,7 +39,9 @@ opendata.Views = opendata.Views || {};
             this.map.on( 'deselect:country', function ( evt ) {
                 that.countrydetail.reset();
             });
-        },
+
+
+        }
 
     });
 

@@ -23,8 +23,6 @@ opendata.Views = opendata.Views || {};
             // only call render when he did not resize it anymore for 300 ms
             $(window).on( "resize.rerender" , _.debounce( this.render, 300 ));
 
-            // render the first time when the map is created
-            this.render()
         },
 
         setRegionFilter: function ( filter ){
@@ -182,19 +180,6 @@ opendata.Views = opendata.Views || {};
             }
 
         }
-
-//        handleMouseover: function( evt ){
-//            var $el = $( evt.target );
-//            if( $el ){
-//
-//                var country = opendata.CountryHelper.getCountryByID( $el.attr("country-id") );
-//
-//                if( country && country.name )
-//                    opendata.App.nav.render( country.name );
-//
-//            }
-//
-//        }
 
     });
 
