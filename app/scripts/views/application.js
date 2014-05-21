@@ -26,10 +26,10 @@ opendata.Views = opendata.Views || {};
 
             this.map.on( 'select:country', function ( evt ) {      
                 var id = evt.id;
-                that.countrydetail.selectedCountry( id );
+                that.countrydetail.setCountry( id );
             });            
             this.map.on( 'deselect:country', function ( evt ) {
-                that.countrydetail.deselectedCountry();
+                that.countrydetail.reset();
             });
         },
 

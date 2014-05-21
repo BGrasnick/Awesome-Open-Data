@@ -12,21 +12,29 @@ opendata.Views = opendata.Views || {};
         events: {},
 
         initialize: function () {
-            this.render();
+            this.currentCountry = null;
+
+            _.bindAll(this, 'setCountry');
         },
 
         render: function () {
-            this.$el.html( this.template({}) );
+
+            if( ! this.currentCountry )
+                return false;
+
+            this.$el.html(this.template({
+                name: this.currentCountry.name
+            }));
+
         },
 
-        selectedCountry: function ( id ) {
-            var countryname = opendata.CountryHelper.getCountryByID(id).name;
-            this.$el.html( this.template({
-                countryname : countryname
-            }) );
+        setCountry: function ( id ) {
+            this.currentCountry = opendata.CountryHelper.getCountryByID( id );
+            this.render();
         },
 
-        deselectedCountry: function () {
+        reset: function () {
+            this.currentCountry = null;
             this.render();
         }
 
