@@ -12,12 +12,22 @@ opendata.Views = opendata.Views || {};
         events: {},
 
         initialize: function () {
-            this.render()
+            this.render();
         },
 
         render: function () {
-            // this.$el.html(this.template(this.model.toJSON()));
-            this.$el.html( this.template({ }) );
+            this.$el.html( this.template({}) );
+        },
+
+        selectedCountry: function ( id ) {
+            var countryname = opendata.CountryHelper.getCountryByID(id).name;
+            this.$el.html( this.template({
+                countryname : countryname
+            }) );
+        },
+
+        deselectedCountry: function () {
+            this.render();
         }
 
     });

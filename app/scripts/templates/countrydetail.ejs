@@ -1,5 +1,10 @@
-<div>
+<% if (typeof(countryname) != "undefined") { %>
+	
+	<div class="countrydetail-tooltip">
+		<h3> <%= countryname %> </h3>
+		</hr>
 
-	<p>Country details here</p>
+		<p>Interesting information about <%= countryname %></p>
+	</div>
 
-</div>
+<% } %>

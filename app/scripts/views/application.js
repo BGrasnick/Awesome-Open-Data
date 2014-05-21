@@ -14,19 +14,25 @@ opendata.Views = opendata.Views || {};
 
         initialize: function () {
 
+            var that = this;
+
             opendata.Router = new ApplicationRouter()
 
             this.render()
-            this.map = new opendata.Views.Map()
-            this.nav = new opendata.Views.Navigation()
-            // this.slider = new opendata.Views.Slider()
-            this.countrydetail = new opendata.Views.Countrydetail()
+            this.map = new opendata.Views.Map();
+            this.nav = new opendata.Views.Navigation();
+            // this.slider = new opendata.Views.Slider();
+            this.countrydetail = new opendata.Views.Countrydetail();
 
+            this.map.on( 'select:country', function ( evt ) {      
+                var id = evt.id;
+                that.countrydetail.selectedCountry( id );
+            });            
+            this.map.on( 'deselect:country', function ( evt ) {
+                that.countrydetail.deselectedCountry();
+            });
         },
 
-        goToCountry: function ( id ){
-            console.log("Now showing info for county " + opendata.CountryHelper.getCountryByID(id).name );
-        }
     });
 
 })();

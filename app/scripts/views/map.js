@@ -126,12 +126,15 @@ opendata.Views = opendata.Views || {};
 
               svg.transition()
                   .duration(750)
-                  .call(zoom.translate(translate).scale(scale).event);
+                  .call(zoom.translate(translate).scale(scale).event)
+                  .each('end', function(){ that.trigger('select:country', { id: d.id }) });
             }
 
             function reset() {
               active.classed("active", false);
               active = d3.select(null);
+
+              that.trigger('deselect:country', {});
 
               svg.transition()
                   .duration(750)
