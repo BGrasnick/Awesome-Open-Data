@@ -13,10 +13,11 @@ opendata.Views = opendata.Views || {};
 
         initialize: function () {
 
+            this.g = null;
             this.filter = 'detail';
             this.colorScale = d3.scale.category20c();
 
-            _.bindAll(this, 'getCountryColor', 'render');
+            _.bindAll( this, 'getCountryColor', 'render' );
 
             // When the user resizes the window:
             // only call render when he did not resize it anymore for 300 ms
@@ -28,7 +29,10 @@ opendata.Views = opendata.Views || {};
 
         setRegionFilter: function ( filter ){
             this.filter = filter;
-            this.render();
+
+            // Update colors
+            this.g.selectAll(".country")
+                .style("fill", this.getCountryColor)
         },
 
         render: function () {
@@ -50,7 +54,10 @@ opendata.Views = opendata.Views || {};
                 .translate([0, 0])
                 .scale(1)
                 .scaleExtent([1, 8])
-                .on("zoom", zoomed);
+                .on("zoom", function zoomed() {
+                    that.g.style("stroke-width", 1.25 / d3.event.scale + "px");
+                    that.g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+                });
 
             var path = d3.geo.path()
                 .projection(projection);
@@ -71,24 +78,18 @@ opendata.Views = opendata.Views || {};
                 .attr("class", "fill")
                 .attr("xlink:href", "#sphere");
 
-            var g = svg.append("g");
+            this.g = svg.append("g");
 
             svg
                 .call(zoom) // delete this line to disable free zooming
                 .call(zoom.event);
 
-            // svg.append("path")
-            //     .datum(graticule)
-            //     .attr("class", "graticule")
-            //     .attr("d", path);
-
             d3.json("data/world.json", function(error, world) {
 
-                var countries = topojson.feature( world, world.objects.countries ).features,
-                    neighbors = topojson.neighbors( world.objects.countries.geometries);
+                // var neighbours = topojson.neighbors( world.objects.countries.geometries)
 
-                g.selectAll(".country")
-                    .data(countries)
+                that.g.selectAll(".country")
+                    .data( topojson.feature( world, world.objects.countries ).features )
                     .enter().insert("path", ".graticule")
                     .attr("class", that.getClasses)
                     .attr("country-id", function( d ) { return d.id })
@@ -96,7 +97,8 @@ opendata.Views = opendata.Views || {};
                     .style("fill", that.getCountryColor)
                     .on("click", clicked);
 
-                g.insert("path", ".graticule")
+                // Country Borders
+                that.g.insert("path", ".graticule")
                     .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
                     .attr("class", "boundary")
                     .attr("d", path);
@@ -106,36 +108,37 @@ opendata.Views = opendata.Views || {};
             d3.select(self.frameElement).style("height", height + "px");
 
             function clicked(d) {
-              if (active.node() === this) return reset();
-              active.classed("active", false);
-              active = d3.select(this).classed("active", true);
+                if (active.node() === this) return reset();
+                active.classed("active", false);
+                active = d3.select(this).classed("active", true);
 
-              var bounds = path.bounds(d),
-                  dx = bounds[1][0] - bounds[0][0],
-                  dy = bounds[1][1] - bounds[0][1],
-                  x = (bounds[0][0] + bounds[1][0]) / 2,
-                  y = (bounds[0][1] + bounds[1][1]) / 2,
-                  scale = .5 / Math.max(dx / width, dy / height),
-                  translate = [width / 2 - scale * x, height / 2 - scale * y];
+                var bounds = path.bounds(d),
+                    dx = bounds[1][0] - bounds[0][0],
+                    dy = bounds[1][1] - bounds[0][1];
 
+                // Sets a maximum zoom level
+                if(dx < 25) dx = 25;
+
+                var x = (bounds[0][0] + bounds[1][0]) / 2,
+                    y = (bounds[0][1] + bounds[1][1]) / 2,
+                    scale = .5 / Math.max(dx / width, dy / height),
+                    translate = [width / 2 - scale * x, height / 2 - scale * y];
 
               svg.transition()
                   .duration(750)
-                  .call(zoom.translate(translate).scale(scale).event);
+                  .call(zoom.translate(translate).scale(scale).event)
+                  .each('end', function(){ that.trigger('select:country', { id: d.id }) });
             }
 
             function reset() {
               active.classed("active", false);
               active = d3.select(null);
 
+              that.trigger('deselect:country', {});
+
               svg.transition()
                   .duration(750)
                   .call(zoom.translate([0, 0]).scale(1).event);
-            }
-
-            function zoomed() {
-              g.style("stroke-width", 1.5 / d3.event.scale + "px");
-              g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
             }
 
             // If the drag behavior prevents the default click,

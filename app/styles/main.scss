@@ -14,6 +14,24 @@ html, body {
 #map-wrapper{
 }
 
+#countrydetail-wrapper{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  pointer-events: none;
+}
+
+#countrydetail{
+  position: fixed;
+  top: 100px;
+  left: 10px;
+}
+
+.countrydetail-tooltip{  
+  background: #ffffff;
+  padding: 10px;
+}
 
 nav{
   position: fixed;
@@ -26,3 +44,4 @@ nav{
   }
 
 }
+
