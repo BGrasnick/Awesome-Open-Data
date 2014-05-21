@@ -30,3 +30,8 @@ http://underscorejs.org/
 # For US states:
 
 * http://www.tnoda.com/blog/2013-12-07
+
+# Source for TopoJSON:
+
+* http://bl.ocks.org/mbostock/raw/4090846/us.json
+* http://bl.ocks.org/mbostock/raw/4090846/world-50m.json
