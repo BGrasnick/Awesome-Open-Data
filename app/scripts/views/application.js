@@ -26,7 +26,11 @@ opendata.Views = opendata.Views || {};
             opendata.Countries = new opendata.Collections.Country();
             opendata.Countries.fetch({
                 url: './data/drugs.json',
-                success: function(col, resp){
+                success: function( Countries , resp){
+                    Countries.each(function( Country ){
+                        Country.set('name', opendata.CountryHelper.getCountryByID( Country.id ).name);
+                    });
+
                     opendata.CountryHelper.setDetailCountries( resp );
                     that.map.render();
                 }
@@ -34,7 +38,13 @@ opendata.Views = opendata.Views || {};
 
             this.map.on( 'select:country', function ( evt ) {      
                 var id = evt.id;
-                that.countrydetail.setCountry( id );
+                var country;
+
+                if( country = opendata.Countries.get( id ) )
+                    that.countrydetail.setCountry( country );
+                else
+                    that.countrydetail.reset();
+
             });            
             this.map.on( 'deselect:country', function ( evt ) {
                 that.countrydetail.reset();

@@ -1,4 +1,5 @@
-opendata.Collections = opendata.Collections || {};opendata.Models = opendata.Models || {};
+opendata.Collections = opendata.Collections || {};
+opendata.Models = opendata.Models || {};
 
 (function () {
     'use strict';

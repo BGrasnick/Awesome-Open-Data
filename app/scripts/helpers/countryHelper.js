@@ -21,7 +21,7 @@
 
             // see http://underscorejs.org/#find
             result = _.find( this.countries , function( country ){
-                return parseInt( country['id'] ) == id;
+                return country['id'] === id;
             });
 
             return result;
@@ -30,18 +30,11 @@
 
         CountryHelper.prototype.setDetailCountries = function( detailCountries ){
 
-
             var detailCountiesIDs = _.pluck(detailCountries, "id");
 
             _.each( this.countries, function( country ){
-
-                if( _.contains( detailCountiesIDs, country.id ) ){
-                    country.detail = true;
-                }else{
-                    country.detail = false;
-                }
+                country.detail = _.contains( detailCountiesIDs, country.id );
             })
-
 
         };
 
