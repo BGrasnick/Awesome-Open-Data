@@ -24,14 +24,12 @@ opendata.Views = opendata.Views || {};
                 return false;
             }
 
-            this.$el.html(this.template({
-                name: this.currentCountry.name
-            }));
+            this.$el.html(this.template( this.currentCountry.toJSON() ));
 
         },
 
-        setCountry: function ( id ) {
-            this.currentCountry = opendata.CountryHelper.getCountryByID( id );
+        setCountry: function ( country ) {
+            this.currentCountry = country;
             this.render();
         },
 
