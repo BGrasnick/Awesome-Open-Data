@@ -106,6 +106,28 @@ opendata.Views = opendata.Views || {};
             d3.select(self.frameElement).style("height", height + "px");
 
             function clicked(d) {
+
+                that.g.selectAll(["#states"]).remove();
+
+                if (opendata.CountryHelper.getCountryByID( d.id )["country-code"] === "840") {
+                    d3.json("/data/us.json", function(error, us) {
+                        that.g.append("g")
+                          .attr("id", "states")
+                          .attr("class", "state")
+                          .selectAll("path")
+                          .data(topojson.feature(us, us.objects.states).features)
+                          .enter()
+                          .append("path")
+                          .attr("state-id", function(d) { return d.id; })
+                          .attr("class", "active")
+                          .attr("d", path)
+                          .style("stroke-width","0.2")
+                          .style("stroke","white")
+                          .style("fill","red")
+                          .on("click", function() { }); // TODO: implement state clicked
+                    });
+                }
+
                 if (active.node() === this) return reset();
                 active.classed("active", false);
                 active = d3.select(this).classed("active", true);
