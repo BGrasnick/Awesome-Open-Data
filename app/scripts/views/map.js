@@ -87,19 +87,19 @@ opendata.Views = opendata.Views || {};
                 // var neighbours = topojson.neighbors( world.objects.countries.geometries)
 
                 that.g.selectAll(".country")
-                    .data( topojson.feature( world, world.objects.countries ).features )
-                    .enter().insert("path", ".graticule")
-                    .attr("class", that.getClasses)
-                    .attr("country-id", function( d ) { return d.id })
-                    .attr("d", path)
-                    .style("fill", that.getCountryColor)
-                    .on("click", clicked);
+                  .data( topojson.feature( world, world.objects.countries ).features )
+                  .enter().insert("path", ".graticule")
+                  .attr("class", that.getClasses)
+                  .attr("country-id", function( d ) { return d.id })
+                  .attr("d", path)
+                  .style("fill", that.getCountryColor)
+                  .on("click", clicked);
 
                 // Country Borders
                 that.g.insert("path", ".graticule")
-                    .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
-                    .attr("class", "boundary")
-                    .attr("d", path);
+                  .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
+                  .attr("class", "boundary")
+                  .attr("d", path);
 
             });
 
@@ -107,9 +107,7 @@ opendata.Views = opendata.Views || {};
 
             function clicked(d) {
 
-                that.g.selectAll(["#states"]).remove();
-
-                if (opendata.CountryHelper.getCountryByID( d.id )["country-code"] === "840") {
+                if (d.id === 840) {
                     d3.json("/data/us.json", function(error, us) {
                         that.g.append("g")
                           .attr("id", "states")
@@ -119,12 +117,11 @@ opendata.Views = opendata.Views || {};
                           .enter()
                           .append("path")
                           .attr("state-id", function(d) { return d.id; })
-                          .attr("class", "active")
                           .attr("d", path)
                           .style("stroke-width","0.2")
                           .style("stroke","white")
-                          .style("fill","red")
-                          .on("click", function() { }); // TODO: implement state clicked
+                          .style("fill", that.getCountryColor)
+                          .on("click", clicked); // TODO: implement state clicked
                     });
                 }
 
@@ -137,7 +134,7 @@ opendata.Views = opendata.Views || {};
                     dy = bounds[1][1] - bounds[0][1];
 
                 // Sets a maximum zoom level
-                if(dx < 25) dx = 25;
+                if(dx < 25) dx = 40;
 
                 var x = (bounds[0][0] + bounds[1][0]) / 2,
                     y = (bounds[0][1] + bounds[1][1]) / 2,
@@ -151,12 +148,13 @@ opendata.Views = opendata.Views || {};
             }
 
             function reset() {
-              active.classed("active", false);
-              active = d3.select(null);
+                active.classed("active", false);
+                active = d3.select(null);
 
-              that.trigger('deselect:country', {});
+                that.g.selectAll(["#states"]).remove();
+                that.trigger('deselect:country');
 
-              svg.transition()
+                svg.transition()
                   .duration(750)
                   .call(zoom.translate([0, 0]).scale(1).event);
             }
