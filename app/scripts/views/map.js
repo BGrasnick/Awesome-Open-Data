@@ -14,7 +14,7 @@ opendata.Views = opendata.Views || {};
         initialize: function () {
 
             this.g = null;
-            this.filter = 'detail';
+            this.filter = 'greenTest';
             this.colorScale = d3.scale.category20c();
 
             _.bindAll( this, 'getCountryColor', 'render' );
@@ -173,6 +173,13 @@ opendata.Views = opendata.Views || {};
                 var config = window.opendata.Config;
 
                 return country && country.detail ? config.detailAvailableColor : config.detailUnavailableColor;
+
+            } else if (currentFilter === 'greenTest') {
+
+                return d3.rgb(74,117,34).darker(
+                    parseInt(8*Math.random() - 4)
+                )
+
 
             } else {
 
