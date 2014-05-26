@@ -26,3 +26,12 @@ http://underscorejs.org/
 * https://github.com/mbostock/topojson
 * http://blog.safaribooksonline.com/2014/02/11/d3-js-maps/
 * http://bost.ocks.org/mike/map/
+
+# For US states:
+
+* http://www.tnoda.com/blog/2013-12-07
+
+# Source for TopoJSON:
+
+* http://bl.ocks.org/mbostock/raw/4090846/us.json
+* http://bl.ocks.org/mbostock/raw/4090846/world-50m.json
