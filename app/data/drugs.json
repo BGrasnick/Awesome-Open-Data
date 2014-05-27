@@ -3,35 +3,888 @@
         "id": 276,
         "cannabis": [
             {
-                "year": 2007,
-                "population": "all",
-                "prevalence": 4.7,
-                "source": "unodc"
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 19.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "young adults",
+                "prevalence": 11.1,
+                "source": "emcdda"
             },
             {
                 "year": 2009,
                 "population": "all",
                 "prevalence": 4.8,
-                "source": "unodc"
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 2.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "young adults",
+                "prevalence": 1.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "all",
+                "prevalence": 0.4,
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 4.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "young adults",
+                "prevalence": 1.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "all",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 3.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "young adults",
+                "prevalence": 1.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "all",
+                "prevalence": 0.8,
+                "source": "emcdda"
             }
         ]
     },
     {
-        "id": 826,
+        "id": 250,
         "cannabis": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 39.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 17.5,
+                "source": "emcdda"
+            },
             {
                 "year": 2010,
                 "population": "all",
-                "prevalence": 6.8,
-                "source": "unodc"
+                "prevalence": 8.4,
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 3.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 0.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 4.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 4.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 1.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 0.9,
+                "source": "emcdda"
+            }
+        ]
+    },
+    {
+        "id": 208,
+        "cannabis": [
+            {
+                "year": 2010,
+                "population": "schools",
+                "prevalence": 18.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 13.5,
+                "source": "emcdda"
             },
             {
                 "year": 2011,
                 "population": "all",
+                "prevalence": 5.4,
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 1.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 0.3,
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 2.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 2.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 2.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 2.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 0.9,
+                "source": "emcdda"
+            }
+        ]
+    },   
+    {
+        "id": 528,
+        "cannabis": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 27.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "young adults",
+                "prevalence": 13.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "all",
+                "prevalence": 7.0,
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 4.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "young adults",
+                "prevalence": 3.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "all",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 1.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "all",
+                "prevalence": 0.4,
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 2.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "young adults",
+                "prevalence": 2.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "all",
+                "prevalence": 1.2,
+                "source": "emcdda"
+            }
+        ]
+    },   
+    {
+        "id": 203,
+        "cannabis": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 42.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 16.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 8.9,
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 3.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 2.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 1.6,
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 2.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 1.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 1.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 0.6,
+                "source": "emcdda"
+            }
+        ]
+    },   
+    {
+        "id": 840,
+        "marijuana": [
+            {
+                "year": 2009,
+                "population": "12-17",
+                "prevalence": 13.28,
+                "source": "samhsa"
+            },
+            {
+                "year": 2009,
+                "population": "18-25",
+                "prevalence": 29.08,
+                "source": "samhsa"
+            },
+            {
+                "year": 2009,
+                "population": "26+",
+                "prevalence": 7.36,
+                "source": "samhsa"
+            },
+            {
+                "year": 2006,
+                "population": "12-17",
+                "prevalence": 13.26,
+                "source": "samhsa"
+            },
+            {
+                "year": 2006,
+                "population": "18-25",
+                "prevalence": 28.03,
+                "source": "samhsa"
+            },
+            {
+                "year": 2006,
+                "population": "26+",
+                "prevalence": 6.90,
+                "source": "samhsa"
+            },
+            {
+                "year": 2004,
+                "population": "12-17",
+                "prevalence": 14.74,
+                "source": "samhsa"
+            },
+            {
+                "year": 2004,
+                "population": "18-25",
+                "prevalence": 28.17,
+                "source": "samhsa"
+            },
+            {
+                "year": 2004,
+                "population": "26+",
+                "prevalence": 6.94,
+                "source": "samhsa"
+            }
+        ],
+        "alcohol": [
+            {
+                "year": 2009,
+                "population": "12-17",
+                "prevalence": 14.66,
+                "source": "samhsa"
+            },
+            {
+                "year": 2009,
+                "population": "18-25",
+                "prevalence": 61.51,
+                "source": "samhsa"
+            },
+            {
+                "year": 2009,
+                "population": "26+",
+                "prevalence": 54.83,
+                "source": "samhsa"
+            },
+            {
+                "year": 2006,
+                "population": "12-17",
+                "prevalence": 16.58,
+                "source": "samhsa"
+            },
+            {
+                "year": 2006,
+                "population": "18-25",
+                "prevalence": 61.42,
+                "source": "samhsa"
+            },
+            {
+                "year": 2006,
+                "population": "26+",
+                "prevalence": 54.35,
+                "source": "samhsa"
+            },
+            {
+                "year": 2004,
+                "population": "12-17",
+                "prevalence": 17.65,
+                "source": "samhsa"
+            },
+            {
+                "year": 2004,
+                "population": "18-25",
+                "prevalence": 60.92,
+                "source": "samhsa"
+            },
+            {
+                "year": 2004,
+                "population": "26+",
+                "prevalence": 52.76,
+                "source": "samhsa"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2009,
+                "population": "12-17",
+                "prevalence": 8.99,
+                "source": "samhsa"
+            },
+            {
+                "year": 2009,
+                "population": "18-25",
+                "prevalence": 35.76,
+                "source": "samhsa"
+            },
+            {
+                "year": 2009,
+                "population": "26+",
+                "prevalence": 23.39,
+                "source": "samhsa"
+            },
+            {
+                "year": 2006,
+                "population": "12-17",
+                "prevalence": 10.58,
+                "source": "samhsa"
+            },
+            {
+                "year": 2006,
+                "population": "18-25",
+                "prevalence": 38.71,
+                "source": "samhsa"
+            },
+            {
+                "year": 2006,
+                "population": "26+",
+                "prevalence": 24.51,
+                "source": "samhsa"
+            },
+            {
+                "year": 2004,
+                "population": "12-17",
+                "prevalence": 12.03,
+                "source": "samhsa"
+            },
+            {
+                "year": 2004,
+                "population": "18-25",
+                "prevalence": 39.88,
+                "source": "samhsa"
+            },
+            {
+                "year": 2004,
+                "population": "26+",
+                "prevalence": 24.39,
+                "source": "samhsa"
+            }
+        ]
+    },  
+    {
+        "id": 826,
+        "cannabis": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 25.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 12.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "all",
                 "prevalence": 6.9,
-                "source": "unodc"
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 4.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 2.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 4.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 5.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 4.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 2.2,
+                "source": "emcdda"
+            }
+        ]
+    },
+    {
+        "id": 752,
+        "cannabis": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 9.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 6.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 2.6,
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 2.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 1.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 1.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 1.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 1.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            }
+        ]
+    },
+    {
+        "id": 724,
+        "cannabis": [
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 17.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 9.6,
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 1.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 0.6,
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 3.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 2.3,
+                "source": "emcdda"
+            }
+        ]
+    },
+    {
+        "id": 380,
+        "cannabis": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 21.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 8.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 3.5,
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 2.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 0.0,
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 2.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "year": 2011,
+                "population": "schools",
+                "prevalence": 3.0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 1.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 0.6,
+                "source": "emcdda"
             }
         ]
     }
-
 ]
