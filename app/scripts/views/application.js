@@ -10,7 +10,7 @@ opendata.Views = opendata.Views || {};
         map: null,
         nav: null,
         // slider: null,
-        countrydetail: null,
+        country: null,
 
         initialize: function () {
 
@@ -21,7 +21,7 @@ opendata.Views = opendata.Views || {};
             this.map = new opendata.Views.Map();
             this.nav = new opendata.Views.Navigation();
             // this.slider = new opendata.Views.Slider();
-            this.countrydetail = new opendata.Views.Countrydetail();
+            this.country = new opendata.Views.Country();
 
             opendata.Countries = new opendata.Collections.Country({
                 success:  that.map.render
@@ -33,13 +33,13 @@ opendata.Views = opendata.Views || {};
                 var country;
 
                 if( country = opendata.Countries.get( id ) )
-                    that.countrydetail.setCountry( country );
+                    that.country.setCountry( country );
                 else
-                    that.countrydetail.reset();
+                    that.country.reset();
 
             });            
             this.map.on( 'deselect:country', function ( evt ) {
-                that.countrydetail.reset();
+                that.country.reset();
             });
 
 

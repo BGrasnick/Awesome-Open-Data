@@ -3,14 +3,14 @@ opendata.Views = opendata.Views || {};
 (function () {
     'use strict';
 
-    opendata.Views.Countrydetail = Backbone.View.extend({
+    opendata.Views.Country = Backbone.View.extend({
 
-        template: JST['app/scripts/templates/countrydetail.ejs'],
+        template: JST['app/scripts/templates/country.ejs'],
 
-        el: '#countrydetail',
+        el: '#country',
 
         events: {
-            "click .countrydetail-tooltip-close" : "reset"
+            "click .country-tooltip-close" : "reset"
         },
 
         initialize: function () {
@@ -36,7 +36,13 @@ opendata.Views = opendata.Views || {};
         renderChart : function() {
             var that = this;
 
-            var data = this.currentCountry.get('drugs')[that.currentDrug];
+            var drugs = this.currentCountry.get('drugs');
+
+            if ( ! drugs ){
+                return false;
+            }
+            var data = drugs[that.currentDrug];
+
 
             var x = d3.scale.linear()
                 .domain( [0, d3.max(data, function(d){ return d.prevalence })] )

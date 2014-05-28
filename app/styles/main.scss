@@ -1,4 +1,5 @@
 @import "map";
+@import "country";
 
 html, body {
   background: #fff;
@@ -9,28 +10,6 @@ html, body {
 #map-wrapper, #map{
   width: 100%;
   height: 100%;
-}
-
-#map-wrapper{
-}
-
-#countrydetail-wrapper{
-  position: fixed;
-  width: 300px;
-  height: 600%;
-  top: 50px;
-  left: 0
-}
-
-#countrydetail{
-  position: fixed;
-  top: 100px;
-  left: 10px;
-}
-
-.countrydetail-tooltip{  
-  background: #ffffff;
-  padding: 10px;
 }
 
 nav{
@@ -45,24 +24,5 @@ nav{
 
 }
 
-.bar-cannabis {
-  background-color: rgb(74,117,34);
-  color: #FFF;
-  padding: 2px;
-}
 
-.countrydetail-tooltip {
-  position: relative;
-  background-color: #CCC;
-  border-radius: 5px;
-}
-
-.countrydetail-tooltip-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px;
-  font: 20px mono;
-  cursor: pointer;
-}
 

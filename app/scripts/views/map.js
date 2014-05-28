@@ -173,7 +173,7 @@ opendata.Views = opendata.Views || {};
             var country = opendata.Countries.get( d.id );
 
             if( country && country.get('alpha-2') )
-                classes += country['alpha-2']
+                classes += country.get('alpha-2')
 
             return classes;
         },
