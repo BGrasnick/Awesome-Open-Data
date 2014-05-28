@@ -9,7 +9,9 @@ opendata.Views = opendata.Views || {};
 
         el: '#countrydetail',
 
-        events: {},
+        events: {
+            "click .countrydetail-tooltip-close" : "reset"
+        },
 
         initialize: function () {
             this.currentCountry = null;
