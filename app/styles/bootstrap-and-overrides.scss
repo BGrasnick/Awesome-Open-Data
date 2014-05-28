@@ -2,14 +2,8 @@
 // see bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/variables.scss
 
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-$brand-primary: #27ae60;
+$brand-primary: #16a085;
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
-
-
-// Overrides
-.btn{
-  border-radius: 0px
-}

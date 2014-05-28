@@ -12,7 +12,7 @@ html, body {
   height: 100%;
 }
 
-nav{
+nav {
   position: fixed;
   top: 0;
   width: auto;
@@ -22,4 +22,21 @@ nav{
     margin: 7px 0 0 10px !important;
   }
 
+  .btn {
+    &.btn-region {
+      background-color: #3498db;
+      color: #FFF
+    }
+
+    &.btn-sub-region {
+      background-color: #2ecc71;
+      color: #FFF
+    }
+  }
+
+}
+
+.cannabis {
+  background-color: rgb(74,117,34);
+  color: #FFF;
 }

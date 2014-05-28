@@ -196,13 +196,7 @@ opendata.Views = opendata.Views || {};
                 return "black"
             }
 
-            if( currentFilter === 'detail'){
-
-                var config = opendata.Config;
-
-                return country.get('details') ? config.detailAvailableColor : config.detailUnavailableColor;
-
-            } else if (currentFilter === 'greenTest') {
+            if (currentFilter === 'greenTest') {
 
                 return d3.rgb(74,117,34).darker(
                     parseInt(8*Math.random() - 4)

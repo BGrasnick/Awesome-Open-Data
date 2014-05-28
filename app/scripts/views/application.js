@@ -16,34 +16,39 @@ opendata.Views = opendata.Views || {};
 
             var that = this;
 
+            _.bindAll( this, 'render' );
+
             opendata.Router = new ApplicationRouter();
 
             this.map = new opendata.Views.Map();
             this.nav = new opendata.Views.Navigation();
-            // this.slider = new opendata.Views.Slider();
             this.country = new opendata.Views.Country();
 
+            this.map.on( 'select:country', this.selectCountry, this );
+            this.map.on( 'deselect:country', function () { that.country.reset(); });
+
             opendata.Countries = new opendata.Collections.Country({
-                success:  that.map.render
+                success: that.render
             });
 
+        },
 
-            this.map.on( 'select:country', function ( evt ) {      
-                var id = evt.id;
-                var country;
+        render: function() {
+            this.map.render();
+            this.nav.render();
+        },
 
-                if( country = opendata.Countries.get( id ) )
-                    that.country.setCountry( country );
-                else
-                    that.country.reset();
+        selectCountry: function ( evt ) {
+            var country,
+                id = evt.id;
 
-            });            
-            this.map.on( 'deselect:country', function ( evt ) {
-                that.country.reset();
-            });
-
+            if( country = opendata.Countries.get( id ) )
+                this.country.setCountry( country );
+            else
+                this.country.reset();
 
         }
+
 
     });
 

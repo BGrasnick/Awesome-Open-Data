@@ -45,14 +45,14 @@ opendata.Views = opendata.Views || {};
 
 
             var x = d3.scale.linear()
-                .domain( [0, d3.max(data, function(d){ return d.prevalence })] )
-                .range( [0, 290] );
+              .domain( [0, d3.max(data, function(d){ return d.prevalence })] )
+              .range( [0, 290] );
 
             d3.select( that.$('.chart')[0] ).selectAll('div')
               .data(data)
             .enter().append("div")
               .style("width", function(d) { return x(d.prevalence) + 'px'; })
-              .attr("class", "bar-" + that.currentDrug)
+              .attr("class", "bar " + that.currentDrug)
               .text(function(d) { return d.population + ": " + d.prevalence + "%"; });
 
         },

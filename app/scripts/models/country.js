@@ -4,26 +4,9 @@ opendata.Models = opendata.Models || {};
 (function () {
     'use strict';
 
-    var detailCountries = [
-        276, // Germany
-        840 // United States
-    ];
-
-    var inactiveCountries = [
-        10 // Antarctica
-    ];
-
     opendata.Models.Country = Backbone.Model.extend({
 
-        defaults: {
-            "details"  : false,
-            "inactive" : false
-        },
-
         initialize: function() {
-
-            if( _.contains( detailCountries, this.id ) )
-                this.set('details', true)
 
         },
 
@@ -35,7 +18,7 @@ opendata.Models = opendata.Models || {};
                     drugs[k] = resp[k];
                     delete resp[k]
                 }
-            })
+            });
 
             if( Object.keys( drugs ).length )
                 resp.drugs = drugs;
@@ -58,7 +41,7 @@ opendata.Models = opendata.Models || {};
                 this.fetch({
                     url: './data/countries.json'
                 })
-            ).done(options.success)
+            ).done(options.success);
 
         },
 
@@ -69,7 +52,7 @@ opendata.Models = opendata.Models || {};
                 if ( _.isString( country.id ) )
                     country.id = parseInt(country.id);
 
-            })
+            });
 
             return resp;
 
