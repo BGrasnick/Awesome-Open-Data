@@ -16,10 +16,10 @@ html, body {
 
 #countrydetail-wrapper{
   position: fixed;
-  width: 100%;
+  width: 300px;
   height: 100%;
   top: 0px;
-  pointer-events: none;
+  left: 0
 }
 
 #countrydetail{
@@ -36,7 +36,7 @@ html, body {
 nav{
   position: fixed;
   top: 0;
-  width: 100%;
+  width: auto;
   height: 50px;
 
   ul{
@@ -45,3 +45,9 @@ nav{
 
 }
 
+.bar-cannabis {
+  background-color: rgb(74,117,34);
+  color: #FFF;
+  padding: 2px;
+
+}
