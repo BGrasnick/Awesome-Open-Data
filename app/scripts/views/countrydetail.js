@@ -25,6 +25,7 @@ opendata.Views = opendata.Views || {};
             }
 
             this.$el.html(this.template( this.currentCountry.toJSON() ));
+            console.log(this.currentCountry)
 
         },
 

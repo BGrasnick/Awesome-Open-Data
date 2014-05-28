@@ -9,13 +9,19 @@ opendata.Models = opendata.Models || {};
         initialize: function() {
         },
 
-        defaults: {
-        },
+        parse: function(response)  {
+            var drugs = {};
 
-        validate: function(attrs, options) {
-        },
+            _.each( ['amphetamines', 'cannabis', 'cocaine', 'ecstasy'] , function( k ){
+                if( response[k] ){
+                    drugs[k] = response[k];
+                    delete response[k]
+                }
+            })
 
-        parse: function(response, options)  {
+            if( Object.keys( drugs ).length )
+                response.drugs = drugs;
+
             return response;
         }
     });

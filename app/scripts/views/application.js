@@ -26,10 +26,13 @@ opendata.Views = opendata.Views || {};
             opendata.Countries = new opendata.Collections.Country();
             opendata.Countries.fetch({
                 url: './data/drugs.json',
-                success: function( Countries , resp){
+                success: function( Countries , resp ){
                     Countries.each(function( Country ){
                         Country.set('name', opendata.CountryHelper.getCountryByID( Country.id ).name);
+                        //Country.set('drugs', _.findWhere(resp, Country.id) );
+
                     });
+
 
                     opendata.CountryHelper.setDetailCountries( resp );
                     that.map.render();
