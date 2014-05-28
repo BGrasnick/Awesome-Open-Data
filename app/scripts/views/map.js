@@ -170,9 +170,9 @@ opendata.Views = opendata.Views || {};
         getClasses: function( d , index ){
 
             var classes = "country "
-            var country = opendata.CountryHelper.getCountryByID( d.id );
+            var country = opendata.Countries.get( d.id );
 
-            if( country && country['alpha-2'])
+            if( country && country.get('alpha-2') )
                 classes += country['alpha-2']
 
             return classes;
@@ -186,13 +186,18 @@ opendata.Views = opendata.Views || {};
             var currentFilter     = this.filter;
             var currentColorScale = this.colorScale;
 
-            var country = opendata.CountryHelper.getCountryByID( d.id );
+            var country = opendata.Countries.get( d.id );
+
+            if (! country ){
+                console.log("Could not find country ", d.id)
+                return "black"
+            }
 
             if( currentFilter === 'detail'){
 
                 var config = window.opendata.Config;
 
-                return country && country.detail ? config.detailAvailableColor : config.detailUnavailableColor;
+                return country.get('details') ? config.detailAvailableColor : config.detailUnavailableColor;
 
             } else if (currentFilter === 'greenTest') {
 
@@ -200,11 +205,9 @@ opendata.Views = opendata.Views || {};
                     parseInt(8*Math.random() - 4)
                 )
 
+            } else
+                return currentColorScale( country.get(currentFilter) );
 
-            } else {
-
-                return currentColorScale( country[currentFilter] );
-            }
 
         }
 

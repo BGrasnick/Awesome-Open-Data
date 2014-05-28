@@ -4,9 +4,23 @@ opendata.Models = opendata.Models || {};
 (function () {
     'use strict';
 
+    var detailCountries = [
+        276, //"Germany",
+        840, //"United States",
+        818 //"Egypt"
+    ]
+
     opendata.Models.Country = Backbone.Model.extend({
 
+        defaults: {
+            "details": false
+        },
+
         initialize: function() {
+
+            if( _.contains( detailCountries, this.id ) )
+                this.set('details', true)
+
         },
 
         parse: function(response)  {
@@ -30,7 +44,33 @@ opendata.Models = opendata.Models || {};
 
     opendata.Collections.Country = Backbone.Collection.extend({
 
-        model: opendata.Models.Country
+        model: opendata.Models.Country,
+
+        initialize: function(options) {
+
+            $.when(
+                this.fetch({
+                    url: './data/drugs.json'
+                }),
+                this.fetch({
+                    url: './data/countries.json'
+                })
+            ).done(options.success)
+
+        },
+
+        parse : function(resp) {
+            _.each(resp, function(country) {
+
+                if (_.isString(country.id)) {
+                    country.id = parseInt(country.id);
+                }
+
+            })
+
+            return resp;
+
+        }
 
     });
 

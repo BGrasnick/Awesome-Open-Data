@@ -23,21 +23,10 @@ opendata.Views = opendata.Views || {};
             // this.slider = new opendata.Views.Slider();
             this.countrydetail = new opendata.Views.Countrydetail();
 
-            opendata.Countries = new opendata.Collections.Country();
-            opendata.Countries.fetch({
-                url: './data/drugs.json',
-                success: function( Countries , resp ){
-                    Countries.each(function( Country ){
-                        Country.set('name', opendata.CountryHelper.getCountryByID( Country.id ).name);
-                        //Country.set('drugs', _.findWhere(resp, Country.id) );
-
-                    });
-
-
-                    opendata.CountryHelper.setDetailCountries( resp );
-                    that.map.render();
-                }
+            opendata.Countries = new opendata.Collections.Country({
+                success:  that.map.render
             });
+
 
             this.map.on( 'select:country', function ( evt ) {      
                 var id = evt.id;
