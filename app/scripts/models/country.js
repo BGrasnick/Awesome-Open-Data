@@ -25,9 +25,6 @@ opendata.Models = opendata.Models || {};
             if( _.contains( detailCountries, this.id ) )
                 this.set('details', true)
 
-            if( _.contains( inactiveCountries, this.id ) )
-                this.set('inactive', true)
-
         },
 
         parse: function( resp ) {

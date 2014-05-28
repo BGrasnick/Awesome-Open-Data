@@ -17,7 +17,7 @@ opendata.Views = opendata.Views || {};
             this.filter = 'greenTest';
             this.colorScale = d3.scale.category20c();
 
-            _.bindAll( this, 'getCountryColor', 'render' );
+            _.bindAll( this, 'requestCountryColor', 'render' );
 
             // When the user resizes the window:
             // only call render when he did not resize it anymore for 300 ms
@@ -30,7 +30,7 @@ opendata.Views = opendata.Views || {};
 
             // Update colors
             this.g.selectAll(".country")
-                .style("fill", this.getCountryColor)
+                .style("fill", this.requestCountryColor)
         },
 
         render: function () {
@@ -92,7 +92,7 @@ opendata.Views = opendata.Views || {};
                   .attr("class", that.getClasses)
                   .attr("country-id", function( d ) { return d.id })
                   .attr("d", path)
-                  .style("fill", that.getCountryColor)
+                  .style("fill", that.requestCountryColor)
                   .on("click", clicked);
 
                 // Country Borders
@@ -120,7 +120,7 @@ opendata.Views = opendata.Views || {};
                           .attr("d", path)
                           .style("stroke-width","0.2")
                           .style("stroke","white")
-                          .style("fill", that.getCountryColor)
+                          .style("fill", that.requestCountryColor)
                           .on("click", clicked); // TODO: implement state clicked
                     });
                 }
@@ -172,16 +172,19 @@ opendata.Views = opendata.Views || {};
             var classes = "country "
             var country = opendata.Countries.get( d.id );
 
-            if( country && country.get('alpha-2') )
+            if ( ! country )
+                throw "Missing country with id " + d.id
+
+            if( country.get('alpha-2') )
                 classes += country.get('alpha-2')
+
+            if( ! country.get('drugs') )
+                classes += ' no-data '
 
             return classes;
         },
 
-        getCountryColor: function( d ){
-
-            if (d.id < 0) //-99
-                return "RGBA(255,255,255,0)";
+        requestCountryColor: function( d ){
 
             var currentFilter     = this.filter;
             var currentColorScale = this.colorScale;
@@ -195,7 +198,7 @@ opendata.Views = opendata.Views || {};
 
             if( currentFilter === 'detail'){
 
-                var config = window.opendata.Config;
+                var config = opendata.Config;
 
                 return country.get('details') ? config.detailAvailableColor : config.detailUnavailableColor;
 
@@ -207,7 +210,6 @@ opendata.Views = opendata.Views || {};
 
             } else
                 return currentColorScale( country.get(currentFilter) );
-
 
         }
 

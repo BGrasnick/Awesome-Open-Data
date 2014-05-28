@@ -1,3 +1,11 @@
+@mixin country-border() {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .fill {
   fill: #fff;
 }
@@ -14,11 +22,7 @@
 }
 
 .boundary {
-  fill: none;
-  stroke: #fff;
-  stroke-width: .5px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  @include country-border();
 }
 
 .container {
@@ -35,7 +39,12 @@
    fill: #657273 !important;
 }
 
-.country.inactive{
-  fill: rgba(255, 255, 255, 1) !important;
-  stroke: #000 !important;
+.country.no-data {
+  @include country-border();
+  fill-opacity: 0.2;
+}
+
+.country.AQ {
+  fill: white !important;
+  stroke: black!important;
 }
