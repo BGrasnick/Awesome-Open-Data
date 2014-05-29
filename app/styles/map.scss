@@ -29,7 +29,7 @@
   min-width: 1170px;
 }
 
-.country{
+.country, .state{
   &:hover {
     fill: rgba(149, 165, 166, .5) !important;
   }
@@ -47,4 +47,8 @@
 .country.AQ {
   fill: white !important;
   stroke: black!important;
+}
+
+.country.US {
+  display: none
 }

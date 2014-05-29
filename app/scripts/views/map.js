@@ -43,44 +43,44 @@ opendata.Views = opendata.Views || {};
                 height = this.$el.outerHeight() - 3,
                 active = d3.select(null);
 
+            d3.select(self.frameElement).style("height", height + "px");
+
             var projection = d3.geo.mercator()
-                .scale(170)
-                .translate([width / 2, height / 2])
-                .precision(0.1);
+              .scale(170)
+              .translate([width / 2, height / 2])
+              .precision(0.1);
 
             var zoom = d3.behavior.zoom()
-                .translate([0, 0])
-                .scale(1)
-                .scaleExtent([1, 8])
-                .on("zoom", function zoomed() {
-                    that.g.style("stroke-width", 1.25 / d3.event.scale + "px");
-                    that.g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-                });
+              .translate([0, 0])
+              .scale(1)
+              .scaleExtent([1, 8])
+              .on("zoom", function () {
+                  that.g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+              });
 
             var path = d3.geo.path()
-                .projection(projection);
+              .projection(projection);
 
             var graticule = d3.geo.graticule();
 
-            var svg = d3.select("#" + this.el.id).append("svg")
-                .attr("width", width)
-                .attr("height", height);
+            var svg = d3.select( this.el ).append("svg")
+              .attr("width", width)
+              .attr("height", height);
 
             svg.append("defs").append("path")
-                .datum({type: "Sphere"})
-                .attr("id", "sphere")
-                .attr("d", path);
-
+              .datum({type: "Sphere"})
+              .attr("id", "sphere")
+              .attr("d", path);
 
             svg.append("use")
-                .attr("class", "fill")
-                .attr("xlink:href", "#sphere");
+              .attr("class", "fill")
+              .attr("xlink:href", "#sphere");
 
             this.g = svg.append("g");
 
             svg
-                .call(zoom) // delete this line to disable free zooming
-                .call(zoom.event);
+              .call(zoom) // delete this line to disable free zooming
+              .call(zoom.event);
 
             d3.json("data/world.json", function(error, world) {
 
@@ -88,12 +88,12 @@ opendata.Views = opendata.Views || {};
 
                 that.g.selectAll(".country")
                   .data( topojson.feature( world, world.objects.countries ).features )
-                  .enter().insert("path", ".graticule")
+                .enter().insert("path", ".graticule")
                   .attr("class", that.getClasses)
                   .attr("country-id", function( d ) { return d.id })
                   .attr("d", path)
                   .style("fill", that.requestCountryColor)
-                  .on("click", clicked);
+                  .on("click", _.partial(_,"country"));
 
                 // Country Borders
                 that.g.insert("path", ".graticule")
@@ -103,26 +103,26 @@ opendata.Views = opendata.Views || {};
 
             });
 
-            d3.select(self.frameElement).style("height", height + "px");
+            d3.json("/data/us.json", function(error, us) {
+                that.g.append("g")
+                  .attr("id", "states")
+                  .selectAll(".state")
+                  .data( topojson.feature(us, us.objects.states ).features )
+                .enter()
+                  .append("path")
+                  .attr("class", "state")
+                  .attr("state-id", function(d) { return d.id; })
+                  .attr("d", path)
+                  .style("stroke-width","0.2")
+                  .style("stroke","white")
+                  .style("fill", that.requestCountryColor)
+                  .on("click", _.partial(_,"state")); // TODO: implement state clicked
+            });
 
-            function clicked(d) {
-
+            function clicked(d, type) {
+                console.log(d, type)
                 if (d.id === 840) {
-                    d3.json("/data/us.json", function(error, us) {
-                        that.g.append("g")
-                          .attr("id", "states")
-                          .attr("class", "state")
-                          .selectAll("path")
-                          .data(topojson.feature(us, us.objects.states).features)
-                          .enter()
-                          .append("path")
-                          .attr("state-id", function(d) { return d.id; })
-                          .attr("d", path)
-                          .style("stroke-width","0.2")
-                          .style("stroke","white")
-                          .style("fill", that.requestCountryColor)
-                          .on("click", clicked); // TODO: implement state clicked
-                    });
+                    $('#states').show();
                 }
 
                 if (active.node() === this) return reset();
@@ -142,16 +142,15 @@ opendata.Views = opendata.Views || {};
                     translate = [width / 2 - scale * x, height / 2 - scale * y];
 
               svg.transition()
-                  .duration(750)
-                  .call(zoom.translate(translate).scale(scale).event)
-                  .each('end', function(){ that.trigger('select:country', { id: d.id }) });
+                .duration(750)
+                .call(zoom.translate(translate).scale(scale).event)
+                .each('end', function(){ that.trigger('select:country', { id: d.id }) });
             }
 
             function reset() {
                 active.classed("active", false);
                 active = d3.select(null);
 
-                that.g.selectAll(["#states"]).remove();
                 that.trigger('deselect:country');
 
                 svg.transition()
@@ -192,7 +191,7 @@ opendata.Views = opendata.Views || {};
             var country = opendata.Countries.get( d.id );
 
             if (! country ){
-                console.log("Could not find country ", d.id)
+                // Possibly a US state
                 return "black"
             }
 
