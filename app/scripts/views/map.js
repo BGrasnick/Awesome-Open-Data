@@ -93,7 +93,7 @@ opendata.Views = opendata.Views || {};
                   .attr("country-id", function( d ) { return d.id })
                   .attr("d", path)
                   .style("fill", that.requestCountryColor)
-                  .on("click", _.partial(_,"country"));
+                  .on("click", clicked);
 
                 // Country Borders
                 that.g.insert("path", ".graticule")
@@ -116,7 +116,7 @@ opendata.Views = opendata.Views || {};
                   .style("stroke-width","0.2")
                   .style("stroke","white")
                   .style("fill", that.requestCountryColor)
-                  .on("click", _.partial(_,"state")); // TODO: implement state clicked
+                  .on("click", clicked);
             });
 
             function clicked(d, type) {
