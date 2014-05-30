@@ -37,39 +37,42 @@ opendata.Models = opendata.Models || {};
             var that = this;
 
             $.when(
+
                 this.fetch({
                     url: './data/drugData.json'
                 }),
+
                 this.fetch({
                     url: './data/countriesMeta.json'
+                }),
+
+                $.get("./data/us.topo.json", function( resp ) {
+
+                    var path = resp.objects['us_states_census.geo'].geometries;
+
+                    var states = _.map(path, function( state ){
+                        return {
+                            id   : state.properties['STATE'],
+                            name : state.properties['NAME']
+                        }
+                    });
+
+                    that.add(states);
                 })
+
             ).done(options.success);
-
-            $.ajax("./data/us.topo.json").done(function(resp) {
-                var path = resp.objects['us_states_census.geo'].geometries;
-
-                var states = _.map(path, function( state ){
-                    return {
-                        id   : state.properties['STATE'],
-                        name : state.properties['NAME']
-                    }
-                });
-
-                that.add(states);
-            });
 
         },
 
-        parse : function(resp) {
+        parse : function( resp ) {
 
-            _.each( resp, function(country) {
+            return _.each( resp, function( country ) {
 
-                if ( _.isString( country.id ) )
+                if ( _.isString( country.id ) ){
                     country.id = parseInt(country.id);
+                }
 
             });
-
-            return resp;
 
         }
 

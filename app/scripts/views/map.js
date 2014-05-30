@@ -204,9 +204,22 @@ opendata.Views = opendata.Views || {};
 
             if (currentFilter === 'greenTest') {
 
-                return d3.rgb(74,117,34).darker(
-                    parseInt(8*Math.random() - 4)
-                )
+                try{
+                    var cannabisData = country.get('drugs')['cannabis'];
+
+                    var mostRecentEntry = _.max(cannabisData, function(obj) {
+                        return (obj.population === 'all') ? obj.year : 0
+                    });
+
+                    var x = d3.scale.linear()
+                      .domain([0, 10, 50])
+                      .range([d3.rgb(255,255,255),d3.rgb(74,117,34),d3.rgb(74,117,34)])
+
+                    return x(mostRecentEntry.prevalence);
+
+                }catch(e){
+                    return '#222'
+                }
 
             } else
                 return currentColorScale( country.get(currentFilter) );
