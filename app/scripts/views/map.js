@@ -82,7 +82,7 @@ opendata.Views = opendata.Views || {};
               .call(zoom) // delete this line to disable free zooming
               .call(zoom.event);
 
-            d3.json("data/world.json", function(error, world) {
+            d3.json("data/world.topo.json", function(error, world) {
 
                 // var neighbours = topojson.neighbors( world.objects.countries.geometries)
 
@@ -103,11 +103,11 @@ opendata.Views = opendata.Views || {};
 
             });
 
-            d3.json("/data/us.json", function(error, us) {
+            d3.json("/data/us.topo.json", function(error, us) {
                 that.g.append("g")
                   .attr("id", "states")
                   .selectAll(".state")
-                  .data( topojson.feature(us, us.objects.states ).features )
+                  .data( topojson.feature(us, us.objects['us_states_census.geo'] ).features )
                 .enter()
                   .append("path")
                   .attr("class", "state")
@@ -119,10 +119,15 @@ opendata.Views = opendata.Views || {};
                   .on("click", clicked);
             });
 
-            function clicked(d, type) {
-                console.log(d, type)
-                if (d.id === 840) {
-                    $('#states').show();
+            function clicked(d) {
+                if (d.id < 10000){
+                    if (d.id === 840 ) {
+                        $("#states").toggle()
+                        $(".country.US").toggle()
+                    }else{
+                        $("#states").hide()
+                        $(".country.US").show()
+                    }
                 }
 
                 if (active.node() === this) return reset();
@@ -148,6 +153,8 @@ opendata.Views = opendata.Views || {};
             }
 
             function reset() {
+                $('#states').hide();
+                $('.country.US').show();
                 active.classed("active", false);
                 active = d3.select(null);
 
