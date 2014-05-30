@@ -7,10 +7,6 @@ opendata.Views = opendata.Views || {};
 
         el: '#map',
 
-        events: {
-            //'mouseover   .country' : 'handleMouseover'
-        },
-
         initialize: function () {
 
             this.g = null;
@@ -25,7 +21,7 @@ opendata.Views = opendata.Views || {};
 
         },
 
-        setRegionFilter: function ( filter ){
+        setGlobalFilter: function ( filter ){
             this.filter = filter;
 
             // Update colors
@@ -149,20 +145,23 @@ opendata.Views = opendata.Views || {};
               svg.transition()
                 .duration(750)
                 .call(zoom.translate(translate).scale(scale).event)
-                .each('end', function(){ that.trigger('select:country', { id: d.id }) });
+                .each('end', function(){ that.trigger('country:focus', { id: d.id }) });
             }
 
             function reset() {
-                $('#states').hide();
-                $('.country.US').show();
+
                 active.classed("active", false);
                 active = d3.select(null);
 
-                that.trigger('deselect:country');
+                that.trigger('country:blur');
 
                 svg.transition()
                   .duration(750)
-                  .call(zoom.translate([0, 0]).scale(1).event);
+                  .call(zoom.translate([0, 0]).scale(1).event)
+                  .each('end', function(){
+                      $('#states').hide();
+                      $('.country.US').show();
+                  });
             }
 
             // If the drag behavior prevents the default click,
@@ -173,13 +172,13 @@ opendata.Views = opendata.Views || {};
 
         },
 
-        getClasses: function( d , index ){
+        getClasses: function( d ){
 
             var classes = "country "
             var country = opendata.Countries.get( d.id );
 
             if ( ! country )
-                throw "Missing country with id " + d.id
+                throw "Missing country with id " + d.id;
 
             if( country.get('alpha-2') )
                 classes += country.get('alpha-2')
@@ -197,10 +196,7 @@ opendata.Views = opendata.Views || {};
 
             var country = opendata.Countries.get( d.id );
 
-            if (! country ){
-                // Possibly a US state
-                return "black"
-            }
+            if (! country ) return "red";
 
             if (currentFilter === 'greenTest') {
 
@@ -217,7 +213,7 @@ opendata.Views = opendata.Views || {};
 
                     return x(mostRecentEntry.prevalence);
 
-                }catch(e){
+                } catch(e) {
                     return '#222'
                 }
 

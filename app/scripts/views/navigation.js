@@ -10,22 +10,17 @@ opendata.Views = opendata.Views || {};
         el: 'nav',
 
         events: {
-            'click li' : 'setCountryFilter'
+            'click li' : 'setGlobalFilter'
         },
 
-        initialize: function () {
-
-        },
-
-
-        setCountryFilter: function ( evt ){
+        setGlobalFilter: function ( evt ){
             var $target = $(evt.target);
 
-            opendata.App.map.setRegionFilter( $target.data("filter") );
+            opendata.App.map.setGlobalFilter( $target.data("filter") );
 
         },
 
-        render: function ( countryname ) {
+        render: function () {
 
             this.$el.html( this.template() );
         }

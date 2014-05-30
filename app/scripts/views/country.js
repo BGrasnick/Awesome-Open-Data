@@ -15,21 +15,24 @@ opendata.Views = opendata.Views || {};
 
         initialize: function () {
             this.currentCountry = null;
-            this.currentDrug = 'cannabis';
+            this.currentDrug    = 'cannabis';
 
             _.bindAll(this, 'setCountry');
         },
 
         render: function () {
 
-            if( ! this.currentCountry ){
+            if( this.currentCountry ){
+
+                this.$el.html( this.template( this.currentCountry.toJSON() ) );
+
+                this.renderChart();
+
+            } else {
+
                 this.$el.empty();
-                return false;
+
             }
-
-            this.$el.html(this.template( this.currentCountry.toJSON() ));
-
-            this.renderChart();
 
         },
 

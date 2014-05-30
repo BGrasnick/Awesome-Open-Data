@@ -7,28 +7,21 @@ opendata.Views = opendata.Views || {};
 
         el: 'body',
 
-        map: null,
-        nav: null,
-        // slider: null,
-        country: null,
-
         initialize: function () {
-
-            var that = this;
 
             _.bindAll( this, 'render' );
 
             opendata.Router = new ApplicationRouter();
 
-            this.map = new opendata.Views.Map();
-            this.nav = new opendata.Views.Navigation();
+            this.map     = new opendata.Views.Map();
+            this.nav     = new opendata.Views.Navigation();
             this.country = new opendata.Views.Country();
 
-            this.map.on( 'select:country', this.selectCountry, this );
-            this.map.on( 'deselect:country', function () { that.country.reset(); });
+            this.map.on( 'country:focus', this.selectCountry, this );
+            this.map.on( 'country:blur', this.country.reset, this.country );
 
             opendata.Countries = new opendata.Collections.Country({
-                success: that.render
+                success: this.render
             });
 
         },
