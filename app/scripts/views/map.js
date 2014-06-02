@@ -209,7 +209,7 @@ opendata.Views = opendata.Views || {};
 
                     var x = d3.scale.linear()
                       .domain([0, 10, 50])
-                      .range([d3.rgb(255,255,255),d3.rgb(74,117,34),d3.rgb(74,117,34)])
+                      .range([d3.rgb(255,255,255),d3.rgb(91,204,141),d3.rgb(91,204,141)])
 
                     return x(mostRecentEntry.prevalence);
 
