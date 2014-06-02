@@ -25,6 +25,8 @@ nav {
   }
 
   .btn {
+      border-radius: 0px !important;
+      padding: 5px 20px !important;
     &.btn-region {
       background-color: #3498db;
       color: #FFF
@@ -42,3 +44,13 @@ nav {
   background-color: rgb(91,204,141);
   color: #FFF;
 }
+
+.country-tooltip h3{
+  font-weight: 800;
+  margin-top: 0px;
+}
+
+.country-tooltip p{
+  color: #fff;
+}
+

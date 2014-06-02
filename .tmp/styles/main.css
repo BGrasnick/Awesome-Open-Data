@@ -52,55 +52,25 @@
   top: 100px;
   left: 10px; }
 
-.btn{
-  border-radius: 0px !important;
-  padding: 5px 20px !important;
-}
-
 .country-tooltip {
   background: #ffffff;
-  padding: 10px;
-  font-weight: 200;
-}
-
-.country-tooltip h3{
-  font-weight: 800;
-  margin-top: 0px;
-}
-
-.country-tooltip p{
-  color: #fff;
-}
+  padding: 10px; }
 
 .chart .bar {
-  padding: 3px;
-  margin-bottom: 3px;
-  color: #000;
-}
+  padding: 3px; }
 
 .country-tooltip {
   position: relative;
-  background-color: #5BCC8D;
-  box-shadow: 0px 0px 0px 2px #5BCC8D;
-  border: 7px solid #fff;
-}
+  background-color: #CCC;
+  border-radius: 5px; }
 
 .country-tooltip-close {
   position: absolute;
   top: 0;
   right: 0;
   padding: 5px;
-  font: 20px 'Source Sans Pro',sans-serif;
-  cursor: pointer;
-  color: #fff;
-  margin-top: 0px;
-  font-weight: 800;
-}
-
-.country-tooltip-close:hover {
-  color: #000;
-}
-
+  font: 20px mono;
+  cursor: pointer; }
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,200italic,300italic,400italic,600,600italic,700,700italic,900,900italic);
 html, body {
@@ -120,17 +90,23 @@ nav {
   height: 50px; }
   nav ul {
     margin: 7px 0 0 10px !important; }
-  nav .btn.btn-region {
-    background-color: #3498db;
-    color: #FFF; }
-  nav .btn.btn-sub-region {
-    background-color: #2ecc71;
-    color: #FFF; }
-
-.chart .bar{
-  background: #fff;
-}
+  nav .btn {
+    border-radius: 0px !important;
+    padding: 5px 20px !important; }
+    nav .btn.btn-region {
+      background-color: #3498db;
+      color: #FFF; }
+    nav .btn.btn-sub-region {
+      background-color: #2ecc71;
+      color: #FFF; }
 
 .cannabis {
   background-color: #5bcc8d;
+  color: #FFF; }
+
+.country-tooltip h3 {
+  font-weight: 800;
+  margin-top: 0px; }
+
+.country-tooltip p {
   color: #fff; }
