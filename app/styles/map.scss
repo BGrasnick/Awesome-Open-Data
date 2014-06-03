@@ -1,3 +1,11 @@
+@mixin country-border() {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .fill {
   fill: #fff;
 }
@@ -14,18 +22,14 @@
 }
 
 .boundary {
-  fill: none;
-  stroke: #fff;
-  stroke-width: .5px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  @include country-border();
 }
 
 .container {
   min-width: 1170px;
 }
 
-.country{
+.country, .state{
   &:hover {
     fill: rgba(149, 165, 166, .5) !important;
   }
@@ -33,4 +37,18 @@
 
 .country.active{
    fill: #657273 !important;
+}
+
+.country.no-data {
+  @include country-border();
+  fill-opacity: 0.2;
+}
+
+.country.AQ {
+  fill: white !important;
+  stroke: black!important;
+}
+
+#states{
+  display: none
 }

@@ -10,26 +10,19 @@ opendata.Views = opendata.Views || {};
         el: 'nav',
 
         events: {
-            'click .btn-primary' : 'setCountryFilter'
+            'click li' : 'setGlobalFilter'
         },
 
-        setCountryFilter: function ( evt ){
-            var $button = $(evt.target);
+        setGlobalFilter: function ( evt ){
+            var $target = $(evt.target);
 
-            opendata.App.map.setRegionFilter( $button.data("filter") );
+            opendata.App.map.setGlobalFilter( $target.data("filter") );
 
         },
 
-        initialize: function () {
-            this.render()
-        },
+        render: function () {
 
-        render: function ( countryname ) {
-
-            //this.$el.html(this.template(this.model.toJSON()));
-            this.$el.html( this.template({
-                name : countryname
-            }) );
+            this.$el.html( this.template() );
         }
 
     });

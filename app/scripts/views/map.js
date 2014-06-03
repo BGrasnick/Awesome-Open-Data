@@ -7,17 +7,13 @@ opendata.Views = opendata.Views || {};
 
         el: '#map',
 
-        events: {
-            //'mouseover   .country' : 'handleMouseover'
-        },
-
         initialize: function () {
 
             this.g = null;
             this.filter = 'greenTest';
             this.colorScale = d3.scale.category20c();
 
-            _.bindAll( this, 'getCountryColor', 'render' );
+            _.bindAll( this, 'requestCountryColor', 'render' );
 
             // When the user resizes the window:
             // only call render when he did not resize it anymore for 300 ms
@@ -25,12 +21,12 @@ opendata.Views = opendata.Views || {};
 
         },
 
-        setRegionFilter: function ( filter ){
+        setGlobalFilter: function ( filter ){
             this.filter = filter;
 
             // Update colors
             this.g.selectAll(".country")
-                .style("fill", this.getCountryColor)
+                .style("fill", this.requestCountryColor)
         },
 
         render: function () {
@@ -43,56 +39,56 @@ opendata.Views = opendata.Views || {};
                 height = this.$el.outerHeight() - 3,
                 active = d3.select(null);
 
+            d3.select(self.frameElement).style("height", height + "px");
+
             var projection = d3.geo.mercator()
-                .scale(170)
-                .translate([width / 2, height / 2])
-                .precision(0.1);
+              .scale(170)
+              .translate([width / 2, height / 2])
+              .precision(0.1);
 
             var zoom = d3.behavior.zoom()
-                .translate([0, 0])
-                .scale(1)
-                .scaleExtent([1, 8])
-                .on("zoom", function zoomed() {
-                    that.g.style("stroke-width", 1.25 / d3.event.scale + "px");
-                    that.g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-                });
+              .translate([0, 0])
+              .scale(1)
+              .scaleExtent([1, 8])
+              .on("zoom", function () {
+                  that.g.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+              });
 
             var path = d3.geo.path()
-                .projection(projection);
+              .projection(projection);
 
             var graticule = d3.geo.graticule();
 
-            var svg = d3.select("#" + this.el.id).append("svg")
-                .attr("width", width)
-                .attr("height", height);
+            var svg = d3.select( this.el ).append("svg")
+              .attr("width", width)
+              .attr("height", height);
 
             svg.append("defs").append("path")
-                .datum({type: "Sphere"})
-                .attr("id", "sphere")
-                .attr("d", path);
-
+              .datum({type: "Sphere"})
+              .attr("id", "sphere")
+              .attr("d", path);
 
             svg.append("use")
-                .attr("class", "fill")
-                .attr("xlink:href", "#sphere");
+              .attr("class", "fill")
+              .attr("xlink:href", "#sphere");
 
             this.g = svg.append("g");
 
             svg
-                .call(zoom) // delete this line to disable free zooming
-                .call(zoom.event);
+              .call(zoom) // delete this line to disable free zooming
+              .call(zoom.event);
 
-            d3.json("data/world.json", function(error, world) {
+            d3.json("data/world.topo.json", function(error, world) {
 
                 // var neighbours = topojson.neighbors( world.objects.countries.geometries)
 
                 that.g.selectAll(".country")
                   .data( topojson.feature( world, world.objects.countries ).features )
-                  .enter().insert("path", ".graticule")
+                .enter().insert("path", ".graticule")
                   .attr("class", that.getClasses)
                   .attr("country-id", function( d ) { return d.id })
                   .attr("d", path)
-                  .style("fill", that.getCountryColor)
+                  .style("fill", that.requestCountryColor)
                   .on("click", clicked);
 
                 // Country Borders
@@ -103,26 +99,31 @@ opendata.Views = opendata.Views || {};
 
             });
 
-            d3.select(self.frameElement).style("height", height + "px");
+            d3.json("/data/us.topo.json", function(error, us) {
+                that.g.append("g")
+                  .attr("id", "states")
+                  .selectAll(".state")
+                  .data( topojson.feature(us, us.objects['us_states_census.geo'] ).features )
+                .enter()
+                  .append("path")
+                  .attr("class", "state")
+                  .attr("state-id", function(d) { return d.id; })
+                  .attr("d", path)
+                  .style("stroke-width","0.2")
+                  .style("stroke","white")
+                  .style("fill", that.requestCountryColor)
+                  .on("click", clicked);
+            });
 
             function clicked(d) {
-
-                if (d.id === 840) {
-                    d3.json("/data/us.json", function(error, us) {
-                        that.g.append("g")
-                          .attr("id", "states")
-                          .attr("class", "state")
-                          .selectAll("path")
-                          .data(topojson.feature(us, us.objects.states).features)
-                          .enter()
-                          .append("path")
-                          .attr("state-id", function(d) { return d.id; })
-                          .attr("d", path)
-                          .style("stroke-width","0.2")
-                          .style("stroke","white")
-                          .style("fill", that.getCountryColor)
-                          .on("click", clicked); // TODO: implement state clicked
-                    });
+                if (d.id < 10000){
+                    if (d.id === 840 ) {
+                        $("#states").toggle()
+                        $(".country.US").toggle()
+                    }else{
+                        $("#states").hide()
+                        $(".country.US").show()
+                    }
                 }
 
                 if (active.node() === this) return reset();
@@ -142,21 +143,25 @@ opendata.Views = opendata.Views || {};
                     translate = [width / 2 - scale * x, height / 2 - scale * y];
 
               svg.transition()
-                  .duration(750)
-                  .call(zoom.translate(translate).scale(scale).event)
-                  .each('end', function(){ that.trigger('select:country', { id: d.id }) });
+                .duration(750)
+                .call(zoom.translate(translate).scale(scale).event)
+                .each('end', function(){ that.trigger('country:focus', { id: d.id }) });
             }
 
             function reset() {
+
                 active.classed("active", false);
                 active = d3.select(null);
 
-                that.g.selectAll(["#states"]).remove();
-                that.trigger('deselect:country');
+                that.trigger('country:blur');
 
                 svg.transition()
                   .duration(750)
-                  .call(zoom.translate([0, 0]).scale(1).event);
+                  .call(zoom.translate([0, 0]).scale(1).event)
+                  .each('end', function(){
+                      $('#states').hide();
+                      $('.country.US').show();
+                  });
             }
 
             // If the drag behavior prevents the default click,
@@ -167,44 +172,53 @@ opendata.Views = opendata.Views || {};
 
         },
 
-        getClasses: function( d , index ){
+        getClasses: function( d ){
 
             var classes = "country "
-            var country = opendata.CountryHelper.getCountryByID( d.id );
+            var country = opendata.Countries.get( d.id );
 
-            if( country && country['alpha-2'])
-                classes += country['alpha-2']
+            if ( ! country )
+                throw "Missing country with id " + d.id;
+
+            if( country.get('alpha-2') )
+                classes += country.get('alpha-2')
+
+            if( ! country.get('drugs') )
+                classes += ' no-data '
 
             return classes;
         },
 
-        getCountryColor: function( d ){
-
-            if (d.id < 0) //-99
-                return "RGBA(255,255,255,0)";
+        requestCountryColor: function( d ){
 
             var currentFilter     = this.filter;
             var currentColorScale = this.colorScale;
 
-            var country = opendata.CountryHelper.getCountryByID( d.id );
+            var country = opendata.Countries.get( d.id );
 
-            if( currentFilter === 'detail'){
+            if (! country ) return "red";
 
-                var config = window.opendata.Config;
+            if (currentFilter === 'greenTest') {
 
-                return country && country.detail ? config.detailAvailableColor : config.detailUnavailableColor;
+                try{
+                    var cannabisData = country.get('drugs')['cannabis'];
 
-            } else if (currentFilter === 'greenTest') {
+                    var mostRecentEntry = _.max(cannabisData, function(obj) {
+                        return (obj.population === 'all') ? obj.year : 0
+                    });
 
-                return d3.rgb(74,117,34).darker(
-                    parseInt(8*Math.random() - 4)
-                )
+                    var x = d3.scale.linear()
+                      .domain([0, 30, 50])
+                      .range([d3.rgb(255,255,255),d3.rgb(91,204,141),d3.rgb(91,204,141)])
 
+                    return x(mostRecentEntry.prevalence);
 
-            } else {
+                } catch(e) {
+                    return '#222'
+                }
 
-                return currentColorScale( country[currentFilter] );
-            }
+            } else
+                return currentColorScale( country.get(currentFilter) );
 
         }
 

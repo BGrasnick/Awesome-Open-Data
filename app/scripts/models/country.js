@@ -7,24 +7,74 @@ opendata.Models = opendata.Models || {};
     opendata.Models.Country = Backbone.Model.extend({
 
         initialize: function() {
+
         },
 
-        defaults: {
-        },
+        parse: function( resp ) {
+            var drugs = {};
 
-        validate: function(attrs, options) {
-        },
+            _.each( ['amphetamines', 'cannabis', 'cocaine', 'ecstasy'] , function( k ) {
+                if( resp[k] ){
+                    drugs[k] = resp[k];
+                    delete resp[k]
+                }
+            });
 
-        parse: function(response, options)  {
-            return response;
+            if( Object.keys( drugs ).length )
+                resp.drugs = drugs;
+
+            return resp;
         }
     });
 
 
-
     opendata.Collections.Country = Backbone.Collection.extend({
 
-        model: opendata.Models.Country
+        model: opendata.Models.Country,
+
+        initialize: function(options) {
+
+            var that = this;
+
+            $.when(
+
+                this.fetch({
+                    url: './data/drugData.json'
+                }),
+
+                this.fetch({
+                    url: './data/countriesMeta.json'
+                }),
+
+                $.get("./data/us.topo.json", function( resp ) {
+
+                    var path = resp.objects['us_states_census.geo'].geometries;
+
+                    var states = _.map(path, function( state ){
+                        return {
+                            id   : state.properties['STATE'],
+                            name : state.properties['NAME']
+                        }
+                    });
+
+                    that.add(states);
+                })
+
+            ).done(options.success);
+
+        },
+
+        parse : function( resp ) {
+
+            return _.each( resp, function( country ) {
+
+                if ( _.isString( country.id ) ){
+                    country.id = parseInt(country.id);
+                }
+
+            });
+
+        }
 
     });
 

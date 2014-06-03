@@ -7,51 +7,41 @@ opendata.Views = opendata.Views || {};
 
         el: 'body',
 
-        map: null,
-        nav: null,
-        // slider: null,
-        countrydetail: null,
-
         initialize: function () {
 
-            var that = this;
+            _.bindAll( this, 'render' );
 
             opendata.Router = new ApplicationRouter();
 
-            this.map = new opendata.Views.Map();
-            this.nav = new opendata.Views.Navigation();
-            // this.slider = new opendata.Views.Slider();
-            this.countrydetail = new opendata.Views.Countrydetail();
+            this.map     = new opendata.Views.Map();
+            this.nav     = new opendata.Views.Navigation();
+            this.country = new opendata.Views.Country();
 
-            opendata.Countries = new opendata.Collections.Country();
-            opendata.Countries.fetch({
-                url: './data/drugs.json',
-                success: function( Countries , resp){
-                    Countries.each(function( Country ){
-                        Country.set('name', opendata.CountryHelper.getCountryByID( Country.id ).name);
-                    });
+            this.map.on( 'country:focus', this.selectCountry, this );
+            this.map.on( 'country:blur', this.country.reset, this.country );
 
-                    opendata.CountryHelper.setDetailCountries( resp );
-                    that.map.render();
-                }
+            opendata.Countries = new opendata.Collections.Country({
+                success: this.render
             });
 
-            this.map.on( 'select:country', function ( evt ) {      
-                var id = evt.id;
-                var country;
+        },
 
-                if( country = opendata.Countries.get( id ) )
-                    that.countrydetail.setCountry( country );
-                else
-                    that.countrydetail.reset();
+        render: function() {
+            this.map.render();
+            this.nav.render();
+        },
 
-            });            
-            this.map.on( 'deselect:country', function ( evt ) {
-                that.countrydetail.reset();
-            });
+        selectCountry: function ( evt ) {
+            var country,
+                id = evt.id;
 
+            if( country = opendata.Countries.get( id ) )
+                this.country.setCountry( country );
+            else
+                this.country.reset();
 
         }
+
 
     });
 

@@ -29,7 +29,8 @@ http://underscorejs.org/
 
 # For US states:
 
-* http://www.tnoda.com/blog/2013-12-07
+http://eric.clst.org/Stuff/USGeoJSON
+topojson -o us.topo.json us_states_census.geo.json -p STATE,NAME --id-property STATE
 
 # Source for TopoJSON:
 
