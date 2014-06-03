@@ -45,44 +45,7 @@ nav {
   color: #FFF;
 }
 
-.country-tooltip {
-  background: #ffffff;
-  padding: 10px;
-  font-weight: 200;
-  position: relative;
-  background-color: #5BCC8D;
-  box-shadow: 0px 0px 0px 2px #5BCC8D;
-  border: 7px solid #fff;  
-  border-radius: 0px;
-  h3{
-  font-weight: 800;
-  margin-top: 0px;
-  }
-  p{
-  color: #fff;
-  }
-}
 
-.country-tooltip-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px;
-  font: 20px 'Source Sans Pro',sans-serif;
-  cursor: pointer;
-  color: #fff;
-  margin-top: 0px;
-  font-weight: 800;
-}
 
-.country-tooltip-close:hover {
-  color: #000;
-}
 
-.chart .bar {
-  padding: 3px;
-  margin-bottom: 3px;
-  color: #000;
-  background: #fff;
-}
 
