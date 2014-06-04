@@ -41,36 +41,80 @@
 #states {
   display: none; }
 
-#country-wrapper {
+#overlay {
   position: fixed;
-  width: 300px;
-  top: 50px;
+  width: 500px;
+  top: 100px;
   left: 0; }
 
-#country {
-  position: fixed;
-  top: 100px;
-  left: 10px; }
-
-.country-tooltip {
-  background: #ffffff;
-  padding: 10px; }
+hr {
+  background-color: #FFF; }
 
 .chart .bar {
-  padding: 3px; }
+  padding: 3px;
+  margin-bottom: 3px;
+  color: #395063;
+  background: #fff; }
 
-.country-tooltip {
-  position: relative;
-  background-color: #CCC;
-  border-radius: 5px; }
-
-.country-tooltip-close {
+.overlay-tooltip-close {
   position: absolute;
   top: 0;
   right: 0;
   padding: 5px;
   font: 20px mono;
   cursor: pointer; }
+
+.overlay-add-view {
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  background: #ffffff;
+  margin-top: 20px;
+  width: 55px;
+  height: 55px;
+  font: 40px 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+  font-weight: 800;
+  color: #5BCC8D;
+  box-shadow: 0px 0px 0px 2px #5BCC8D;
+  border-radius: 0px; }
+
+.overlay-add-view:hover {
+  color: #395063; }
+
+.country-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px;
+  font: 20px 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 0px;
+  font-weight: 800; }
+
+.country-close:hover {
+  color: #395063; }
+
+.country {
+  position: relative;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 10px;
+  font-weight: 200;
+  background-color: #5BCC8D;
+  box-shadow: 0px 0px 0px 2px #5BCC8D;
+  border: 7px solid #fff;
+  border-radius: 0px; }
+  .country h3 {
+    font-weight: 800;
+    margin-top: 0px;
+    margin-right: 40px;
+    color: #395063; }
+  .country p {
+    color: #fff; }
+  .country .tab-content {
+    margin-top: 5px; }
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,200italic,300italic,400italic,600,600italic,700,700italic,900,900italic);
 html, body {
@@ -103,38 +147,3 @@ nav {
 .cannabis {
   background-color: #5bcc8d;
   color: #FFF; }
-
-.country-tooltip {
-  background: #ffffff;
-  padding: 10px;
-  font-weight: 200;
-  position: relative;
-  background-color: #5BCC8D;
-  box-shadow: 0px 0px 0px 2px #5BCC8D;
-  border: 7px solid #fff;
-  border-radius: 0px; }
-  .country-tooltip h3 {
-    font-weight: 800;
-    margin-top: 0px; }
-  .country-tooltip p {
-    color: #fff; }
-
-.country-tooltip-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px;
-  font: 20px 'Source Sans Pro', sans-serif;
-  cursor: pointer;
-  color: #fff;
-  margin-top: 0px;
-  font-weight: 800; }
-
-.country-tooltip-close:hover {
-  color: #000; }
-
-.chart .bar {
-  padding: 3px;
-  margin-bottom: 3px;
-  color: #000;
-  background: #fff; }

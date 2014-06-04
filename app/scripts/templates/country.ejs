@@ -1,35 +1,29 @@
-<div class="country-container">
+<div class="country">
 
-	<div class="country-tooltip">
+    <h3><%= name %></h3>
 
-		<div class="country-tooltip-close">X</div>
+    <hr>
 
-		<h3><%= name %></h3>
+    <div class="country-close" data-id="<%= id %>">X</div>
 
-		</hr>
+        <% if ( typeof drugs !== 'undefined' ) { %>
 
-		<% if ( this.currentCountry.get('drugs') ) { %>
+        <ul class="nav nav-tabs" id="tab">
+            <li <% if ( this.currentDrug === 'cannabis' ) { %> class="active" <% } %> ><a href="#tab-cannabis" data-toggle="tab">Cannabis</a></li>
+            <li <% if ( this.currentDrug === 'amphetamines' ) { %> class="active" <% } %> ><a href="#tab-amphetamines" data-toggle="tab">Amphetamines</a></li>
+            <li <% if ( this.currentDrug === 'cocaine' ) { %> class="active" <% } %> ><a href="#tab-cocaine" data-toggle="tab">Cocaine</a></li>
+            <li <% if ( this.currentDrug === 'ecstasy' ) { %> class="active" <% } %> ><a href="#tab-ecstasy" data-toggle="tab">Ecstasy</a></li>
+        </ul>
 
-			<ul class="nav nav-tabs" id="tab">
-				<li <% if ( this.currentDrug == 'cannabis' ) { %> class="active" <% } %> ><a href="#cannabis" data-toggle="tab">Cannabis</a></li>
-				<li <% if ( this.currentDrug == 'amphetamines' ) { %> class="active" <% } %> ><a href="#amphetamines" data-toggle="tab">Amphetamines</a></li>
-				<li <% if ( this.currentDrug == 'cocaine' ) { %> class="active" <% } %> ><a href="#cocaine" data-toggle="tab">Cocaine</a></li>
-				<li <% if ( this.currentDrug == 'ecstasy' ) { %> class="active" <% } %> ><a href="#ecstasy" data-toggle="tab">Ecstasy</a></li>
-			</ul>
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="tab-cannabis"><div class="chart chart-cannabis"></div></div>
+            <div class="tab-pane fade" id="tab-amphetamines"><div class="chart chart-amphetamines"></div></div>
+            <div class="tab-pane fade" id="tab-cocaine"><div class="chart chart-cocaine"></div></div>
+            <div class="tab-pane fade" id="tab-ecstasy"><div class="chart chart-ecstasy"></div></div>
+        </div>
 
-			<div class="tab-content">
-				<div class="tab-pane fade in active" id="cannabis"><div class="chart chart-cannabis"></div></div>
-				<div class="tab-pane fade" id="amphetamines"><div class="chart chart-amphetamines"></div></div>
-				<div class="tab-pane fade" id="cocaine"><div class="chart chart-cocaine"></div></div>
-				<div class="tab-pane fade" id="ecstasy"><div class="chart chart-ecstasy"></div></div>
-			</div>
+        <% }; %>
 
-		<% }; %>
-
-	</div>
-
-	<div class="country-drop-container"></div>
-
-	<div class="country-add-view-container"></div>
+    </div>
 
 </div>
