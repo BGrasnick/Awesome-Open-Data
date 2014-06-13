@@ -1,0 +1,3215 @@
+[
+  {
+    "id": "Alabama",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.4,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 25.21,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.51,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.68,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 51.7,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 40.1,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.48,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 39.63,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 27.49,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Alaska",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.44,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 36.09,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 11.56,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.98,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 57.83,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 53.91,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.15,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 42.66,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 24.63,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Arizona",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.56,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 26.17,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.81,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.94,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 57.72,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 52.77,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.96,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 36.64,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 24.56,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Arkansas",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.66,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 29.65,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.05,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.55,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 56.04,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 41.05,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.21,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 46.46,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 29.22,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "California",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.6,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 27.82,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 7.49,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.81,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 55.85,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 54.63,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 8.69,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 31.42,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 16.7,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Colorado",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.27,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 31.16,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 9.51,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 21.55,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 69.41,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 62,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.14,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 43.95,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 25.24,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Connecticut",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.53,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 39.37,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 7.7,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 20.86,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 73.79,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 63.74,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.96,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 41.32,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 22.24,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Delaware",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.1,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 31.65,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.59,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.95,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 64.91,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 52.58,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.05,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 41,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 23.63,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "District of Columbia",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.28,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 30.87,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 10.59,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 12.25,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 64.98,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 58.43,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 6.71,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 31.41,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 26.59,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Florida",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.26,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 29.07,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 7.39,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.17,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 59.01,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 53.97,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 10.63,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 35.57,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 23.94,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Georgia",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.29,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 22.97,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.82,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.59,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 54.1,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 48.25,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.99,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 35.78,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 26.12,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Hawaii",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.99,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 29.39,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 7.19,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.44,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 60.31,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 51.18,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 8.96,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 35.98,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 19.39,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Idaho",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.21,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 23.19,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.5,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.21,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 56,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 50.81,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.82,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 39.9,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 20.67,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Illinois",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.76,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 28.04,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.88,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.55,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 65.68,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 55.83,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.06,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 43.73,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 26.39,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Indiana",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.55,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 28.64,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.52,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.2,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 61.28,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 49.22,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 12.59,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 42.48,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 26.73,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Iowa",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 12.15,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 27.06,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.65,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 19.6,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 71.26,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 55.26,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.21,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 44.09,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 25.75,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Kansas",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.84,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 23.96,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.6,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 19.47,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 66.03,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 49.3,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.89,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 42.9,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 26.79,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Kentucky",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.08,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 24.57,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 7.48,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 19.53,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 57.39,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 40.36,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.82,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 48.7,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 32.51,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Louisiana",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 12.36,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 23.58,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.45,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.42,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 59.58,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 47.51,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 12.79,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 40.61,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 28.56,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Maine",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.32,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 36.86,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 7.96,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.41,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 63.81,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 51.58,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.87,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 45.73,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 25.22,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Maryland",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.06,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 29.86,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.52,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.19,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 64.06,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 54.68,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 10.54,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 35.5,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 22.78,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Massachusetts",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.99,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 38.1,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 9.87,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 21.81,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 70.71,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 64.21,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 10.71,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 40.33,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 20.28,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Michigan",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.17,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 32.08,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 8.68,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.21,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 66.08,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 55.1,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.38,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 44.15,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 27.02,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Minnesota",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.42,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 28.71,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 7.24,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.56,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 69.03,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 60.83,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.17,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 46.79,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 22.6,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Mississippi",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 10.28,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 20.18,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 4.97,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.75,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 50.74,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 37.36,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 12.44,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 41.57,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 27.64,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Missouri",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.74,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 29.97,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 8.04,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 20.2,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 63.79,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 51.36,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.14,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 45.5,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 29.79,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Montana",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 19.84,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 33.7,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 8.05,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 23,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 71.5,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 57.62,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.41,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 42.45,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 24.62,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Nebraska",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.61,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 24.22,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.18,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 20.1,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 71.18,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 57.32,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.64,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 43.21,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 22.01,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Nevada",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.11,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 25.68,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 7.27,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.41,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 56.26,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 49.44,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.01,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 36.16,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 27.11,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "New Hampshire",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.18,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 39.78,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 10.11,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 21.57,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 73.36,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 63.3,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 12.73,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 41.04,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 23.62,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "New Jersey",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.24,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 28.96,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.17,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.82,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 63.79,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 56.24,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.7,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 38.02,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 21.9,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "New Mexico",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 19.88,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 33.51,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 8.39,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 20.33,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 59.68,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 49.02,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.01,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 37.78,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 22.58,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "New York",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.95,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 33.1,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 7.86,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 19.01,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 64.14,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 55.98,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.04,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 39.91,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 24.11,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "North Carolina",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.54,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 25.53,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.08,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.95,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 54.25,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 41.97,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.18,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 44.46,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 25.93,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "North Dakota",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.11,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 28.93,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.36,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 23.39,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 75.61,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 60.72,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.82,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 43.47,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 25.62,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Ohio",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.33,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 27.81,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.47,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.24,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 63.51,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 53.97,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.13,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 44.32,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 28.69,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Oklahoma",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.14,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 25.86,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.88,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.4,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 59.14,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 42.87,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.65,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 46.88,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 29.75,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Oregon",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.19,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 34.16,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 8.94,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.78,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 66.77,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 57.17,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.63,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 39.3,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 23.55,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Pennsylvania",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.39,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 30.76,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.71,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.75,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 65.04,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 54.54,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.73,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 44.53,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 25.99,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Rhode Island",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.68,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 41.05,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 9.55,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 20.26,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 73.69,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 63.25,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.09,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 40.4,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 25.12,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "South Carolina",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.91,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 25.71,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.65,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.4,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 59.19,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 45.04,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 12.09,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 42.85,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 26.15,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "South Dakota",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.63,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 25.02,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.52,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 23.37,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 72.3,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 59.34,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.27,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 49.56,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 28.18,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Tennessee",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 12.77,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 21.77,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.62,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.08,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 50.6,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 38.43,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.36,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 38.49,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 28.1,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Texas",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.33,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 21.69,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.11,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.69,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 55.48,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 49.76,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.17,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 37.9,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 26.18,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Utah",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 10.48,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 18.78,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 4.45,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.28,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 34.85,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 31.02,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 6.81,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 25.47,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 17.41,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Vermont",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 19.8,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 43.33,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 9.37,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 19.95,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 71.11,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 60.81,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.23,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 46.33,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 23.13,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Virginia",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 12.81,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 30.54,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.96,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.75,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 64.28,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 52.55,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 11.99,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 42.99,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 24.28,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Washington",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.73,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 29.54,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 7.97,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.07,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 61.9,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 60.87,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 10.69,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 40.37,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 22.65,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "West Virginia",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.23,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 28.87,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 5.85,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.78,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 54.53,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 36.21,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 16.69,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 50.09,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 30.91,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Wisconsin",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 17.08,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 29.26,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.54,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 24.44,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 75.46,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 64.82,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 15.27,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 45.78,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 23.6,
+        "source": "samhsa"
+      }
+    ]
+  },
+  {
+    "id": "Wyoming",
+    "cannabis": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 14.47,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 28.87,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 6.55,
+        "source": "samhsa"
+      }
+    ],
+    "alcohol": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 18.32,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 67.05,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 53.05,
+        "source": "samhsa"
+      }
+    ],
+    "cigarette": [
+      {
+        "year": 2004,
+        "population": "12-17",
+        "prevalence": 13.61,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "18-25",
+        "prevalence": 42.41,
+        "source": "samhsa"
+      },
+      {
+        "year": 2004,
+        "population": "26+",
+        "prevalence": 23.97,
+        "source": "samhsa"
+      }
+    ]
+  }
+]
