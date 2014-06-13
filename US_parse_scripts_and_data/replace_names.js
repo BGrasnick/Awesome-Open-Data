@@ -1,4 +1,4 @@
-var us_data = require('./us.topo.json');
+var us_data = require('../app/data/us.topo.json');
 var drug_data = require('./data.json');
 
 var objects = us_data.objects["us_states_census.geo"].geometries;
