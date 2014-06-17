@@ -15,10 +15,10 @@ opendata.Views = opendata.Views || {};
 
             this.map     = new opendata.Views.Map();
             this.nav     = new opendata.Views.Navigation();
-            this.country = new opendata.Views.Country();
+            this.overlay = new opendata.Views.Overlay();
 
             this.map.on( 'country:focus', this.selectCountry, this );
-            this.map.on( 'country:blur', this.country.reset, this.country );
+            this.map.on( 'country:blur', this.overlay.reset, this.overlay );
 
             opendata.Countries = new opendata.Collections.Country({
                 success: this.render
@@ -28,7 +28,9 @@ opendata.Views = opendata.Views || {};
 
         render: function() {
             this.map.render();
-            this.nav.render();
+            this.nav.render()
+
+            opendata.PinnedCountries.add(opendata.Countries.models.slice(10,13));
         },
 
         selectCountry: function ( evt ) {
@@ -36,9 +38,9 @@ opendata.Views = opendata.Views || {};
                 id = evt.id;
 
             if( country = opendata.Countries.get( id ) )
-                this.country.setCountry( country );
+                this.overlay.setCountry( country );
             else
-                this.country.reset();
+                this.overlay.reset();
 
         }
 

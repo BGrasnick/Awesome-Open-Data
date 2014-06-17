@@ -34,8 +34,10 @@ opendata.Models = opendata.Models || {};
 
         initialize: function(options) {
 
-            var that = this;
+            if( !options )
+                return
 
+            var that = this;
             $.when(
 
                 this.fetch({
