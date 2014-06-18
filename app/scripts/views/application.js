@@ -29,8 +29,6 @@ opendata.Views = opendata.Views || {};
         render: function() {
             this.map.render();
             this.nav.render();
-
-            opendata.PinnedCountries.add(opendata.Countries.models.slice(10,13));
         },
 
         selectCountry: function ( evt ) {

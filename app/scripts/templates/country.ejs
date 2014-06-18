@@ -4,7 +4,10 @@
 
     <hr>
 
-    <div class="country-close" data-id="<%= id %>">X</div>
+    <% if( ! isPinned){ %>
+        <div class="country-controls country-pin" data-loading-text="Pinned" data-id="<%= id %>">Pin</div>
+    <% } %>
+    <div class="country-controls country-close" data-id="<%= id %>">X</div>
 
         <% if ( typeof drugs !== 'undefined' ) { %>
 

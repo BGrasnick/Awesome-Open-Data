@@ -46,16 +46,23 @@ hr{
     color: #395063;
 }
 
-.country-close {
+.country-controls {
     position: absolute;
     top: 0px;
-    right: 0px;
-    padding: 5px;
     font: 20px 'Source Sans Pro',sans-serif;
+    padding: 5px;
     cursor: pointer;
     color: #fff;
     margin-top: 0px;
     font-weight: 800;
+}
+.country-close {
+
+    right: 0px;
+}
+
+.country-pin {
+    right: 30px
 }
 
 .country-close:hover {
