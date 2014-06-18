@@ -11,7 +11,8 @@ opendata.Views = opendata.Views || {};
 
         events: {
             "click .country-pin"   : 'triggerPin',
-            "click .country-close" : 'triggerClose'
+            "click .country-close" : 'triggerClose',
+            "click a[data-toggle] ": 'updateActiveTab'
         },
 
         triggerPin : function(evt){
@@ -37,6 +38,12 @@ opendata.Views = opendata.Views || {};
             })
         },
 
+        updateActiveTab: function(evt) {
+
+            opendata.ActiveTabs[this.model.id] = $(evt.target).html().toLowerCase()
+
+        },
+
         initialize: function () {
 
             this.render();
@@ -48,8 +55,40 @@ opendata.Views = opendata.Views || {};
             data.isPinned = opendata.PinnedCountries.contains(this.model);
 
             this.$el.html( this.template( data ) );
+            this.renderChart()
+
+        },
+
+        renderChart : function() {
+
+            var that = this;
+
+            var drugs = that.model.get('drugs');
+
+            if ( ! drugs ){
+                return false;
+            }
+
+            _.each(drugs, function(drug, key){
+
+                var data = drug;
+
+                var x = d3.scale.linear()
+                    .domain( [0, d3.max(data, function(d){ return d.prevalence })] )
+                    .range( [0, 290] );
+
+                d3.select( that.$('.chart-' + key)[0] ).selectAll('div')
+                    .data(data)
+                    .enter()
+                    .append('div')
+                    .style('width', function(d) { return x(d.prevalence) + 'px'; })
+                    .attr('class', 'bar ' + key)
+                    .text(function(d) { return d.population + ': ' + d.prevalence + '%'; });
+
+            })
 
         }
+
 
     });
 
