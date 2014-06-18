@@ -12,9 +12,8 @@ opendata.Views = opendata.Views || {};
 
         initialize: function () {
             this.currentCountry = null;
-            this.numberOfViews  = 0;
 
-            _.bindAll(this, 'setCountry');
+            _.bindAll(this, 'setCountry', 'reset');
         },
 
         render: function () {
@@ -75,25 +74,11 @@ opendata.Views = opendata.Views || {};
             });
 
         },
-//
-//        renderButton: function() {
-//
-//            var that = this;
-//
-//            var drugs = that.currentCountry.get('drugs');
-//
-//
-//            // Why use d3? use jquery instead -> way simpler
-//            if ( drugs ){
-//
-//                d3.select( that.$('.country-add-view-container')[0] ).selectAll('div')
-//                .data('+')
-//                .enter().append('div')
-//                .attr('class', 'country-add-view')
-//                .text('+');
-//            }
-//        },
 
+        reset: function(){
+            this.currentCountry = null;
+            this.render();
+        },
 
         setCountry: function ( country ) {
             this.currentCountry = country;
