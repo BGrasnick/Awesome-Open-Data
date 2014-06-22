@@ -25,6 +25,7 @@ opendata.Models = opendata.Models || {};
 
             return resp;
         }
+
     });
 
 
@@ -35,18 +36,12 @@ opendata.Models = opendata.Models || {};
         initialize: function(options) {
 
             if( !options )
-                return
+                return;
 
             var that = this;
             $.when(
 
-                this.fetch({
-                    url: './data/drugData.json'
-                }),
-
-                this.fetch({
-                    url: './data/countriesMeta.json'
-                }),
+                this.fetch({ url: './data/drugData.json' }),
 
                 $.get("./data/us.topo.json", function( resp ) {
 
@@ -62,7 +57,13 @@ opendata.Models = opendata.Models || {};
                     that.add(states);
                 })
 
-            ).done(options.success);
+            ).done(function (){
+                that.fetch({
+                    url     : './data/countriesMeta.json',
+                    success : options.success
+                });
+
+            });
 
         },
 

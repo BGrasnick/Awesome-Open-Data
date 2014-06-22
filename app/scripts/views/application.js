@@ -18,19 +18,17 @@ opendata.Views = opendata.Views || {};
             this.overlay = new opendata.Views.Overlay();
 
             this.map.on( 'country:focus', this.selectCountry, this );
-            this.map.on( 'country:blur', this.overlay.reset, this.overlay );
+            this.map.on( 'country:blur',  this.overlay.reset, this.overlay );
 
             opendata.Countries = new opendata.Collections.Country({
-                success: this.render
+                success : this.render
             });
 
         },
 
         render: function() {
             this.map.render();
-            this.nav.render()
-
-            opendata.PinnedCountries.add(opendata.Countries.models.slice(10,13));
+            this.nav.render();
         },
 
         selectCountry: function ( evt ) {

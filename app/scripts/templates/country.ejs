@@ -1,25 +1,40 @@
+<%
+var activeState = {
+    'cannabis': '',
+    'amphetamines': '',
+    'cocaine': '',
+    'ecstasy': ''
+}
+var previous =  opendata.ActiveTabs[this.model.id]
+activeState[previous ? previous : 'cannabis'] = ' class="active"';
+
+%>
 <div class="country">
 
     <h3><%= name %></h3>
 
     <hr>
 
-    <div class="country-close" data-id="<%= id %>">X</div>
+    <% if( ! isPinned){ %>
+        <div class="country-controls country-pin" data-loading-text="Pinned" data-id="<%= id %>">Pin</div>
+    <% } %>
+    <div class="country-controls country-close" data-id="<%= id %>">X</div>
 
         <% if ( typeof drugs !== 'undefined' ) { %>
 
         <ul class="nav nav-tabs" id="tab">
-            <li <% if ( this.currentDrug === 'cannabis' ) { %> class="active" <% } %> ><a href="#tab-cannabis" data-toggle="tab">Cannabis</a></li>
-            <li <% if ( this.currentDrug === 'amphetamines' ) { %> class="active" <% } %> ><a href="#tab-amphetamines" data-toggle="tab">Amphetamines</a></li>
-            <li <% if ( this.currentDrug === 'cocaine' ) { %> class="active" <% } %> ><a href="#tab-cocaine" data-toggle="tab">Cocaine</a></li>
-            <li <% if ( this.currentDrug === 'ecstasy' ) { %> class="active" <% } %> ><a href="#tab-ecstasy" data-toggle="tab">Ecstasy</a></li>
+
+            <li<%= activeState['cannabis'] %>><a href="#tab-cannabis-<%= id %>" data-toggle="tab">Cannabis</a></li>
+            <li<%= activeState['amphetamines'] %>><a href="#tab-amphetamines-<%= id %>" data-toggle="tab">Amphetamines</a></li>
+            <li<%= activeState['cocaine'] %>><a href="#tab-cocaine-<%= id %>" data-toggle="tab">Cocaine</a></li>
+            <li<%= activeState['ecstasy'] %>><a href="#tab-ecstasy-<%= id %>" data-toggle="tab">Ecstasy</a></li>
         </ul>
 
         <div class="tab-content">
-            <div class="tab-pane fade in active" id="tab-cannabis"><div class="chart chart-cannabis"></div></div>
-            <div class="tab-pane fade" id="tab-amphetamines"><div class="chart chart-amphetamines"></div></div>
-            <div class="tab-pane fade" id="tab-cocaine"><div class="chart chart-cocaine"></div></div>
-            <div class="tab-pane fade" id="tab-ecstasy"><div class="chart chart-ecstasy"></div></div>
+            <div class="tab-pane fade in active" id="tab-cannabis-<%= id %>"><div class="chart chart-cannabis"></div></div>
+            <div class="tab-pane fade" id="tab-amphetamines-<%= id %>"><div class="chart chart-amphetamines"></div></div>
+            <div class="tab-pane fade" id="tab-cocaine-<%= id %>"><div class="chart chart-cocaine"></div></div>
+            <div class="tab-pane fade" id="tab-ecstasy-<%= id %>"><div class="chart chart-ecstasy"></div></div>
         </div>
 
         <% }; %>
@@ -27,3 +42,4 @@
     </div>
 
 </div>
+
