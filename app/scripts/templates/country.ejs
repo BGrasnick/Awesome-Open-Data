@@ -1,14 +1,12 @@
-<%
-var activeState = {
-    'cannabis': '',
-    'amphetamines': '',
-    'cocaine': '',
-    'ecstasy': ''
+<% var activeState = {};
+for (var i in drugs) {
+    activeState[i]='';
 }
+var activeIn = false;
 var previous =  opendata.ActiveTabs[this.model.id]
 activeState[previous ? previous : 'cannabis'] = ' class="active"';
-
 %>
+
 <div class="country">
 
     <h3><%= name %></h3>
@@ -20,21 +18,18 @@ activeState[previous ? previous : 'cannabis'] = ' class="active"';
     <% } %>
     <div class="country-controls country-close" data-id="<%= id %>">X</div>
 
-        <% if ( typeof drugs !== 'undefined' ) { %>
-
-        <ul class="nav nav-tabs" id="tab">
-
-            <li<%= activeState['cannabis'] %>><a href="#tab-cannabis-<%= id %>" data-toggle="tab">Cannabis</a></li>
-            <li<%= activeState['amphetamines'] %>><a href="#tab-amphetamines-<%= id %>" data-toggle="tab">Amphetamines</a></li>
-            <li<%= activeState['cocaine'] %>><a href="#tab-cocaine-<%= id %>" data-toggle="tab">Cocaine</a></li>
-            <li<%= activeState['ecstasy'] %>><a href="#tab-ecstasy-<%= id %>" data-toggle="tab">Ecstasy</a></li>
+        <%  if ( typeof drugs !== 'undefined' ) { %>
+        <ul class="nav nav-tabs" id="tab">             
+            <%  for (var i in drugs) { %>
+                <li<%= activeState[i] %>><a href="#tab-<%= i %>-<%= id %>" data-toggle="tab"><%= (i.charAt(0).toUpperCase() + i.slice(1)) %></a></li>
+            <% } %>        
         </ul>
 
         <div class="tab-content">
-            <div class="tab-pane fade in active" id="tab-cannabis-<%= id %>"><div class="chart chart-cannabis"></div></div>
-            <div class="tab-pane fade" id="tab-amphetamines-<%= id %>"><div class="chart chart-amphetamines"></div></div>
-            <div class="tab-pane fade" id="tab-cocaine-<%= id %>"><div class="chart chart-cocaine"></div></div>
-            <div class="tab-pane fade" id="tab-ecstasy-<%= id %>"><div class="chart chart-ecstasy"></div></div>
+            <%  for (var i in drugs) { %>
+                <div class="tab-pane fade<%= !activeIn ? " in active": ""%>" id="tab-<%= i %>-<%= id %>"><div class="chart chart-<%= i %>"></div></div>
+            <% activeIn=true 
+            } %> 
         </div>
 
         <% }; %>

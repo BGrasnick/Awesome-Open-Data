@@ -83,7 +83,7 @@ opendata.Views = opendata.Views || {};
                     .append('div')
                     .style('width', function(d) { return x(d.prevalence) + 'px'; })
                     .attr('class', 'bar ' + key)
-                    .text(function(d) { return d.population + ': ' + d.prevalence + '%'; });
+                    .text(function(d) { return d.year + " / " + d.population + ': ' + d.prevalence + '%'; });
 
             })
 
