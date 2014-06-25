@@ -1,7 +1,9 @@
 <% var activeState = {};
-for (var i in drugs) {
+
+if(drugs) for (var i in drugs) {
     activeState[i]='';
 }
+
 var activeIn = false;
 var previous =  opendata.ActiveTabs[this.model.id]
 activeState[previous ? previous : 'cannabis'] = ' class="active"';
