@@ -13,7 +13,7 @@ opendata.Models = opendata.Models || {};
         parse: function( resp ) {
             var drugs = {};
 
-            _.each( ['amphetamines', 'cannabis', 'cocaine', 'ecstasy'] , function( k ) {
+            _.each( ['amphetamines', 'cannabis', 'cocaine', 'ecstasy', 'cigarette', 'alcohol'] , function( k ) {
                 if( resp[k] ){
                     drugs[k] = resp[k];
                     delete resp[k]
