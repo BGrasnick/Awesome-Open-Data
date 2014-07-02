@@ -30,7 +30,7 @@ activeTab[previous ? previous : 'cannabis'] = ' in active';
                 <li<%= activeState[i] %>><a href="#tab-<%= i %>-<%= id %>" data-toggle="tab"><%= (i.charAt(0).toUpperCase() + i.slice(1)) %></a></li>
             <% } %>
 
-            <% if ( id == 840 ) { %>
+            <% if ( id == 840 || id > 10000 ) { %>
                 <div class="dropdown">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu_filter" data-toggle="dropdown">
                         <% if ( filter ) { %>

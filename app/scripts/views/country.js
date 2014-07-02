@@ -115,6 +115,10 @@ opendata.Views = opendata.Views || {};
 
               counter++;
             });
+
+            this.sliderValues = _.sortBy(this.sliderValues, function(num) {
+              return num;
+            });
           }
 
           this.sliderValue = this.sliderValues[0];
