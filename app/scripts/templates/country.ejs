@@ -1,12 +1,14 @@
 <% var activeState = {};
+activeTab= {};
 
-if(drugs) for (var i in drugs) {
-    activeState[i]='';
+if(drugs) for (var d in drugs) {
+    activeState[d]='';
+    activeTab[d]='';
 }
 
-var activeIn = false;
 var previous =  opendata.ActiveTabs[this.model.id]
 activeState[previous ? previous : 'cannabis'] = ' class="active"';
+activeTab[previous ? previous : 'cannabis'] = ' in active';
 %>
 
 <div class="country">
@@ -15,7 +17,7 @@ activeState[previous ? previous : 'cannabis'] = ' class="active"';
 
     <hr>
 
-    <% if( ! isPinned){ %>
+    <% if( ! isPinned ){ %>
         <div class="country-controls country-pin" data-loading-text="Pinned" data-id="<%= id %>">Pin</div>
     <% } %>
     <div class="country-controls country-close" data-id="<%= id %>">X</div>
@@ -29,14 +31,14 @@ activeState[previous ? previous : 'cannabis'] = ' class="active"';
 
         <div class="tab-content">
             <%  for (var i in drugs) { %>
-                <div class="tab-pane fade<%= !activeIn ? " in active": ""%>" id="tab-<%= i %>-<%= id %>"><div class="chart chart-<%= i %>"></div></div>
-            <% activeIn=true 
-            } %> 
+                <div class="tab-pane fade<%= activeTab[i] %>" id="tab-<%= i %>-<%= id %>"><div class="chart chart-<%= i %>"></div></div>
+            <% } %>
         </div>
 
-        <% }; %>
 
-    </div>
+    <% } %>
+
+</div>
 
 </div>
 
