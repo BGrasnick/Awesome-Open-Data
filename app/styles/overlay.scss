@@ -25,27 +25,6 @@ hr{
     cursor: pointer;
 }
 
-
-.overlay-add-view {
-    position: relative;
-    text-align: center;
-    border-radius: 5px;
-    background: #ffffff;
-    margin-top: 20px;
-    width: 55px;
-    height: 55px;
-    font: 40px 'Source Sans Pro',sans-serif;
-    cursor: pointer;
-    font-weight: 800;
-    color: #5BCC8D;
-    box-shadow: 0px 0px 0px 2px #5BCC8D;
-    border-radius: 0px;
-}
-
-.overlay-add-view:hover {
-    color: #395063;
-}
-
 .country-controls {
     position: absolute;
     top: 0px;
@@ -69,11 +48,8 @@ hr{
     color: #395063;
 }
 
-
 .country {
     position: relative;
-    border-radius: 5px;
-    background: #ffffff;
     padding: 10px;
     font-weight: 200;
     background-color: #5BCC8D;
@@ -94,4 +70,19 @@ hr{
     .tab-content{
         margin-top: 5px;
     }
+}
+
+.dropdown {
+  float: right;
+}
+
+#slider {
+  display: inline-block;
+  width: 85%;
+}
+
+.output {
+  display: inline-block;
+  line-height: 1;
+  padding-left: 10px;
 }
