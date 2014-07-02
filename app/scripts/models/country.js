@@ -44,27 +44,43 @@ opendata.Models = opendata.Models || {};
             var that = this;
             $.when(
 
-                this.fetch({ url: './data/drugData.json' }),
-
-                $.get("./data/us.topo.json", function( resp ) {
-
-                    var path = resp.objects['us_states_census.geo'].geometries;
-
-                    var states = _.map(path, function( state ){
-                        return {
-                            id   : state.properties['STATE'],
-                            name : state.properties['NAME']
-                        }
-                    });
-
-                    that.add(states);
-                })
-
-            ).done(function (){
                 that.fetch({
-                    url     : './data/countriesMeta.json',
-                    success : options.success
-                });
+                    url     : './data/countriesMeta.json'
+                })              
+
+
+            ).done(function (){  
+
+                $.when(
+
+                    $.get("./data/us.topo.json", function( resp ) {
+
+                        var path = resp.objects['us_states_census.geo'].geometries;
+
+                        var states = _.map(path, function( state ){
+                            return {
+                                id   : state.properties['STATE'],
+                                name : state.properties['NAME']
+                            }
+                        });
+
+                        that.add(states);
+                    })
+
+                ).done(function() {            
+
+                    $.get("./data/drugData.json", function( resp ) {
+                        _.each( resp, function( country ) {
+
+                            if (that.get(country.id) != undefined) {
+                                that.get(country.id).attributes.drugs = country;
+                                delete that.get(country.id).attributes.drugs.id
+                            }
+                        })
+                        options.success();
+                    })
+
+                })  
 
             });
 
