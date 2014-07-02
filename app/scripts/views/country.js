@@ -155,6 +155,8 @@ opendata.Views = opendata.Views || {};
 
             _.each(drugs, function(drug, key){
 
+              var average = opendata.Countries.getContinentAverage(that.model, key);
+
               var data = drug;
 
               if ( that.filter ) {
@@ -167,6 +169,23 @@ opendata.Views = opendata.Views || {};
                   }
                 });
               }
+
+              var x = d3.scale.linear()
+              .domain( [0, d3.max(data, function(d){ return d.prevalence })] )
+              .range( [0, 465] );
+
+              var bar = d3.select( that.$('.chart-' + key)[0] ).selectAll('div')
+              .data(data)
+              .enter()
+              .append('div')
+              .style('width', function(d) { return x(d.prevalence) + 'px'; })
+              .attr('class', 'bar ' + key)
+              .text(function(d) { return d.year + " / " + d.population + ': ' + d.prevalence + '%'; });
+
+              bar.append('div')
+              .attr('class', 'baseline')
+              .style('left', x(average) + "px");
+
 
               var x = d3.scale.linear()
               .domain( [0, d3.max(data, function(d){ return d.prevalence })] )
