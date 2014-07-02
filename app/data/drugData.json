@@ -369,21 +369,6 @@
                 "source": "emcdda"
             }
         ]
-    },
-  {
-        "id": 233,
-        "cannabis": [
-
-        ],
-        "ecstasy": [
-
-        ],
-        "amphetamines": [
-
-        ],
-        "cocaine": [
-
-        ]
     }, 
   {
         "id": 246,
@@ -914,21 +899,6 @@
                 "prevalence": 0.9,
                 "source": "emcdda"
             }
-        ]
-    },
-    {
-        "id": 442,
-        "cannabis": [
-
-        ],
-        "ecstasy": [
-
-        ],
-        "amphetamines": [
-
-        ],
-        "cocaine": [
-
         ]
     },
     {
