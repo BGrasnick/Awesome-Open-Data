@@ -36,3 +36,8 @@ topojson -o us.topo.json us_states_census.geo.json -p STATE,NAME --id-property S
 
 * http://bl.ocks.org/mbostock/raw/4090846/us.json
 * http://bl.ocks.org/mbostock/raw/4090846/world-50m.json
+
+# Data sources:
+
+* Europe: http://www.emcdda.europa.eu/data/2014
+* USA: http://oas.samhsa.gov/states.cfm

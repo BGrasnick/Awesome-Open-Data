@@ -14,11 +14,14 @@ opendata.Models = opendata.Models || {};
             var drugs = {};
 
             _.each( ['amphetamines', 'cannabis', 'cocaine', 'ecstasy', 'cigarette', 'alcohol'] , function( k ) {
-                if( resp[k] ){
+
+                if( resp[k] && resp[k].length ){
                     drugs[k] = resp[k];
-                    delete resp[k]
                 }
+                
+                delete resp[k]
             });
+
 
             if( Object.keys( drugs ).length )
                 resp.drugs = drugs;
