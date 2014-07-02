@@ -50,11 +50,21 @@
 hr {
   background-color: #FFF; }
 
+.chart {
+  position: relative; }
+
 .chart .bar {
   padding: 3px;
   margin-bottom: 3px;
   color: #395063;
   background: #fff; }
+  .chart .bar .baseline {
+    background-color: #c0392b;
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 100%;
+    width: 2px; }
 
 .overlay-tooltip-close {
   position: absolute;

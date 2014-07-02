@@ -77,6 +77,27 @@ opendata.Models = opendata.Models || {};
 
             });
 
+        },
+
+        getContinentAverage : function ( country, drug ){
+
+            var items = 0,
+                sum = this.reduce(function ( memo, C ) {
+
+                if(country.get('region-code') !== C.get('region-code') )
+                    return memo;
+
+                try{
+                    items++;
+                    return memo + C.get('drugs')[drug][0].prevalence
+                }catch(e){
+                    return memo
+                }
+
+            }, 0);
+
+            return sum/items;
+
         }
 
     });
