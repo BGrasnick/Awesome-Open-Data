@@ -1,7 +1,7 @@
 <% var activeState = {};
 activeTab= {};
 
-if(drugs) for (var d in drugs) {
+if(typeof drugs !== 'undefined') for (var d in drugs) {
     activeState[d]='';
     activeTab[d]='';
 }

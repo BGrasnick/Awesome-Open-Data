@@ -36,53 +36,38 @@ opendata.Models = opendata.Models || {};
 
         model: opendata.Models.Country,
 
-        initialize: function(options) {
+        initialize: function( options ) {
 
-            if( !options )
-                return;
+            if( ! ( options && options.success ) )
+                return true;
 
             var that = this;
+
             $.when(
 
                 that.fetch({
-                    url     : './data/countriesMeta.json'
-                })              
+                    url    : './data/countriesMeta.json',
+                    remove : false
+                }),
 
+                that.fetch({
+                    url    : "./data/drugData.json",
+                    remove : false
+                }),
 
-            ).done(function (){  
+                $.get("./data/us.topo.json", function( resp ) {
 
-                $.when(
+                    var path = resp.objects['us_states_census.geo'].geometries;
 
-                    $.get("./data/us.topo.json", function( resp ) {
+                    var states = _.map( path, function( state ){ return {
+                        id   : state.properties['STATE'],
+                        name : state.properties['NAME']
+                    } });
 
-                        var path = resp.objects['us_states_census.geo'].geometries;
+                    that.add(states, { merge: true, remove: false });
+                })
 
-                        var states = _.map(path, function( state ){
-                            return {
-                                id   : state.properties['STATE'],
-                                name : state.properties['NAME']
-                            }
-                        });
-
-                        that.add(states);
-                    })
-
-                ).done(function() {            
-
-                    $.get("./data/drugData.json", function( resp ) {
-                        _.each( resp, function( country ) {
-
-                            if (that.get(country.id) != undefined) {
-                                that.get(country.id).attributes.drugs = country;
-                                delete that.get(country.id).attributes.drugs.id
-                            }
-                        })
-                        options.success();
-                    })
-
-                })  
-
-            });
+            ).done( options.success );
 
         },
 
