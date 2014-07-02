@@ -14,7 +14,7 @@ opendata.Views = opendata.Views || {};
             this.colorScale = d3.scale.category20c();
 
             _.bindAll( this, 'requestCountryColor', 'render' );
-
+            
             // When the user resizes the window:
             // only call render when he did not resize it anymore for 300 ms
             $(window).on( "resize.rerender" , _.debounce( this.render, 300 ));
