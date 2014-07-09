@@ -1,0 +1,242 @@
+[
+  {
+    "Country":"Austria",
+    "Year":2008,
+    "Sample size":3761,
+    "Males":78.4,
+    "Females":71,
+    "Total":74.7
+  },
+  {
+    "Country":"Belgium",
+    "Year":2008,
+    "Sample size":6792,
+    "Males":85,
+    "Females":79.4,
+    "Total":82.1
+  },
+  {
+    "Country":"Bulgaria",
+    "Year":2012,
+    "Sample size":5325,
+    "Males":86.5,
+    "Females":61.8,
+    "Total":74.3
+  },
+  {
+    "Country":"Croatia",
+    "Year":2012,
+    "Sample size":4756,
+    "Males":81.1,
+    "Females":62.5,
+    "Total":71.8
+  },
+  {
+    "Country":"Cyprus",
+    "Year":2012,
+    "Sample size":3500,
+    "Males":88.5,
+    "Females":69.7,
+    "Total":78.8
+  },
+  {
+    "Country":"Czech Republic",
+    "Year":2012,
+    "Sample size":2134,
+    "Males":88.8,
+    "Females":79.4,
+    "Total":84
+  },
+  {
+    "Country":"Denmark",
+    "Year":2013,
+    "Sample size":10470,
+    "Males":null,
+    "Females":null,
+    "Total":null
+  },
+  {
+    "Country":"Estonia",
+    "Year":2008,
+    "Sample size":1401,
+    "Males":89.5,
+    "Females":81,
+    "Total":85.1
+  },
+  {
+    "Country":"Finland",
+    "Year":2010,
+    "Sample size":1873,
+    "Males":88.5,
+    "Females":84.1,
+    "Total":86.3
+  },
+  {
+    "Country":"France",
+    "Year":2010,
+    "Sample size":22774,
+    "Males":89.23,
+    "Females":82.93,
+    "Total":86.03
+  },
+  {
+    "Country":"Germany",
+    "Year":2012,
+    "Sample size":9084,
+    "Males":87.7,
+    "Females":85.5,
+    "Total":86.6
+  },
+  {
+    "Country":"Greece",
+    "Year":2004,
+    "Sample size":4351,
+    "Males":85.9,
+    "Females":67.8,
+    "Total":76.9
+  },
+  {
+    "Country":"Hungary",
+    "Year":2007,
+    "Sample size":2710,
+    "Males":86.7,
+    "Females":72,
+    "Total":79.2
+  },
+  {
+    "Country":"Ireland",
+    "Year":2011,
+    "Sample size":60,
+    "Males":87.5,
+    "Females":83.2,
+    "Total":85.3
+  },
+  {
+    "Country":"Italy *",
+    "Year":2012,
+    "Sample size":18898,
+    "Males":76.1,
+    "Females":57.4,
+    "Total":66
+  },
+  {
+    "Country":"Latvia",
+    "Year":2011,
+    "Sample size":4491,
+    "Males":87.5,
+    "Females":83.1,
+    "Total":85.2
+  },
+  {
+    "Country":"Lithuania",
+    "Year":2012,
+    "Sample size":4831,
+    "Males":85.9,
+    "Females":78.2,
+    "Total":82
+  },
+  {
+    "Country":"Luxembourg",
+    "Year":null,
+    "Sample size":null,
+    "Males":null,
+    "Females":null,
+    "Total":null
+  },
+  {
+    "Country":"Malta",
+    "Year":2001,
+    "Sample size":null,
+    "Males":null,
+    "Females":null,
+    "Total":69.3
+  },
+  {
+    "Country":"Netherlands *",
+    "Year":2009,
+    "Sample size":5769,
+    "Males":89.6,
+    "Females":78.3,
+    "Total":84
+  },
+  {
+    "Country":"Norway",
+    "Year":2012,
+    "Sample size":1668,
+    "Males":91.1,
+    "Females":87.4,
+    "Total":89.3
+  },
+  {
+    "Country":"Poland",
+    "Year":2012,
+    "Sample size":3428,
+    "Males":null,
+    "Females":null,
+    "Total":null
+  },
+  {
+    "Country":"Portugal",
+    "Year":2012,
+    "Sample size":5355,
+    "Males":73.6,
+    "Females":49.3,
+    "Total":61.1
+  },
+  {
+    "Country":"Romania",
+    "Year":2010,
+    "Sample size":5100,
+    "Males":76.6,
+    "Females":52.7,
+    "Total":64.6
+  },
+  {
+    "Country":"Slovakia",
+    "Year":2010,
+    "Sample size":4055,
+    "Males":82.29,
+    "Females":72.69,
+    "Total":77.49
+  },
+  {
+    "Country":"Slovenia",
+    "Year":2012,
+    "Sample size":7514,
+    "Males":84.4,
+    "Females":76.6,
+    "Total":80.6
+  },
+  {
+    "Country":"Spain",
+    "Year":2011,
+    "Sample size":22128,
+    "Males":83.2,
+    "Females":69.9,
+    "Total":76.6
+  },
+  {
+    "Country":"Sweden",
+    "Year":2012,
+    "Sample size":6910,
+    "Males":null,
+    "Females":null,
+    "Total":null
+  },
+  {
+    "Country":"Turkey",
+    "Year":2011,
+    "Sample size":8045,
+    "Males":21.5,
+    "Females":6.8,
+    "Total":14.3
+  },
+  {
+    "Country":"United Kingdom",
+    "Year":2012,
+    "Sample size":21501,
+    "Males":null,
+    "Females":null,
+    "Total":null
+  }
+]
