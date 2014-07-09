@@ -80,8 +80,8 @@ opendata.Views = opendata.Views || {};
             d3.select(self.frameElement).style("height", height + "px");
 
             var projection = d3.geo.mercator()
-              .scale(170)
-              .translate([width / 2, height / 2])
+              .scale(230)
+              .translate([width / 2, height / 1.4])
               .precision(0.1);
 
             var zoom = d3.behavior.zoom()
