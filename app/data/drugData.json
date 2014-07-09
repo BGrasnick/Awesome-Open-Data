@@ -10924,5 +10924,80 @@
                 "source": "samhsa"
             }
         ]
+    },
+    {
+        "id": 1,
+        "cannabis": [
+            {
+                "population": "young",
+                "prevalence": "18.26",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "24.82",
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "population": "young",
+                "prevalence": "4.07",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "2.48",
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "population": "young",
+                "prevalence": "3.48",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "2.29",
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "population": "young",
+                "prevalence": "4.18",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "2.77",
+                "source": "emcdda"
+            }
+        ],
+        "alcohol": [
+            {
+                "population": "young",
+                "prevalence": "35.18",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "66.63",
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "population": "young",
+                "prevalence": "18.35",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "41.23",
+                "source": "emcdda"
+            }
+        ]
     }
 ]
