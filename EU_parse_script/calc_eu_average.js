@@ -1,25 +1,48 @@
 var drug_data = require('../app/data/drugData.json');
 var __ = require('../bower_components/underscore/underscore.js')
 
-var keys = Object.keys(drug_data[0])
+var keys = [
+  'cannabis',
+  'ecstasy',
+  'amphetamines',
+  'cocaine',
+  'alcohol',
+  'cigarette'   
+]
 
-var id = 1;
+var age_groups = [
+	'young adults',
+	'all',
+	'Aged 15-24',
+	'Aged 25-34',
+	'Aged 35-44',
+	'Aged 45-54',
+	'Aged 55-64'
+]
 
-var europe = {id: id};
+var europe = {id: 1};
 
-for (var i = 1; i < keys.length; i++) {
+for (var i = 0; i < keys.length; i++) {
 	var data = [];
-	data.push(calculateData(0, 'young', i));
-	data.push(calculateData(1, 'all', i));
+	for (var j = 0; j < age_groups.length; j++) {
+		var object = calculateData(j,age_groups[j], i);
+		if (object !== null) {
+			data.push(object);
+		}
+	}
 	europe[keys[i]] = data;
 }
 
 function calculateData(groupIndex, name, keyIndex) {
-	var firstFilter = __.filter(drug_data, function(obj) { return obj[keys[keyIndex]] !== undefined})
-	var secondFilter = __.filter(firstFilter, function(obj) { return obj[keys[keyIndex]][groupIndex] !== undefined})
-	var value = __.map(secondFilter, function(obj) {return obj[keys[keyIndex]][groupIndex].prevalence});
+	var firstFilter = __.filter(drug_data, function(obj) { return obj[keys[keyIndex]] !== undefined});
+	var secondFilter = __.filter(firstFilter, function(obj) { return obj[keys[keyIndex]][groupIndex] !== undefined});
+	var europeStates = __.filter(secondFilter, function(obj) { return obj[keys[keyIndex]][groupIndex].source === "emcdda"});
+	var value = __.map(europeStates, function(obj) {return obj[keys[keyIndex]][groupIndex].prevalence});
 	var average = __.reduce(value, function(memo, num){ return memo + num; }, 0) / value.length;
-	return {population: name, prevalence: average.toFixed(2), source: 'emcdda'};
+	if (average !== undefined && !isNaN(average)) {
+		return {population: name, prevalence: average.toFixed(2), source: 'emcdda'};
+	}
+	return null;
 }
 
 drug_data.push(europe);
