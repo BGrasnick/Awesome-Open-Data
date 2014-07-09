@@ -56,9 +56,37 @@
                 "prevalence": 2.2,
                 "source": "emcdda"
             }
+        ],
+        "alcohol": [
+            {
+                "year": 2008,
+                "population": "all",
+                "prevalence": 74.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "young adults",
+                "prevalence": 76.1,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2008,
+                "population": "all",
+                "prevalence": 43.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "young adults",
+                "prevalence": 49.8,
+                "source": "emcdda"
+            }
         ]
     },
-   {
+    {
         "id": 56,
         "cannabis": [
             {
@@ -73,9 +101,24 @@
                 "prevalence": 14.3,
                 "source": "emcdda"
             }
-        ]
+        ],
+        "alcohol": [
+            {
+                "year": 2008,
+                "population": "all",
+                "prevalence": 82.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "young adults",
+                "prevalence": 78.4,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": []
     },
-   {
+    {
         "id": 100,
         "cannabis": [
             {
@@ -132,9 +175,37 @@
                 "prevalence": 0.9,
                 "source": "emcdda"
             }
+        ],
+        "alcohol": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 74.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 73.5,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 48.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 53.4,
+                "source": "emcdda"
+            }
         ]
     },
-   {
+    {
         "id": 191,
         "cannabis": [
             {
@@ -191,9 +262,37 @@
                 "prevalence": 2.3,
                 "source": "emcdda"
             }
+        ],
+        "alcohol": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 71.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 79.5,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 39.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 42.4,
+                "source": "emcdda"
+            }
         ]
     },
-  {
+    {
         "id": 196,
         "cannabis": [
             {
@@ -250,9 +349,37 @@
                 "prevalence": 1.3,
                 "source": "emcdda"
             }
+        ],
+        "alcohol": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 78.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 82.2,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 38.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 43.1,
+                "source": "emcdda"
+            }
         ]
     },
-   {
+    {
         "id": 203,
         "cannabis": [
             {
@@ -307,6 +434,34 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 2.3,
+                "source": "emcdda"
+            }
+        ],
+        "alcohol": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 84,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 83.8,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 40.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 47.1,
                 "source": "emcdda"
             }
         ]
@@ -368,9 +523,11 @@
                 "prevalence": 5.2,
                 "source": "emcdda"
             }
-        ]
-    }, 
-  {
+        ],
+        "alcohol": [],
+        "cigarette": []
+    },
+    {
         "id": 246,
         "cannabis": [
             {
@@ -427,9 +584,24 @@
                 "prevalence": 1.7,
                 "source": "emcdda"
             }
-        ]
+        ],
+        "alcohol": [
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 86.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 84.4,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": []
     },
-   {
+    {
         "id": 250,
         "cannabis": [
             {
@@ -486,8 +658,23 @@
                 "prevalence": 3.66,
                 "source": "emcdda"
             }
-        ]
-    },     
+        ],
+        "alcohol": [
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 86.03,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 81.37,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": []
+    },
     {
         "id": 276,
         "cannabis": [
@@ -545,9 +732,37 @@
                 "prevalence": 3.4,
                 "source": "emcdda"
             }
+        ],
+        "alcohol": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 86.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 88.2,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 33.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 38.6,
+                "source": "emcdda"
+            }
         ]
     },
-     {
+    {
         "id": 300,
         "cannabis": [
             {
@@ -604,7 +819,22 @@
                 "prevalence": 0.7,
                 "source": "emcdda"
             }
-        ]
+        ],
+        "alcohol": [
+            {
+                "year": 2004,
+                "population": "all",
+                "prevalence": 76.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "young adults",
+                "prevalence": 79.2,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": []
     },
     {
         "id": 348,
@@ -663,7 +893,22 @@
                 "prevalence": 0.9,
                 "source": "emcdda"
             }
-        ]
+        ],
+        "alcohol": [
+            {
+                "year": 2007,
+                "population": "all",
+                "prevalence": 79.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "young adults",
+                "prevalence": 82,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": []
     },
     {
         "id": 372,
@@ -720,6 +965,34 @@
                 "year": 2011,
                 "population": "all",
                 "prevalence": 6.8,
+                "source": "emcdda"
+            }
+        ],
+        "alcohol": [
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 85.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 86.3,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 32.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 37.3,
                 "source": "emcdda"
             }
         ]
@@ -840,6 +1113,34 @@
                 "prevalence": 1.5,
                 "source": "emcdda"
             }
+        ],
+        "alcohol": [
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 85.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 84.3,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 44.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 45.5,
+                "source": "emcdda"
+            }
         ]
     },
     {
@@ -899,6 +1200,34 @@
                 "prevalence": 0.9,
                 "source": "emcdda"
             }
+        ],
+        "alcohol": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 82,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 80.7,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 36.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 36,
+                "source": "emcdda"
+            }
         ]
     },
     {
@@ -956,6 +1285,22 @@
                 "year": 2001,
                 "population": "all",
                 "prevalence": 0.4,
+                "source": "emcdda"
+            }
+        ],
+        "alcohol": [
+            {
+                "year": 2001,
+                "population": "all",
+                "prevalence": 69.3,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2001,
+                "population": "all",
+                "prevalence": 33.5,
                 "source": "emcdda"
             }
         ]
@@ -1018,7 +1363,7 @@
                 "source": "emcdda"
             }
         ]
-    },  
+    },
     {
         "id": 578,
         "cannabis": [
@@ -1034,7 +1379,22 @@
                 "prevalence": 19.2,
                 "source": "emcdda"
             }
-        ]
+        ],
+        "alcohol": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 89.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 89.5,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": []
     },
     {
         "id": 616,
@@ -1093,7 +1453,9 @@
                 "prevalence": 0.9,
                 "source": "emcdda"
             }
-        ]
+        ],
+        "alcohol": [],
+        "cigarette": []
     },
     {
         "id": 620,
@@ -1152,6 +1514,34 @@
                 "prevalence": 1.2,
                 "source": "emcdda"
             }
+        ],
+        "alcohol": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 61.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 61,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 28.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 33.2,
+                "source": "emcdda"
+            }
         ]
     },
     {
@@ -1160,7 +1550,7 @@
             {
                 "year": 2010,
                 "population": "young adults",
-                "prevalence": 3.0,
+                "prevalence": 3,
                 "source": "emcdda"
             },
             {
@@ -1209,6 +1599,34 @@
                 "year": 2010,
                 "population": "all",
                 "prevalence": 0.3,
+                "source": "emcdda"
+            }
+        ],
+        "alcohol": [
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 64.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 61.7,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 30.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 32.4,
                 "source": "emcdda"
             }
         ]
@@ -1270,6 +1688,34 @@
                 "prevalence": 0.61,
                 "source": "emcdda"
             }
+        ],
+        "alcohol": [
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 77.49,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 75.34,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2010,
+                "population": "all",
+                "prevalence": 38.02,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "young adults",
+                "prevalence": 40.13,
+                "source": "emcdda"
+            }
         ]
     },
     {
@@ -1329,7 +1775,22 @@
                 "prevalence": 2.1,
                 "source": "emcdda"
             }
-        ]
+        ],
+        "alcohol": [
+            {
+                "year": 2012,
+                "population": "all",
+                "prevalence": 80.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "young adults",
+                "prevalence": 84.3,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": []
     },
     {
         "id": 724,
@@ -1388,6 +1849,34 @@
                 "prevalence": 8.8,
                 "source": "emcdda"
             }
+        ],
+        "alcohol": [
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 76.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 79.1,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 40.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 43.8,
+                "source": "emcdda"
+            }
         ]
     },
     {
@@ -1405,9 +1894,11 @@
                 "prevalence": 14.9,
                 "source": "emcdda"
             }
-        ]
+        ],
+        "alcohol": [],
+        "cigarette": []
     },
-   {
+    {
         "id": 792,
         "cannabis": [
             {
@@ -1451,8 +1942,34 @@
                 "source": "emcdda"
             }
         ],
-        "cocaine": [
- 
+        "cocaine": [],
+        "alcohol": [
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 14.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 15.7,
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "year": 2011,
+                "population": "all",
+                "prevalence": 35.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "young adults",
+                "prevalence": 34.6,
+                "source": "emcdda"
+            }
         ]
     },
     {
@@ -1512,9 +2029,10 @@
                 "prevalence": 9,
                 "source": "emcdda"
             }
-        ]
+        ],
+        "alcohol": [],
+        "cigarette": []
     },
- 
     {
         "id": 840,
         "cannabis": [
@@ -1551,7 +2069,7 @@
             {
                 "year": 2006,
                 "population": "26+",
-                "prevalence": 6.90,
+                "prevalence": 6.9,
                 "source": "samhsa"
             },
             {
@@ -1686,7 +2204,6 @@
             }
         ]
     },
- 
     {
         "id": 10001,
         "cannabis": [
@@ -10408,6 +10925,4 @@
             }
         ]
     }
-
 ]
-
