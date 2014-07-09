@@ -14000,5 +14000,180 @@
                 "source": "samhsa"
             }
         ]
+    },
+    {
+        "id": 1,
+        "cannabis": [
+            {
+                "population": "young adults",
+                "prevalence": "23.68",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "16.64",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 15-24",
+                "prevalence": "22.23",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 25-34",
+                "prevalence": "26.47",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 35-44",
+                "prevalence": "16.51",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 45-54",
+                "prevalence": "9.63",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 55-64",
+                "prevalence": "5.33",
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "population": "young adults",
+                "prevalence": "4.07",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "2.48",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 15-24",
+                "prevalence": "3.33",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 25-34",
+                "prevalence": "5.29",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 35-44",
+                "prevalence": "2.45",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 45-54",
+                "prevalence": "0.57",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 55-64",
+                "prevalence": "0.20",
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "population": "young adults",
+                "prevalence": "3.48",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "2.29",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 15-24",
+                "prevalence": "2.59",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 25-34",
+                "prevalence": "4.27",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 35-44",
+                "prevalence": "2.47",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 45-54",
+                "prevalence": "1.13",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 55-64",
+                "prevalence": "0.57",
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "population": "young adults",
+                "prevalence": "4.02",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "2.66",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 15-24",
+                "prevalence": "2.79",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 25-34",
+                "prevalence": "5.01",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 35-44",
+                "prevalence": "3.00",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 45-54",
+                "prevalence": "1.39",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 55-64",
+                "prevalence": "0.48",
+                "source": "emcdda"
+            }
+        ],
+        "alcohol": [
+            {
+                "population": "young adults",
+                "prevalence": "75.75",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "76.51",
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "population": "young adults",
+                "prevalence": "37.55",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "41.24",
+                "source": "emcdda"
+            }
+        ]
     }
 ]
