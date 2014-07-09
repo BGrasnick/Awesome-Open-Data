@@ -478,56 +478,6 @@
         {
           "type": "MultiPolygon",
           "properties": {
-            "STATE": 10072,
-            "NAME": "Puerto Rico"
-          },
-          "id": 10072,
-          "arcs": [
-            [
-              [
-                112
-              ]
-            ],
-            [
-              [
-                113
-              ]
-            ],
-            [
-              [
-                114
-              ]
-            ],
-            [
-              [
-                115
-              ]
-            ],
-            [
-              [
-                116
-              ]
-            ],
-            [
-              [
-                117
-              ]
-            ],
-            [
-              [
-                118
-              ]
-            ],
-            [
-              [
-                119
-              ]
-            ]
-          ]
-        },
-        {
-          "type": "MultiPolygon",
-          "properties": {
             "STATE": 10010,
             "NAME": "Delaware"
           },

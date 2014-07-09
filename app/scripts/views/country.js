@@ -17,6 +17,11 @@ opendata.Views = opendata.Views || {};
             "change input"          : 'updateSlider'
         },
 
+        initialize: function () {
+
+            this.render();
+        },
+
         triggerPin : function(evt){
             var that = this,
                 btn = $(evt.target);
@@ -27,7 +32,6 @@ opendata.Views = opendata.Views || {};
             setTimeout( function () {
 
                 btn.button('reset');
-
                 that.trigger('pin');
 
             }, 500);
@@ -35,98 +39,94 @@ opendata.Views = opendata.Views || {};
         },
 
         triggerClose : function(){
-            this.trigger('close', {
-                id : this.model.id
-            })
-        },
 
-        updateActiveTab: function(evt) {
-
-            opendata.ActiveTabs[this.model.id] = $(evt.target).html().toLowerCase()
+            this.trigger('close', { id : this.model.id });
 
         },
 
-        updateActiveFilter: function(evt) {
+        updateActiveTab: function( evt ) {
 
-          this.sliderValues = [];
-          this.filter = $(evt.target).html().toLowerCase();
-          var that = this;
+            opendata.ActiveTabs[this.model.id] = $( evt.target ).html().toLowerCase()
 
-          if ( this.filter == 'default' ) {
-            this.filter = undefined;
-            this.sliderValue = undefined;
-          } else if ( this.filter == 'ages' ) {
+        },
+
+        updateActiveFilter: function( evt ) {
+
+            this.sliderValues = [];
+            this.filter = $( evt.target ).html().toLowerCase();
+
+            var that = this;
+
+            if ( this.filter == 'default' ) {
+                this.filter = undefined;
+                this.sliderValue = undefined;
+                return;
+            }
+
+
             var drugs = this.model.get('drugs');
 
-            var counter = 0;
-            _.each(drugs, function(drug){
+            var keys = Object.keys(drugs);
+            var drug = drugs[keys[0]];
 
-              if ( counter == 0 ) {
+            var nestedCounter1 = 0;
+            var nestedCounter2 = 0;
 
-                var data = drug;
+
+            if ( this.filter == 'ages' ) {
+
 
                 var firstYear = '';
-                var nestedCounter1 = 0;
-                var nestedCounter2 = 0;
-                _.each(drug, function(dataSet) {
 
-                  if ( nestedCounter1 == 0 ) {
-                    firstYear = dataSet.year;
-                  }
 
-                  if ( dataSet.year == firstYear ) {
-                    that.sliderValues[nestedCounter2] = dataSet.population;
-                    nestedCounter2++;
-                  }
+                _.each( drug, function( dataSet ) {
 
-                  nestedCounter1++;
+                    if ( nestedCounter1 == 0 ) {
+                        firstYear = dataSet.year;
+                    }
+
+                    if ( dataSet.year == firstYear ) {
+                        that.sliderValues[nestedCounter2] = dataSet.population;
+                        nestedCounter2++;
+                    }
+
+                    nestedCounter1++;
+
                 });
-              }
 
-              counter++;
-            });
-          } else if ( this.filter == 'years' ) {
-            var drugs = this.model.get('drugs');
 
-            var counter = 0;
-            _.each(drugs, function(drug){
+            } else if ( this.filter == 'years' ) {
 
-              if ( counter == 0 ) {
-
-                var data = drug;
 
                 var firstPopulation = '';
-                var nestedCounter1 = 0;
-                var nestedCounter2 = 0;
+
                 _.each(drug, function(dataSet) {
 
-                  if ( nestedCounter1 == 0 ) {
-                    firstPopulation = dataSet.population;
-                  }
+                    if ( nestedCounter1 == 0 ) {
+                        firstPopulation = dataSet.population;
+                    }
 
-                  if ( dataSet.population == firstPopulation ) {
-                    that.sliderValues[nestedCounter2] = dataSet.year;
-                    nestedCounter2++;
-                  }
+                    if ( dataSet.population == firstPopulation ) {
+                        that.sliderValues[nestedCounter2] = dataSet.year;
+                        nestedCounter2++;
+                    }
 
-                  nestedCounter1++;
+                    nestedCounter1++;
+
                 });
-              }
 
-              counter++;
-            });
-          }
 
-          this.sliderValue = this.sliderValues[0];
+                this.sliderValues = _.sortBy(this.sliderValues, function(num) {
+                    return num;
+                });
+            }
 
-          this.render();
-
-        },
-
-        initialize: function () {
+            this.sliderValue = this.sliderValues[0];
 
             this.render();
+
         },
+
 
         render: function () {
 
@@ -205,9 +205,9 @@ opendata.Views = opendata.Views || {};
 
         renderSlider: function() {
           if ( this.sliderValue ) {
-            var $slider = $('input[type="range"]');
+            var $slider = this.$('input[type="range"]');
 
-            $slider.val(this.sliderValues.indexOf(this.sliderValue));
+            $slider.val( this.sliderValues.indexOf(this.sliderValue) );
           }
         },
 
