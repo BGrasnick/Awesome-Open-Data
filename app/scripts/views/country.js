@@ -180,7 +180,18 @@ opendata.Views = opendata.Views || {};
               .append('div')
               .style('width', function(d) { return x(d.prevalence) + 'px'; })
               .attr('class', 'bar ' + key)
-              .text(function(d) { return d.year + " / " + d.population + ': ' + d.prevalence + '%'; });
+              .text(function(d) {
+                      var text = "";
+                      if(d.year)
+                        text += d.year + " / ";
+
+                      if(d.population)
+                        text += d.population +": ";
+
+                      text += d.prevalence + "%";
+
+                      return text
+                  });
 
               bar.append('div')
               .attr('class', 'baseline')
