@@ -1,5 +1,6 @@
 @import "map";
 @import "overlay";
+@import "navigation";
 
 html, body {
   background: #fff;
@@ -18,89 +19,6 @@ hr{
   height: 100%;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 85px;
-  background: rgba(0,0,0,0.75);
-
-  ul{
-    margin: 7px 0 0 10px !important;
-  }
-
-  .btn {
-      border-radius: 0px !important;
-      padding: 5px 20px !important;
-    &.btn-region {
-      background-color: #3498db;
-      color: #FFF
-    }
-
-    &.btn-sub-region {
-      background-color: #2ecc71;
-      color: #FFF
-    }
-  }
-
-}
-
-.title{
-  position: absolute;
-  color: #fff;
-  margin: -16px 0 0 50%;
-  left: -190px;
-  font-size: 64px;
-  font-family: 'Leckerli One', cursive !important;
-}
-
-.cannabis-btn{
-  background: #5bcc8d url('../img/cannabis.png') no-repeat;
-  background-size: 70px 70px;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  cursor: pointer;
-  }
-.cannabis-btn:hover{
-    background: #82CCA3 url('../img/cannabis.png') no-repeat;
-  }
-
-.ecstasy-btn{
-  background: #F1D430 url('../img/ecstasy.png') no-repeat;
-  background-size: 70px 70px;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  cursor: pointer;
-}
-.ecstasy-btn:hover{
-    background: #F1DB7C url('../img/ecstasy.png') no-repeat;
-  } 
-
-.amphetamine-btn{
-  background: #E75E52 url('../img/amphetamine.png') no-repeat;
-  background-size: 70px 70px;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  cursor: pointer;
-} 
-.amphetamine-btn:hover{
-    background: #E78F85 url('../img/amphetamine.png') no-repeat;
-  } 
-
-.cocaine-btn{
-  background: #c87fd3 url('../img/cocaine.png') no-repeat;
-  background-size: 70px 70px;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  cursor: pointer;
-} 
-.cocaine-btn:hover{
-    background: #CC9CD3 url('../img/cocaine.png') no-repeat;
-  } 
 
 
 

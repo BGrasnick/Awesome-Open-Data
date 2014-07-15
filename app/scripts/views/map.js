@@ -10,7 +10,7 @@ opendata.Views = opendata.Views || {};
         initialize: function () {
 
             this.g = null;
-            this.filter = 'greenTest';
+            this.filter = 'cannabis';
             this.colorScale = d3.scale.category20c();
 
             _.bindAll( this, 'requestCountryColor', 'render' );
@@ -215,18 +215,16 @@ opendata.Views = opendata.Views || {};
 
             if (! country ) return "red";
 
-            if (currentFilter === 'greenTest') {
+            if ( _.contains( ['cannabis', 'ecstasy', 'cocaine', 'amphetamines'], currentFilter ) ) {
 
                 try{
-                    var cannabisData = country.get('drugs')['cannabis'];
+                    var data = country.get('drugs')[currentFilter];
 
-                    var mostRecentEntry = _.max(cannabisData, function(obj) {
+                    var mostRecentEntry = _.max(data, function(obj) {
                         return (obj.population === 'all') ? obj.year : 0
                     });
 
-                    var x = d3.scale.linear()
-                      .domain([0, 30, 50])
-                      .range([d3.rgb(255,255,255),d3.rgb(91,204,141),d3.rgb(91,204,141)])
+                    var x = this.getColorScaleForFilter(currentFilter);
 
                     return x(mostRecentEntry.prevalence);
 
@@ -256,6 +254,42 @@ opendata.Views = opendata.Views || {};
             }));
 
             return _.extend(europe, { id: 1 })
+        },
+
+        getColorScaleForFilter: function( filter ){
+
+            var scale;
+
+            // TODO : Proper colors according to navigation.scss hex codes
+            // TODO : Proper ranges according to drug data
+            switch(filter){
+                case 'cannabis':
+                    scale = d3.scale.linear()
+                        .domain([0, 50])
+                        .range([d3.rgb(255,255,255),d3.rgb(91,204,141)])
+                    break;
+
+                case 'cocaine':
+                    scale = d3.scale.linear()
+                        .domain([0, 20])
+                        .range([d3.rgb(255,255,255),d3.rgb(130,20,200)])
+                    break;
+
+                case 'amphetamines':
+                    scale = d3.scale.linear()
+                        .domain([0, 20])
+                        .range([d3.rgb(255,255,255),d3.rgb(231,94,82)])
+                    break;
+
+                case 'ecstasy':
+                    scale = d3.scale.linear()
+                        .domain([0, 20])
+                        .range([d3.rgb(255,255,255),d3.rgb(241,12,48)])
+                    break;
+            }
+
+            return scale
+
         }
 
     });
