@@ -131,7 +131,7 @@ opendata.Views = opendata.Views || {};
         render: function () {
 
             var data = this.model.toJSON();
-            data.isPinned = opendata.PinnedCountries.contains(this.model);
+            data.isPinned = opendata.PinnedCountries.contains( this.model );
             data.filter = this.filter;
             data.sliderValue = this.sliderValue;
 
@@ -185,19 +185,6 @@ opendata.Views = opendata.Views || {};
               bar.append('div')
               .attr('class', 'baseline')
               .style('left', x(average) + "px");
-
-
-              var x = d3.scale.linear()
-              .domain( [0, d3.max(data, function(d){ return d.prevalence })] )
-              .range( [0, 290] );
-
-              d3.select( that.$('.chart-' + key)[0] ).selectAll('div')
-              .data(data)
-              .enter()
-              .append('div')
-              .style('width', function(d) { return x(d.prevalence) + 'px'; })
-              .attr('class', 'bar ' + key)
-              .text(function(d) { return d.year + " / " + d.population + ': ' + d.prevalence + '%'; });
 
             });
 
