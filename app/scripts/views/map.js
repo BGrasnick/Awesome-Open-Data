@@ -100,7 +100,7 @@ opendata.Views = opendata.Views || {};
                 that.g.append("path")
                   .datum( that.mergeEurope(world) )
                   .attr("class", that.getClasses)
-                  .attr("id", "europeOverlay")
+                  .attr("id", "europe")
                   .style("fill", that.requestCountryColor)
                   .attr("country-id", function( d ) { return d.id })
                   .attr("d", path)
@@ -134,7 +134,12 @@ opendata.Views = opendata.Views || {};
                         $("#states").hide()
                         $(".country.US").show()
                     }
+
+                    if(d.id === 1){
+                        $("#europe").hide()
+                    }
                 }
+
 
                 if (active.node() === this) return reset();
                 active.classed("active", false);
@@ -143,9 +148,10 @@ opendata.Views = opendata.Views || {};
                 var bounds = path.bounds(d),
                     dx = bounds[1][0] - bounds[0][0],
                     dy = bounds[1][1] - bounds[0][1];
-                
-                // Sets a maximum zoom level
-                if(dx < 25) dx = 40;
+
+                // Sets a maximum zoom levels
+                if(dx < 25)  dx = 40;
+                if(dx > 350) dx = 350;
 
                 var x = (bounds[0][0] + bounds[1][0]) / 2,
                     y = (bounds[0][1] + bounds[1][1]) / 2,
@@ -170,6 +176,7 @@ opendata.Views = opendata.Views || {};
                   .call(zoom.translate([0, 0]).scale(1).event)
                   .each('end', function(){
                       $('#states').hide();
+                      $('#europe').show();
                       $('.country.US').show();
                   });
             }
