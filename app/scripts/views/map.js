@@ -29,7 +29,45 @@ opendata.Views = opendata.Views || {};
                 .style("fill", this.requestCountryColor)
         },
 
-        render: function () {
+        render: function () {          
+
+            var europeIdArray = [
+              620,
+              724,
+              250,
+              826,
+              372,
+              578,
+              246,
+              752,
+              276,
+              380,
+              208,
+              528,
+              56,
+              616,
+              203,
+              40,
+              703,
+              792,
+              348,
+              705,
+              191,
+              300,
+              100,
+              642,
+              196,
+              440,
+              428,
+              // fill empty holes, unfortunately no data
+              756,
+              442,
+              70,
+              688,
+              807,
+              8,
+              499
+            ];
 
             this.$el.empty();
 
@@ -42,8 +80,8 @@ opendata.Views = opendata.Views || {};
             d3.select(self.frameElement).style("height", height + "px");
 
             var projection = d3.geo.mercator()
-              .scale(170)
-              .translate([width / 2, height / 2])
+              .scale(230)
+              .translate([width / 2, height / 1.4])
               .precision(0.1);
 
             var zoom = d3.behavior.zoom()
@@ -96,6 +134,13 @@ opendata.Views = opendata.Views || {};
                   .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
                   .attr("class", "boundary")
                   .attr("d", path);
+
+                that.g.append("path")
+                  .datum(topojson.merge(world, world.objects.countries.geometries.filter(function (d) { return _.contains(europeIdArray,d.id) ? d : null;})))
+                  .attr("id", "europeOverlay")
+                  .style("fill", "#5BCC8D")
+                  .attr("d", path)
+                  .on("click", clicked);
 
             });
 

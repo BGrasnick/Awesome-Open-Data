@@ -25,14 +25,20 @@ for (var i=0; i<alcohol_all.length; i++) {
 				country.alcohol.push({year: alc_all_country.Year, population: 'all', prevalence: alc_all_country.Total, source: 'emcdda'});
 			}
 			if (alc_young_country.Total != null) {
-			country.alcohol.push({year: alc_young_country.Year, population: 'young adults', prevalence: alc_young_country.Total, source: 'emcdda'});
+				country.alcohol.push({year: alc_young_country.Year, population: 'young adults', prevalence: alc_young_country.Total, source: 'emcdda'});
+			}			
+			if (country.alcohol.length === 0) {
+				delete country.alcohol;
 			}
 			country.cigarette = [];
 			if (cig_all_country.Total != null) {
-			country.cigarette.push({year: cig_all_country.Year, population: 'all', prevalence: cig_all_country.Total, source: 'emcdda'});
+				country.cigarette.push({year: cig_all_country.Year, population: 'all', prevalence: cig_all_country.Total, source: 'emcdda'});
 			}
 			if (cig_young_country.Total != null) {
-			country.cigarette.push({year: cig_young_country.Year, population: 'young adults', prevalence: cig_young_country.Total, source: 'emcdda'});
+				country.cigarette.push({year: cig_young_country.Year, population: 'young adults', prevalence: cig_young_country.Total, source: 'emcdda'});
+			}
+			if (country.cigarette.length === 0) {
+				delete country.cigarette;
 			}
 		}
 	}
