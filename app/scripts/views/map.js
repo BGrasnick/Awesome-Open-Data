@@ -127,17 +127,24 @@ opendata.Views = opendata.Views || {};
 
             function clicked(d) {
                 if (d.id < 10000){
-                    if (d.id === 840 ) {
-                        $("#states").toggle()
-                        $(".country.US").toggle()
-                    }else{
-                        $("#states").hide()
-                        $(".country.US").show()
-                    }
 
                     if(d.id === 1){
                         $("#europe").hide()
+                        $("#states").hide()
+                        $(".country.US").show()
+                    } else if (d.id === 840 ) {
+                        $("#states").toggle()
+                        $(".country.US").toggle()
+                        $("#europe").show()
+                    } else if( ! that.isCountryInEurope( d.id ) ) {
+                        $("#europe").show()
+                        $("#states").hide()
+                        $(".country.US").show()
+                    } else{
+                        $("#states").hide()
+                        $(".country.US").show()
                     }
+                    
                 }
 
 
@@ -234,6 +241,22 @@ opendata.Views = opendata.Views || {};
 
             } else
                 return currentColorScale( country.get(currentFilter) );
+
+        },
+
+        isCountryInEurope: function( id ) {
+
+            var europeCountryIds = [
+                620, 724, 250, 826, 372, 578,
+                246, 752, 276, 703, 792, 348,
+                380, 208, 528,  56, 616, 203,
+                705, 191, 300, 100, 642, 196,
+                 40, 440, 428,
+                // fill empty holes, unfortunately no data
+                756, 442, 70, 688, 807, 8, 499
+            ];
+
+            return _.contains( europeCountryIds, id );
 
         },
 
