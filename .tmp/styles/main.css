@@ -20,9 +20,6 @@
 .container {
   min-width: 1170px; }
 
-.country:hover, .state:hover {
-  fill: rgba(149, 165, 166, 0.5) !important; }
-
 .country.active {
   fill: #657273 !important; }
 

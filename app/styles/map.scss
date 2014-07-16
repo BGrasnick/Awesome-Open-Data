@@ -29,12 +29,6 @@
   min-width: 1170px;
 }
 
-.country, .state{
-  &:hover {
-    fill: rgba(149, 165, 166, .5) !important;
-  }
-}
-
 .country.active{
    fill: #657273 !important;
 }

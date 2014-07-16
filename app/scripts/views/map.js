@@ -87,8 +87,11 @@ opendata.Views = opendata.Views || {};
                 .enter().insert("path", ".graticule")
                   .attr("class", that.getClasses)
                   .attr("country-id", function( d ) { return d.id })
+                  .attr("region_code", function( d ) { return opendata.Countries.get( d.id ).get("region-code") })
                   .attr("d", path)
                   .style("fill", that.requestCountryColor)
+                  .on("mouseover", hovered)
+                  .on("mouseout", mouseout)
                   .on("click", clicked);
 
                 // Country Borders
@@ -146,6 +149,36 @@ opendata.Views = opendata.Views || {};
                 .duration(750)
                 .call(zoom.translate(translate).scale(scale).event)
                 .each('end', function(){ that.trigger('country:focus', { id: d.id }) });
+            }
+
+            function hovered( d ) {
+              var country = opendata.Countries.get( d.id );
+              var region_code = country.get("region-code");
+
+              that.g.selectAll(".country")
+              .filter( function ( d, i ) {
+
+                var this_country = opendata.Countries.get( d.id );
+                var this_region_code = this_country.get("region-code");
+
+                if ( region_code == 150 ) {
+
+                  if ( this_region_code != 150 ) return false;
+                  return true;
+                }
+
+                if ( country.id == this_country.id ) return true;
+                return false;
+              })
+              .style("fill", "rgba(149, 165, 166, .5)");
+            }
+
+            function mouseout(d) {
+              var country = opendata.Countries.get( d.id );
+              var region_code = country.get("region-code");
+
+              that.g.selectAll(".country")
+              .style("fill", that.requestCountryColor);
             }
 
             function reset() {
