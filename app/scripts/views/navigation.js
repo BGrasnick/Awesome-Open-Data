@@ -26,11 +26,12 @@ opendata.Views = opendata.Views || {};
 
         render: function ( filter ) {
 
-            if ( filter ) {
-                var filter = filter.charAt(0).toUpperCase() + filter.slice(1);
-            }
+            if ( ! filter ) filter = 'cannabis';
+
+            var filter = filter.charAt(0).toUpperCase() + filter.slice(1);
             var data = {};
             data.filter = filter;
+
             this.$el.html( this.template( data ) );
 
         }
