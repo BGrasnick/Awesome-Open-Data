@@ -85,25 +85,23 @@ opendata.Models = opendata.Models || {};
 
         getContinentAverage : function ( country, drug ){
 
-            var items = 0,
-                val,
-                sum = this.reduce(function ( memo, C ) {
+            var continent = null,
+                key = null;
 
-                if(country.get('region-code') !== C.get('region-code') )
-                    return memo;
+            // EU
+            if( country.get('region-code') == 150 ){
+                continent = 1;
+                key = 'all';
+            }
+            // US
+            else if( country.get('id') > 10000 || country.get('id') === 840 ){
+                continent = 840;
+                key = '26+';
+            }
 
-                try{
-                    val = memo + C.get('drugs')[drug][0].prevalence
-                }catch(e){
-                    return memo
-                }
+            var averageDrugData = opendata.Countries.get( continent ).get('drugs')[ drug ];
 
-                items++;
-                return val
-
-            }, 0);
-
-            return sum/items;
+            return _.findWhere( averageDrugData, { population : key }).prevalence
 
         }
 

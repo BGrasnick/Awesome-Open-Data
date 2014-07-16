@@ -155,18 +155,20 @@ opendata.Views = opendata.Views || {};
 
             _.each(drugs, function(drug, key){
 
-              var average = opendata.Countries.getContinentAverage(that.model, key);
+                var average = opendata.Countries.getContinentAverage(that.model, key);
 
-              var data = drug;
+                var data = drug;
 
-              if ( that.filter ) {
-                data = [];
-                var counter = 0;
-                _.each(drug, function(dataSet) {
-                  if ( (that.filter == "ages" && dataSet.population == that.sliderValue) || ( that.filter == "years" && dataSet.year == that.sliderValue ) ) {
-                    data[counter] = dataSet;
-                    counter++;
-                  }
+                if ( that.filter ) {
+
+                    data = [];
+                    var counter = 0;
+
+                    _.each(drug, function(dataSet) {
+                        if ( (that.filter == "ages" && dataSet.population == that.sliderValue) || ( that.filter == "years" && dataSet.year == that.sliderValue ) ) {
+                            data[counter] = dataSet;
+                            counter++;
+                        }
                 });
               }
 
