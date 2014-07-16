@@ -27,9 +27,6 @@
 #europe:hover, .country.US:hover {
   fill: #95a5a6 !important; }
 
-.country.active {
-  fill: #657273 !important; }
-
 .country.no-data {
   fill: none;
   stroke: #fff;

@@ -40,10 +40,6 @@
     fill: rgba(149, 165, 166, 1) !important;
 }
 
-.country.active{
-   fill: #657273 !important;
-}
-
 .country.no-data {
   @include country-border();
   fill-opacity: 0.2;

@@ -20,11 +20,18 @@ opendata.Views = opendata.Views || {};
 
             opendata.App.map.setGlobalFilter( filter );
 
+            this.render( filter );
+
         },
 
-        render: function () {
+        render: function ( filter ) {
 
-            this.$el.html( this.template() );
+            if ( filter ) {
+                var filter = filter.charAt(0).toUpperCase() + filter.slice(1);
+            }
+            var data = {};
+            data.filter = filter;
+            this.$el.html( this.template( data ) );
 
         }
 
