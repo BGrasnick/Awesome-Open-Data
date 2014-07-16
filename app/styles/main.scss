@@ -1,6 +1,6 @@
 @import "map";
 @import "overlay";
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,200italic,300italic,400italic,600,600italic,700,700italic,900,900italic);
+@import "navigation";
 
 html, body {
   background: #fff;
@@ -9,41 +9,16 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+hr{
+  border-top: 0 !important;
+  background-color: #FFF;
+}
+
 #map-wrapper, #map{
   width: 100%;
   height: 100%;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  width: auto;
-  height: 50px;
-
-  ul{
-    margin: 7px 0 0 10px !important;
-  }
-
-  .btn {
-      border-radius: 0px !important;
-      padding: 5px 20px !important;
-    &.btn-region {
-      background-color: #3498db;
-      color: #FFF
-    }
-
-    &.btn-sub-region {
-      background-color: #2ecc71;
-      color: #FFF
-    }
-  }
-
-}
-
-.cannabis {
-  background-color: rgb(91,204,141);
-  color: #FFF;
-}
 
 
 

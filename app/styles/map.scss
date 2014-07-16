@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Leckerli+One);
+
 @mixin country-border() {
   fill: none;
   stroke: #fff;
@@ -27,6 +29,15 @@
 
 .container {
   min-width: 1170px;
+}
+
+.country:not(#europe), .state{
+  &:hover {
+    fill: rgba(149, 165, 166, .5) !important;
+  }
+}
+#europe:hover, .country.US:hover {
+    fill: rgba(149, 165, 166, 1) !important;
 }
 
 .country.active{

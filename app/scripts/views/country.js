@@ -131,7 +131,7 @@ opendata.Views = opendata.Views || {};
         render: function () {
 
             var data = this.model.toJSON();
-            data.isPinned = opendata.PinnedCountries.contains(this.model);
+            data.isPinned = opendata.PinnedCountries.contains( this.model );
             data.filter = this.filter;
             data.sliderValue = this.sliderValue;
 
@@ -155,18 +155,20 @@ opendata.Views = opendata.Views || {};
 
             _.each(drugs, function(drug, key){
 
-              var average = opendata.Countries.getContinentAverage(that.model, key);
+                var average = opendata.Countries.getContinentAverage(that.model, key);
 
-              var data = drug;
+                var data = drug;
 
-              if ( that.filter ) {
-                data = [];
-                var counter = 0;
-                _.each(drug, function(dataSet) {
-                  if ( (that.filter == "ages" && dataSet.population == that.sliderValue) || ( that.filter == "years" && dataSet.year == that.sliderValue ) ) {
-                    data[counter] = dataSet;
-                    counter++;
-                  }
+                if ( that.filter ) {
+
+                    data = [];
+                    var counter = 0;
+
+                    _.each(drug, function(dataSet) {
+                        if ( (that.filter == "ages" && dataSet.population == that.sliderValue) || ( that.filter == "years" && dataSet.year == that.sliderValue ) ) {
+                            data[counter] = dataSet;
+                            counter++;
+                        }
                 });
               }
 
@@ -180,24 +182,22 @@ opendata.Views = opendata.Views || {};
               .append('div')
               .style('width', function(d) { return x(d.prevalence) + 'px'; })
               .attr('class', 'bar ' + key)
-              .text(function(d) { return d.year + " / " + d.population + ': ' + d.prevalence + '%'; });
+              .text(function(d) {
+                      var text = "";
+                      if(d.year)
+                        text += d.year + " / ";
+
+                      if(d.population)
+                        text += d.population +": ";
+
+                      text += d.prevalence + "%";
+
+                      return text
+                  });
 
               bar.append('div')
               .attr('class', 'baseline')
               .style('left', x(average) + "px");
-
-
-              var x = d3.scale.linear()
-              .domain( [0, d3.max(data, function(d){ return d.prevalence })] )
-              .range( [0, 290] );
-
-              d3.select( that.$('.chart-' + key)[0] ).selectAll('div')
-              .data(data)
-              .enter()
-              .append('div')
-              .style('width', function(d) { return x(d.prevalence) + 'px'; })
-              .attr('class', 'bar ' + key)
-              .text(function(d) { return d.year + " / " + d.population + ': ' + d.prevalence + '%'; });
 
             });
 

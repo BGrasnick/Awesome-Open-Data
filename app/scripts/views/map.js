@@ -10,7 +10,7 @@ opendata.Views = opendata.Views || {};
         initialize: function () {
 
             this.g = null;
-            this.filter = 'greenTest';
+            this.filter = 'cannabis';
             this.colorScale = d3.scale.category20c();
 
             _.bindAll( this, 'requestCountryColor', 'render' );
@@ -29,7 +29,7 @@ opendata.Views = opendata.Views || {};
                 .style("fill", this.requestCountryColor)
         },
 
-        render: function () {
+        render: function () {          
 
             this.$el.empty();
 
@@ -42,8 +42,8 @@ opendata.Views = opendata.Views || {};
             d3.select(self.frameElement).style("height", height + "px");
 
             var projection = d3.geo.mercator()
-              .scale(170)
-              .translate([width / 2, height / 2])
+              .scale(230)
+              .translate([width / 2, height / 1.4])
               .precision(0.1);
 
             var zoom = d3.behavior.zoom()
@@ -80,8 +80,7 @@ opendata.Views = opendata.Views || {};
 
             d3.json("data/world.topo.json", function(error, world) {
 
-                // var neighbours = topojson.neighbors( world.objects.countries.geometries)
-
+                // Countries
                 that.g.selectAll(".country")
                   .data( topojson.feature( world, world.objects.countries ).features )
                 .enter().insert("path", ".graticule")
@@ -100,9 +99,20 @@ opendata.Views = opendata.Views || {};
                   .attr("class", "boundary")
                   .attr("d", path);
 
+                // Europe
+                that.g.append("path")
+                  .datum( that.mergeEurope(world) )
+                  .attr("class", that.getClasses)
+                  .attr("id", "europe")
+                  .style("fill", that.requestCountryColor)
+                  .attr("country-id", function( d ) { return d.id })
+                  .attr("d", path)
+                  .on("click", clicked);
+
             });
 
             d3.json("/data/us.topo.json", function(error, us) {
+                // US
                 that.g.append("g")
                   .attr("id", "states")
                   .selectAll(".state")
@@ -127,7 +137,12 @@ opendata.Views = opendata.Views || {};
                         $("#states").hide()
                         $(".country.US").show()
                     }
+
+                    if(d.id === 1){
+                        $("#europe").hide()
+                    }
                 }
+
 
                 if (active.node() === this) return reset();
                 active.classed("active", false);
@@ -137,8 +152,9 @@ opendata.Views = opendata.Views || {};
                     dx = bounds[1][0] - bounds[0][0],
                     dy = bounds[1][1] - bounds[0][1];
 
-                // Sets a maximum zoom level
-                if(dx < 25) dx = 40;
+                // Sets a maximum zoom levels
+                if(dx < 25)  dx = 40;
+                if(dx > 350) dx = 350;
 
                 var x = (bounds[0][0] + bounds[1][0]) / 2,
                     y = (bounds[0][1] + bounds[1][1]) / 2,
@@ -193,6 +209,7 @@ opendata.Views = opendata.Views || {};
                   .call(zoom.translate([0, 0]).scale(1).event)
                   .each('end', function(){
                       $('#states').hide();
+                      $('#europe').show();
                       $('.country.US').show();
                   });
             }
@@ -231,18 +248,16 @@ opendata.Views = opendata.Views || {};
 
             if (! country ) return "red";
 
-            if (currentFilter === 'greenTest') {
+            if ( _.contains( ['cannabis', 'ecstasy', 'cocaine', 'amphetamines'], currentFilter ) ) {
 
                 try{
-                    var cannabisData = country.get('drugs')['cannabis'];
+                    var data = country.get('drugs')[currentFilter];
 
-                    var mostRecentEntry = _.max(cannabisData, function(obj) {
+                    var mostRecentEntry = _.max(data, function(obj) {
                         return (obj.population === 'all') ? obj.year : 0
                     });
 
-                    var x = d3.scale.linear()
-                      .domain([0, 30, 50])
-                      .range([d3.rgb(255,255,255),d3.rgb(91,204,141),d3.rgb(91,204,141)])
+                    var x = this.getColorScaleForFilter(currentFilter);
 
                     return x(mostRecentEntry.prevalence);
 
@@ -252,6 +267,61 @@ opendata.Views = opendata.Views || {};
 
             } else
                 return currentColorScale( country.get(currentFilter) );
+
+        },
+
+        mergeEurope: function( world ){
+
+            var europeCountryIds = [
+                620, 724, 250, 826, 372, 578,
+                246, 752, 276, 703, 792, 348,
+                380, 208, 528,  56, 616, 203,
+                705, 191, 300, 100, 642, 196,
+                 40, 440, 428,
+                // fill empty holes, unfortunately no data
+                756, 442, 70, 688, 807, 8, 499
+            ];
+
+            var europe = topojson.merge( world, world.objects.countries.geometries.filter( function (d) {
+                return _.contains( europeCountryIds, d.id )
+            }));
+
+            return _.extend(europe, { id: 1 })
+        },
+
+        getColorScaleForFilter: function( filter ){
+
+            var scale;
+
+            // TODO : Proper colors according to navigation.scss hex codes
+            // TODO : Proper ranges according to drug data
+            switch(filter){
+                case 'cannabis':
+                    scale = d3.scale.linear()
+                        .domain([0, 50])
+                        .range([d3.rgb(255,255,255),d3.rgb(91,204,141)])
+                    break;
+
+                case 'cocaine':
+                    scale = d3.scale.linear()
+                        .domain([0, 20])
+                        .range([d3.rgb(255,255,255),d3.rgb(130,20,200)])
+                    break;
+
+                case 'amphetamines':
+                    scale = d3.scale.linear()
+                        .domain([0, 20])
+                        .range([d3.rgb(255,255,255),d3.rgb(231,94,82)])
+                    break;
+
+                case 'ecstasy':
+                    scale = d3.scale.linear()
+                        .domain([0, 20])
+                        .range([d3.rgb(255,255,255),d3.rgb(241,12,48)])
+                    break;
+            }
+
+            return scale
 
         }
 

@@ -1,0 +1,69 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 85px;
+  background: rgba(0,0,0,0.75);
+
+  ul{
+    margin: 7px 0 0 10px !important;
+  }
+
+}
+
+.title{
+  position: absolute;
+  color: #fff;
+  margin: -16px 0 0 50%;
+  left: -190px;
+  font-size: 64px;
+  font-family: 'Leckerli One', cursive !important;
+}
+
+.btn-filter{
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  background-size: 70px 70px;
+  border-radius: 50%;
+  background-size: 70px 70px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+}
+
+.cannabis-filter{
+  background-color: #5bcc8d;
+  background-image: url('../img/cannabis.png');
+
+  &:hover{
+    background-color: #82CCA3;
+  }
+}
+
+.ecstasy-filter {
+  background-color: #F1D430;
+  background-image: url('../img/ecstasy.png');
+
+  &:hover {
+    background-color: #F1DB7C;
+  }
+}
+
+.amphetamine-filter{
+  background-color: #E75E52;
+  background-image: url('../img/amphetamine.png');
+
+  &:hover{
+    background-color: #E78F85;
+  }
+}
+
+
+.cocaine-filter{
+  background-color: #c87fd3;
+  background-image: url('../img/cocaine.png');
+
+  &:hover{
+    background-color: #CC9CD3;
+  }
+}

@@ -13,6 +13,36 @@
                 "population": "all",
                 "prevalence": 14.2,
                 "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 15-24",
+                "prevalence": 23.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 25-34",
+                "prevalence": 15.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 35-44",
+                "prevalence": 14.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 45-54",
+                "prevalence": 11.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 55-64",
+                "prevalence": 6.2,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -26,6 +56,36 @@
                 "year": 2008,
                 "population": "all",
                 "prevalence": 2.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 15-24",
+                "prevalence": 5.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 25-34",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 35-44",
+                "prevalence": 2.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 45-54",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 55-64",
+                "prevalence": 1.7,
                 "source": "emcdda"
             }
         ],
@@ -41,6 +101,36 @@
                 "population": "all",
                 "prevalence": 2.5,
                 "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 15-24",
+                "prevalence": 4.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 25-34",
+                "prevalence": 2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 35-44",
+                "prevalence": 3.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 45-54",
+                "prevalence": 1.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 55-64",
+                "prevalence": 0.4,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -54,6 +144,36 @@
                 "year": 2008,
                 "population": "all",
                 "prevalence": 2.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 15-24",
+                "prevalence": 4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 25-34",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 35-44",
+                "prevalence": 3.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 45-54",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -100,6 +220,36 @@
                 "population": "all",
                 "prevalence": 14.3,
                 "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 15-24",
+                "prevalence": 21.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 25-34",
+                "prevalence": 30.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 35-44",
+                "prevalence": 12.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 45-54",
+                "prevalence": 6.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2008,
+                "population": "Aged 55-64",
+                "prevalence": 3.3,
+                "source": "emcdda"
             }
         ],
         "alcohol": [
@@ -115,8 +265,7 @@
                 "prevalence": 78.4,
                 "source": "emcdda"
             }
-        ],
-        "cigarette": []
+        ]
     },
     {
         "id": 100,
@@ -132,6 +281,36 @@
                 "population": "all",
                 "prevalence": 7.5,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 18.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 13.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 4.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.6,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -145,6 +324,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 6.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 2.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.1,
                 "source": "emcdda"
             }
         ],
@@ -160,6 +369,36 @@
                 "population": "all",
                 "prevalence": 1.2,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 1.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.1,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -173,6 +412,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 2.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 1.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.2,
                 "source": "emcdda"
             }
         ],
@@ -219,6 +488,36 @@
                 "population": "all",
                 "prevalence": 15.6,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 22.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 28.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 16.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 7.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 1.6,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -232,6 +531,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 2.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 2.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 6.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 2.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.4,
                 "source": "emcdda"
             }
         ],
@@ -247,6 +576,36 @@
                 "population": "all",
                 "prevalence": 2.6,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 3.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 6.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 1.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.4,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -260,6 +619,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 2.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 2.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 5.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 2.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.5,
                 "source": "emcdda"
             }
         ],
@@ -306,6 +695,36 @@
                 "population": "all",
                 "prevalence": 9.9,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 10.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 17.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 7.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 3.5,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -319,6 +738,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 1.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.2,
                 "source": "emcdda"
             }
         ],
@@ -334,6 +783,36 @@
                 "population": "all",
                 "prevalence": 0.7,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 0.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 1.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.7,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -347,6 +826,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 1.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 1.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 3.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -393,6 +902,36 @@
                 "population": "all",
                 "prevalence": 27.9,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 42.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 48.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 29.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 12.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 6.7,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -406,6 +945,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 3.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 4.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 9.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 3.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.2,
                 "source": "emcdda"
             }
         ],
@@ -421,6 +990,36 @@
                 "population": "all",
                 "prevalence": 2.5,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 3.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 5.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 2.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.2,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -434,6 +1033,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 2.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 2.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 4.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 2.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.5,
                 "source": "emcdda"
             }
         ],
@@ -480,6 +1109,36 @@
                 "population": "all",
                 "prevalence": 35.6,
                 "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 15-24",
+                "prevalence": 41.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 25-34",
+                "prevalence": 51,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 35-44",
+                "prevalence": 41.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 45-54",
+                "prevalence": 31.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 55-64",
+                "prevalence": 22.9,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -493,6 +1152,36 @@
                 "year": 2013,
                 "population": "all",
                 "prevalence": 2.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 15-24",
+                "prevalence": 3.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 25-34",
+                "prevalence": 7.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 35-44",
+                "prevalence": 2.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 45-54",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 55-64",
+                "prevalence": 0.2,
                 "source": "emcdda"
             }
         ],
@@ -508,6 +1197,36 @@
                 "population": "all",
                 "prevalence": 6.6,
                 "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 15-24",
+                "prevalence": 5.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 25-34",
+                "prevalence": 14.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 35-44",
+                "prevalence": 8.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 45-54",
+                "prevalence": 5.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 55-64",
+                "prevalence": 2.7,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -522,10 +1241,38 @@
                 "population": "all",
                 "prevalence": 5.2,
                 "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 15-24",
+                "prevalence": 5.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 25-34",
+                "prevalence": 14.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 35-44",
+                "prevalence": 6.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 45-54",
+                "prevalence": 2.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2013,
+                "population": "Aged 55-64",
+                "prevalence": 1.2,
+                "source": "emcdda"
             }
-        ],
-        "alcohol": [],
-        "cigarette": []
+        ]
     },
     {
         "id": 246,
@@ -541,6 +1288,36 @@
                 "population": "all",
                 "prevalence": 18.3,
                 "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 21.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 36.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 22.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 9.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 5.2,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -554,6 +1331,36 @@
                 "year": 2010,
                 "population": "all",
                 "prevalence": 1.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 5.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 1.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 0.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -569,6 +1376,36 @@
                 "population": "all",
                 "prevalence": 2.3,
                 "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 1.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 6.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 2.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -582,6 +1419,36 @@
                 "year": 2010,
                 "population": "all",
                 "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 4.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 1.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 1.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -598,8 +1465,7 @@
                 "prevalence": 84.4,
                 "source": "emcdda"
             }
-        ],
-        "cigarette": []
+        ]
     },
     {
         "id": 250,
@@ -615,6 +1481,36 @@
                 "population": "all",
                 "prevalence": 32.12,
                 "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 38.06,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 52.16,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 38.03,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 22.61,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 10.14,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -628,6 +1524,36 @@
                 "year": 2010,
                 "population": "all",
                 "prevalence": 2.38,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 2.52,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 6.44,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 2.34,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 0.73,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 0.08,
                 "source": "emcdda"
             }
         ],
@@ -643,6 +1569,36 @@
                 "population": "all",
                 "prevalence": 1.69,
                 "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 1.57,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 3.13,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 1.25,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 1.21,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -656,6 +1612,36 @@
                 "year": 2010,
                 "population": "all",
                 "prevalence": 3.66,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 4.21,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 7.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 3.71,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 2.23,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 0.61,
                 "source": "emcdda"
             }
         ],
@@ -672,8 +1658,7 @@
                 "prevalence": 81.37,
                 "source": "emcdda"
             }
-        ],
-        "cigarette": []
+        ]
     },
     {
         "id": 276,
@@ -689,6 +1674,36 @@
                 "population": "all",
                 "prevalence": 32.1,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 27.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 40.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 26,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 16.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 10.8,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -702,6 +1717,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 2.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 2.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 7.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 3.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.5,
                 "source": "emcdda"
             }
         ],
@@ -717,6 +1762,36 @@
                 "population": "all",
                 "prevalence": 3.1,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 3.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 6.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 2.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 1.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 1.5,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -730,6 +1805,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 3.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 2.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 7.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 4.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 2.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.9,
                 "source": "emcdda"
             }
         ],
@@ -776,6 +1881,36 @@
                 "population": "all",
                 "prevalence": 8.9,
                 "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 15-24",
+                "prevalence": 9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 25-34",
+                "prevalence": 12.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 35-44",
+                "prevalence": 12.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 45-54",
+                "prevalence": 6.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 55-64",
+                "prevalence": 2.8,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -789,6 +1924,36 @@
                 "year": 2004,
                 "population": "all",
                 "prevalence": 0.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 15-24",
+                "prevalence": 0.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 25-34",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 35-44",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 45-54",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -804,6 +1969,36 @@
                 "population": "all",
                 "prevalence": 0.1,
                 "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 15-24",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 25-34",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 35-44",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -817,6 +2012,36 @@
                 "year": 2004,
                 "population": "all",
                 "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 15-24",
+                "prevalence": 0.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 25-34",
+                "prevalence": 1.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 35-44",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 45-54",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2004,
+                "population": "Aged 55-64",
+                "prevalence": 0.2,
                 "source": "emcdda"
             }
         ],
@@ -833,8 +2058,7 @@
                 "prevalence": 79.2,
                 "source": "emcdda"
             }
-        ],
-        "cigarette": []
+        ]
     },
     {
         "id": 348,
@@ -850,6 +2074,36 @@
                 "population": "all",
                 "prevalence": 8.5,
                 "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 15-24",
+                "prevalence": 25.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 25-34",
+                "prevalence": 15.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 35-44",
+                "prevalence": 3.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 45-54",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 55-64",
+                "prevalence": 0.2,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -863,6 +2117,36 @@
                 "year": 2007,
                 "population": "all",
                 "prevalence": 2.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 15-24",
+                "prevalence": 6.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 25-34",
+                "prevalence": 4.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 35-44",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 45-54",
+                "prevalence": 0.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -878,6 +2162,36 @@
                 "population": "all",
                 "prevalence": 1.8,
                 "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 15-24",
+                "prevalence": 4.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 25-34",
+                "prevalence": 3.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 35-44",
+                "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 45-54",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -891,6 +2205,36 @@
                 "year": 2007,
                 "population": "all",
                 "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 15-24",
+                "prevalence": 1.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 25-34",
+                "prevalence": 1.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 35-44",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 45-54",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2007,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -907,8 +2251,7 @@
                 "prevalence": 82,
                 "source": "emcdda"
             }
-        ],
-        "cigarette": []
+        ]
     },
     {
         "id": 372,
@@ -924,6 +2267,36 @@
                 "population": "all",
                 "prevalence": 25.3,
                 "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 25.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 38.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 26.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 17.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 9.7,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -937,6 +2310,36 @@
                 "year": 2011,
                 "population": "all",
                 "prevalence": 6.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 5.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 14.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 7.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 2.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -952,6 +2355,36 @@
                 "population": "all",
                 "prevalence": 4.5,
                 "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 3.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 8.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 4.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 1.1,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -965,6 +2398,36 @@
                 "year": 2011,
                 "population": "all",
                 "prevalence": 6.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 12.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 6.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 4.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 2,
                 "source": "emcdda"
             }
         ],
@@ -1011,6 +2474,36 @@
                 "population": "all",
                 "prevalence": 21.7,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 30.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 36.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 16,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1024,6 +2517,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 1.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 2.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 3.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 1.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1039,6 +2562,36 @@
                 "population": "all",
                 "prevalence": 1.8,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 2.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 1.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1052,6 +2605,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 4.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 4.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 7.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 3.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ]
@@ -1070,6 +2653,36 @@
                 "population": "all",
                 "prevalence": 12.5,
                 "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 20.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 20.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 12.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 3.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 3.1,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1083,6 +2696,36 @@
                 "year": 2011,
                 "population": "all",
                 "prevalence": 2.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 4.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 3.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 0.1,
                 "source": "emcdda"
             }
         ],
@@ -1098,6 +2741,36 @@
                 "population": "all",
                 "prevalence": 2.2,
                 "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 3.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 3.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 2.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1111,6 +2784,36 @@
                 "year": 2011,
                 "population": "all",
                 "prevalence": 1.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 2.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 2.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 2.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 0.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 0.1,
                 "source": "emcdda"
             }
         ],
@@ -1157,6 +2860,36 @@
                 "population": "all",
                 "prevalence": 10.5,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 13.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 20.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 9.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 5.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 2.7,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1170,6 +2903,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 1.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 1.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 3.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.1,
                 "source": "emcdda"
             }
         ],
@@ -1185,6 +2948,36 @@
                 "population": "all",
                 "prevalence": 1.2,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 3.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1198,6 +2991,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 2.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1244,6 +3067,36 @@
                 "population": "all",
                 "prevalence": 3.5,
                 "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 15-24",
+                "prevalence": 4.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 25-34",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 35-44",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1257,6 +3110,36 @@
                 "year": 2001,
                 "population": "all",
                 "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 15-24",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 25-34",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 35-44",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1272,6 +3155,36 @@
                 "population": "all",
                 "prevalence": 0.4,
                 "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 15-24",
+                "prevalence": 1.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 25-34",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 35-44",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1285,6 +3198,36 @@
                 "year": 2001,
                 "population": "all",
                 "prevalence": 0.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 15-24",
+                "prevalence": 1.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 25-34",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 35-44",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2001,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1319,6 +3262,36 @@
                 "population": "all",
                 "prevalence": 25.7,
                 "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 15-24",
+                "prevalence": 31.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 25-34",
+                "prevalence": 42.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 35-44",
+                "prevalence": 25.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 45-54",
+                "prevalence": 20.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 55-64",
+                "prevalence": 11,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1332,6 +3305,36 @@
                 "year": 2009,
                 "population": "all",
                 "prevalence": 6.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 15-24",
+                "prevalence": 6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 25-34",
+                "prevalence": 17.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 35-44",
+                "prevalence": 6.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1347,6 +3350,36 @@
                 "population": "all",
                 "prevalence": 3.1,
                 "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 15-24",
+                "prevalence": 3.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 25-34",
+                "prevalence": 7.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 35-44",
+                "prevalence": 3.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1360,6 +3393,36 @@
                 "year": 2009,
                 "population": "all",
                 "prevalence": 5.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 15-24",
+                "prevalence": 4.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 25-34",
+                "prevalence": 10.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 35-44",
+                "prevalence": 6.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2009,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ]
@@ -1378,6 +3441,36 @@
                 "population": "all",
                 "prevalence": 19.2,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 24.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 32.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 20.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 12.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 6.3,
+                "source": "emcdda"
             }
         ],
         "alcohol": [
@@ -1393,8 +3486,7 @@
                 "prevalence": 89.5,
                 "source": "emcdda"
             }
-        ],
-        "cigarette": []
+        ]
     },
     {
         "id": 616,
@@ -1410,6 +3502,36 @@
                 "population": "all",
                 "prevalence": 12.2,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 21,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 20.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 10.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 4.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 3,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1423,6 +3545,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 1.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 3.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1438,6 +3590,36 @@
                 "population": "all",
                 "prevalence": 2.9,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 3.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 7.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 2.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.1,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1452,10 +3634,38 @@
                 "population": "all",
                 "prevalence": 0.9,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 1.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 1.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.3,
+                "source": "emcdda"
             }
-        ],
-        "alcohol": [],
-        "cigarette": []
+        ]
     },
     {
         "id": 620,
@@ -1471,6 +3681,36 @@
                 "population": "all",
                 "prevalence": 9.4,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 12.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 15.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 10.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 7.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 1.4,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1484,6 +3724,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 1.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 1.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 2.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 1.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1499,6 +3769,36 @@
                 "population": "all",
                 "prevalence": 0.5,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.2,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1512,6 +3812,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 1.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 1.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 1.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.2,
                 "source": "emcdda"
             }
         ],
@@ -1558,6 +3888,36 @@
                 "population": "all",
                 "prevalence": 1.6,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 2.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.3,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1571,6 +3931,36 @@
                 "year": 2010,
                 "population": "all",
                 "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 0.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1586,6 +3976,36 @@
                 "population": "all",
                 "prevalence": 0.1,
                 "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 0.3,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1598,6 +4018,36 @@
             {
                 "year": 2010,
                 "population": "all",
+                "prevalence": 0.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 0.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 0.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
                 "prevalence": 0.3,
                 "source": "emcdda"
             }
@@ -1645,6 +4095,36 @@
                 "population": "all",
                 "prevalence": 10.49,
                 "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 20.99,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 16.91,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 7.25,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 2.99,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 1.63,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1658,6 +4138,36 @@
                 "year": 2010,
                 "population": "all",
                 "prevalence": 1.86,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 3.53,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 3.49,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 0.95,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 0.71,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1673,6 +4183,36 @@
                 "population": "all",
                 "prevalence": 0.53,
                 "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 1.45,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 0.91,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 0.13,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1686,6 +4226,36 @@
                 "year": 2010,
                 "population": "all",
                 "prevalence": 0.61,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 15-24",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 25-34",
+                "prevalence": 1.43,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 35-44",
+                "prevalence": 0.27,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 45-54",
+                "prevalence": 0.32,
+                "source": "emcdda"
+            },
+            {
+                "year": 2010,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1732,6 +4302,36 @@
                 "population": "all",
                 "prevalence": 15.8,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 27.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 29.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 14.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 7.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 2.5,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1745,6 +4345,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 2.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 3.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 5.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 1.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.1,
                 "source": "emcdda"
             }
         ],
@@ -1760,6 +4390,36 @@
                 "population": "all",
                 "prevalence": 0.9,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 1.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 2.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1773,6 +4433,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 2.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 3.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 4.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 1.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.1,
                 "source": "emcdda"
             }
         ],
@@ -1789,8 +4479,7 @@
                 "prevalence": 84.3,
                 "source": "emcdda"
             }
-        ],
-        "cigarette": []
+        ]
     },
     {
         "id": 724,
@@ -1806,6 +4495,36 @@
                 "population": "all",
                 "prevalence": 27.4,
                 "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 34.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 38.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 30.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 22.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 9,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1819,6 +4538,36 @@
                 "year": 2011,
                 "population": "all",
                 "prevalence": 3.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 6.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 4.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 1.4,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 0.4,
                 "source": "emcdda"
             }
         ],
@@ -1834,6 +4583,36 @@
                 "population": "all",
                 "prevalence": 3.3,
                 "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 5.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 4.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 1.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 0.5,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -1847,6 +4626,36 @@
                 "year": 2011,
                 "population": "all",
                 "prevalence": 8.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 7.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 13.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 11.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 1.8,
                 "source": "emcdda"
             }
         ],
@@ -1893,10 +4702,38 @@
                 "population": "all",
                 "prevalence": 14.9,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 17.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 26.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 14.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 9.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 7.4,
+                "source": "emcdda"
             }
-        ],
-        "alcohol": [],
-        "cigarette": []
+        ]
     },
     {
         "id": 792,
@@ -1912,6 +4749,36 @@
                 "population": "all",
                 "prevalence": 0.7,
                 "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 0.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 1.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 0.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 0.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 0.5,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1925,6 +4792,36 @@
                 "year": 2011,
                 "population": "all",
                 "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 0,
                 "source": "emcdda"
             }
         ],
@@ -1940,9 +4837,70 @@
                 "population": "all",
                 "prevalence": 0.1,
                 "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
             }
         ],
-        "cocaine": [],
+        "cocaine": [
+            {
+                "year": 2011,
+                "population": "Aged 15-24",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 25-34",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 35-44",
+                "prevalence": 0.1,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2011,
+                "population": "Aged 55-64",
+                "prevalence": 0,
+                "source": "emcdda"
+            }
+        ],
         "alcohol": [
             {
                 "year": 2011,
@@ -1986,6 +4944,36 @@
                 "population": "all",
                 "prevalence": 30,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 30.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 38.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 33.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 22.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 16.9,
+                "source": "emcdda"
             }
         ],
         "ecstasy": [
@@ -1999,6 +4987,36 @@
                 "year": 2012,
                 "population": "all",
                 "prevalence": 8.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 7.9,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 14.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 11.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 0,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 0.8,
                 "source": "emcdda"
             }
         ],
@@ -2014,6 +5032,36 @@
                 "population": "all",
                 "prevalence": 10.6,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 7.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 13.3,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 15.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 8.2,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 4.9,
+                "source": "emcdda"
             }
         ],
         "cocaine": [
@@ -2028,10 +5076,38 @@
                 "population": "all",
                 "prevalence": 9,
                 "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 15-24",
+                "prevalence": 8.5,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 25-34",
+                "prevalence": 14.7,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 35-44",
+                "prevalence": 10.8,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 45-54",
+                "prevalence": 4.6,
+                "source": "emcdda"
+            },
+            {
+                "year": 2012,
+                "population": "Aged 55-64",
+                "prevalence": 2.6,
+                "source": "emcdda"
             }
-        ],
-        "alcohol": [],
-        "cigarette": []
+        ]
     },
     {
         "id": 840,
@@ -10922,6 +13998,181 @@
                 "population": "26+",
                 "prevalence": 25.99,
                 "source": "samhsa"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "cannabis": [
+            {
+                "population": "young adults",
+                "prevalence": "23.68",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "16.64",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 15-24",
+                "prevalence": "22.23",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 25-34",
+                "prevalence": "26.47",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 35-44",
+                "prevalence": "16.51",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 45-54",
+                "prevalence": "9.63",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 55-64",
+                "prevalence": "5.33",
+                "source": "emcdda"
+            }
+        ],
+        "ecstasy": [
+            {
+                "population": "young adults",
+                "prevalence": "4.07",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "2.48",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 15-24",
+                "prevalence": "3.33",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 25-34",
+                "prevalence": "5.29",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 35-44",
+                "prevalence": "2.45",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 45-54",
+                "prevalence": "0.57",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 55-64",
+                "prevalence": "0.20",
+                "source": "emcdda"
+            }
+        ],
+        "amphetamines": [
+            {
+                "population": "young adults",
+                "prevalence": "3.48",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "2.29",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 15-24",
+                "prevalence": "2.59",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 25-34",
+                "prevalence": "4.27",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 35-44",
+                "prevalence": "2.47",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 45-54",
+                "prevalence": "1.13",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 55-64",
+                "prevalence": "0.57",
+                "source": "emcdda"
+            }
+        ],
+        "cocaine": [
+            {
+                "population": "young adults",
+                "prevalence": "4.02",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "2.66",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 15-24",
+                "prevalence": "2.79",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 25-34",
+                "prevalence": "5.01",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 35-44",
+                "prevalence": "3.00",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 45-54",
+                "prevalence": "1.39",
+                "source": "emcdda"
+            },
+            {
+                "population": "Aged 55-64",
+                "prevalence": "0.48",
+                "source": "emcdda"
+            }
+        ],
+        "alcohol": [
+            {
+                "population": "young adults",
+                "prevalence": "75.75",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "76.51",
+                "source": "emcdda"
+            }
+        ],
+        "cigarette": [
+            {
+                "population": "young adults",
+                "prevalence": "37.55",
+                "source": "emcdda"
+            },
+            {
+                "population": "all",
+                "prevalence": "41.24",
+                "source": "emcdda"
             }
         ]
     }

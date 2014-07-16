@@ -629,6 +629,15 @@
         "sub-region-code": "014"
     },
     {
+        "name": "Europe",
+        "alpha-2": "EU",
+        "alpha-3": "EUR",
+        "id": "001",
+        "iso_3166-2": "ISO 3166-2:EU",
+        "region-code": "150",
+        "sub-region-code": "120"
+    },
+    {
         "name": "Falkland Islands (Malvinas)",
         "alpha-2": "FK",
         "alpha-3": "FLK",

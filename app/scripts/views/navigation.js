@@ -14,15 +14,18 @@ opendata.Views = opendata.Views || {};
         },
 
         setGlobalFilter: function ( evt ){
-            var $target = $(evt.target);
 
-            opendata.App.map.setGlobalFilter( $target.data("filter") );
+            var $target = $( evt.target ),
+                filter  = $target.data( "filter" );
+
+            opendata.App.map.setGlobalFilter( filter );
 
         },
 
         render: function () {
 
             this.$el.html( this.template() );
+
         }
 
     });
