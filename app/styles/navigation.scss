@@ -14,7 +14,7 @@ nav {
   position: absolute;
   color: #fff;
   margin: -16px 0 0 50%;
-  left: -280px;
+  left: -230px;
   font-size: 64px;
   font-family: 'Leckerli One', cursive !important;
 }
@@ -64,5 +64,25 @@ nav {
 
   &:hover{
     background-color: #CC9CD3;
+  }
+}
+
+
+.cigarette-filter{
+  background-color: #61BCBA;
+  background-image: url('../img/cigarette.png');
+
+  &:hover{
+    background-color: #84D3CF;
+  }
+}
+
+
+.alcohol-filter{
+  background-color: #3A78C1;
+  background-image: url('../img/alcohol.png');
+
+  &:hover{
+    background-color: #639CD3;
   }
 }
