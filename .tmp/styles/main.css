@@ -44,9 +44,9 @@
 
 #overlay {
   position: fixed;
-  width: 100%;
-  left: 0;
-  bottom: 0; }
+  width: 500px;
+  top: 100px;
+  left: 0; }
 
 hr {
   background-color: #FFF; }
@@ -59,7 +59,7 @@ hr {
   margin-bottom: 3px;
   color: #395063;
   background: #fff;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700; }
   .chart .bar .baseline {
     background-color: #c0392b;
@@ -104,6 +104,7 @@ hr {
   border-radius: 0px; }
   .country h3 {
     font-weight: 800;
+    font-size: 18px;
     margin-top: 0px;
     margin-right: 40px;
     color: #fff; }
@@ -136,7 +137,16 @@ hr {
 .output {
   display: inline-block;
   line-height: 1;
-  padding-left: 10px; }
+  padding-left: 10px;
+  color: white; }
+
+.nav-tabs > li > a {
+  color: white;
+  font-size: 14px;
+  padding: 5px; }
+
+.nav-tabs > li > a:hover {
+  color: black; }
 
 nav {
   position: fixed;

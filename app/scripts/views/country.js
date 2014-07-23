@@ -172,9 +172,17 @@ opendata.Views = opendata.Views || {};
                 });
               }
 
+              var max = d3.max(data, function(d){ return d.prevalence });
+
+              if (that.model.id === 1) {
+                max = "26.47";
+              }
+
               var x = d3.scale.linear()
-              .domain( [0, 100 ] )
-              .range( [0, $(".tab-pane.in.active").width()] );
+              .domain( [0, max ] )
+              .range( [0, 465] );
+
+
 
               var bar = d3.select( that.$('.chart-' + key)[0] ).selectAll('div')
               .data(data)
