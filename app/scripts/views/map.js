@@ -222,7 +222,7 @@ opendata.Views = opendata.Views || {};
 
             if (! country ) return "red";
 
-            if ( _.contains( ['cannabis', 'ecstasy', 'cocaine', 'amphetamines'], currentFilter ) ) {
+            if ( _.contains( ['cannabis', 'ecstasy', 'cocaine', 'amphetamines', 'alcohol', 'cigarette'], currentFilter ) ) {
 
                 try{
                     var data = country.get('drugs')[currentFilter];
@@ -309,6 +309,19 @@ opendata.Views = opendata.Views || {};
                         .domain([0, 20])
                         .range([d3.rgb(255,255,255),d3.rgb(241,12,48)])
                     break;
+
+                case 'alcohol':
+                    scale = d3.scale.linear()
+                        .domain([0, 20])
+                        .range([d3.rgb(255,255,255),d3.rgb(24,120,255)])
+                    break;
+
+                case 'cigarette':
+                    scale = d3.scale.linear()
+                        .domain([0, 20])
+                        .range([d3.rgb(255,255,255),d3.rgb(12,210,150)])
+                    break;
+
             }
 
             return scale
