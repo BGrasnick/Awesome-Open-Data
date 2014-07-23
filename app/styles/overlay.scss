@@ -1,8 +1,8 @@
 #overlay {
     position: fixed;
-    width: 500px;
-    top: 100px;
+    width: 100%;
     left: 0;
+    bottom: 0;
 }
 
 hr{
@@ -17,7 +17,8 @@ hr{
     margin-bottom: 3px;
     color: #395063;
     background: #fff;
-
+    font-size: 12px;
+    font-weight: 700;
 
     .baseline{
         background-color: #c0392b;

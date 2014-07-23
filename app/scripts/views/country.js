@@ -173,8 +173,8 @@ opendata.Views = opendata.Views || {};
               }
 
               var x = d3.scale.linear()
-              .domain( [0, d3.max(data, function(d){ return d.prevalence })] )
-              .range( [0, 465] );
+              .domain( [0, 100 ] )
+              .range( [0, $(".tab-pane.in.active").width()] );
 
               var bar = d3.select( that.$('.chart-' + key)[0] ).selectAll('div')
               .data(data)
