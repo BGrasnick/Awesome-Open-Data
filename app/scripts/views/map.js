@@ -27,6 +27,11 @@ opendata.Views = opendata.Views || {};
             // Update colors
             this.g.selectAll(".country")
                 .style("fill", this.requestCountryColor)
+
+
+            this.g.select("g").selectAll(".state")
+                .style("fill", this.requestCountryColor)            
+
         },
 
         render: function () {          
