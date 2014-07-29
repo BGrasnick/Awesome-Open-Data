@@ -6,3 +6,5 @@ bower_components
 test/bower_components
 *.sublime*
 /.idea/
+
+/.DS_Store
