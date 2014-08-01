@@ -74,12 +74,16 @@ Data on the other hand was limited and hard to normalize due to different separa
 ### How did you realize your project?
 
 First we were looking for possible data sources on the internet to evaluate whether working on this topic was feasible.
-To distribute tasks we split up into three teams: Design, Code and Data
+
+Every week, we met at the HTW campus to talk about past week's tasks and assign new task to our todo-list. 
+We tried being agile about it to respond to feedback quickly. 
+
+To distribute tasks we split up into three specialized teams : Design, Code and Data
 
 #### Data
 
 #### Design
-Check the End of the Page, because we allready wrote something about the design part.
+See [below](#which-considerations-did-you-have-in-terms-of-design-and-interface)
 
 #### Code
 
@@ -90,7 +94,7 @@ Now we had to build the user interface on top of the map-layer.
 
 
 
-Every week, we met us at the HTW campus to develop our interactive map and add new task to our todo-list. We tried to work in an agile work process, because it was the best way, to add new features to our map. Everyone had his own tasks, that's why we could work very accurately. We realized the project with the following frameworks and libraries. We choosed a pure javascript webapplication, because it was a good excercise, to improve our knowledge.
+
 
 
 
