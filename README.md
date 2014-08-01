@@ -79,7 +79,7 @@ We tried being agile about it to respond to feedback quickly.
 To distribute tasks we split up into three specialized teams : Design, Code and Data
 
 #### Data
-Check the top of the Page, because we allready wrote something about the design part.
+See [up](###which-data-did-you-choose?-by-which-criteria)
 
 #### Design
 See [below](#which-considerations-did-you-have-in-terms-of-design-and-interface)
