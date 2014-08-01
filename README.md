@@ -62,3 +62,8 @@
 **Your expierience in terms of searching data and using it are especially
 valuable for me when I am in touch with data providers asking how they
 can improve their service.**
+
+- We tried to have a minimal design, so that the user can explore the drug data very easy.
+- There are Icons, which display the different drugs.
+- Every drug has their own color, so that you can see the differents between them.
+- the easiest way to show the data was in a map, so we creaded an interactive world map
