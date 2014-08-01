@@ -60,9 +60,7 @@ The data provided by SAMHSA included different age groups (12-17, 18-25, 26+ etc
  
  In order to be able to show Europe and the US as a whole but also as split states we needed geometry information for three contexts: World, Europe and US.
  Finding shapefiles for US States was fairly easy but not so much for the european states. We ended up generating this file by ourselves.
- 
- - Item 2
- - Item 3
+
 
 ### Did you even have to change the project due to these difficulties/lacking data?
 
@@ -77,6 +75,7 @@ First we were looking for possible data sources on the internet to evaluate whet
 To distribute tasks we split up into three teams: Design, Code and Data
 
 #### Data
+Check the top of the Page, because we allready wrote something about the design part.
 
 #### Design
 Check the End of the Page, because we allready wrote something about the design part.
@@ -123,6 +122,6 @@ Last but not least, we used git for version control, working mostly on the maste
 
 ![alt tag](app/img/icons.png)
 
-We tried to have a minimal design, that the user can explore the drug data very easy. There are Icons, which display the different drugs. Every drug has their own color, that you can see the differents between them. For the design part, we used programs like Adobe Photoshop and Illustrator, to create the icons.
+We tried to have a 'minimal design', that the user can explore the drug data very easy. On the top of the application, there are Icons, which display the different drugs. Every drug has their own color. The countries with more saturaion has more people, which consume drugs. We used for the design part programs like Adobe Photoshop and Illustrator, to create the drug-icons.
 
-The easiest way to show the data was in a map, so we creaded an interactive world map, where you can zoom in and out. We had the focus on Europe and United States of America, because we could find some good data. When you click on some specific country, it shows up a diagramm, where you can compare for example the canabis consume in different coutrys. You have the possibility to fix the diagram information for a better comparison.
+To show to data in a map was the best way. We creaded an interactive world map, where you can zoom in and out. We had the focus on Europe and the United States of America, because we found some good data about these continents/countries. When you click on some specific country, it shows up a diagramm, where you can compare, for example the canabis consume in different countrys. You have the possibility to fix the diagram information for a better comparison.
