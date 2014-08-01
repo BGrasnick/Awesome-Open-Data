@@ -46,7 +46,8 @@
 
 ### How did you realize your project?
 
- - Item 1
+ - At the beginning, we asked us, which data we are going to use and searched for some good data ideas
+ - We split the group in a programming team, a data team and a ui-design team, that we had no communication and developing trouble
  - Item 2
  - Item 3
 
@@ -63,7 +64,12 @@
 valuable for me when I am in touch with data providers asking how they
 can improve their service.**
 
-- We tried to have a minimal design, so that the user can explore the drug data very easy.
+![alt tag](app/img/icons.png)
+
+- We tried to have a minimal design, that the user can explore the drug data very easy.
 - There are Icons, which display the different drugs.
-- Every drug has their own color, so that you can see the differents between them.
-- the easiest way to show the data was in a map, so we creaded an interactive world map
+- Every drug has their own color, that you can see the differents between them.
+- The easiest way to show the data was in a map, so we creaded an interactive world map, where you can zoom in and out.
+- We had the focus on Europe and United States of America, because we could find some good data.
+- When you click on some specific country, it shows up a diagramm, where you can compare for example the canabis consume in different coutrys.
+- You have the possibility to fix the diagram information for a better comparison.
