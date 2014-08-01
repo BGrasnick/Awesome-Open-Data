@@ -62,25 +62,33 @@ The data provided by SAMHSA included different age groups (12-17, 18-25, 26+ etc
 ### Did you even have to change the project due to these difficulties/lacking data?
 
 
-#**Wer macht das ??**
+**Wer macht das ??**
 
 
 ### How did you realize your project?
 
- - At the beginning, we asked us, which data we are going to use and searched for some good data ideas
- - We split the group in a programming team, a data team and a ui-design team, that we had no communication and developing trouble
- - Item 2
- - Item 3
+First we were looking for possible data sources on the internet to evaluate whether working on this topic was feasible.
+To distribute tasks we split up into three teams: Design, Code and Data
+
+#### Data
+
+#### Design
+
+#### Code
+First we set up the basic development environment, downloading and setting up the tools mentioned below.
+To begin with the project we started off with investigating D3's possibilities. 
+There was a really helpful [tutorial](http://bost.ocks.org/mike/map/) that got us kickstarted on the technology.
+
 
 ### Which languages, libraries, frameworks, tools did you use?
 
 In order to quickly produce visual results we chose the browser of our environment of choice.
 
-We decided to use [SASS](http://sass-lang.com/)(SCSS Syntax) for Sylesheets and JavaScript for the application.
+We decided to use [SASS](http://sass-lang.com/)(SCSS Syntax) for Stylesheets and JavaScript for the application.
 For asset compilation and workflow optimization we chose [Grunt](http://gruntjs.com/) as Task Runner. Crucial for development were the following modules: [autoprefixer](https://github.com/ai/autoprefixer), [EJS](http://embeddedjs.com/) for templating, [grunt-contrib-livereload](https://github.com/gruntjs/grunt-contrib-livereload) for hot swapping changes in the stylesheets.
 
 Not all of us were familiar with JavaScript in the beginning. 
-This is why we chose not to use Coffee- or TypeScript. We know that this project was about sharing knowled and learning together. 
+This is why we chose not to use Coffee- or TypeScript. We know that this project was about sharing knowledge and learning together. 
 
 For the general MVC structure of the application we used [Backbone](http://backbonejs.org).
 We gained the following benefits by doing so:
