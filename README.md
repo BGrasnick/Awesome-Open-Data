@@ -55,14 +55,20 @@ The data provided by SAMHSA included different age groups (12-17, 18-25, 26+ etc
 
 ### Did you encounter difficulties?
 
- - The data for the US was only available as plain HTML tables or PDF documents. However, using some JavaScript and XPath it was possible to parse those HTML tables.
+ The data for the US was only available as plain HTML tables or PDF documents. 
+ However, using JavaScript and XPath it was possible to parse those HTML tables.
+ 
+ In order to be able to show Europe and the US as a whole but also as split states we needed geometry information for three contexts: World, Europe and US.
+ Finding shapefiles for US States was fairly easy but not so much for the european states. We ended up generating this file by ourselves.
+ 
  - Item 2
  - Item 3
 
 ### Did you even have to change the project due to these difficulties/lacking data?
 
+From a programmers point of view, we were able to realize basically everything we wanted. Time was the only limiting factor.
 
-**Wer macht das ??**
+Data on the other hand was limited and hard to normalize due to different separation of age groups represented in the sources.
 
 
 ### How did you realize your project?
@@ -75,9 +81,11 @@ To distribute tasks we split up into three teams: Design, Code and Data
 #### Design
 
 #### Code
+
 First we set up the basic development environment, downloading and setting up the tools mentioned below.
 To begin with the project we started off with investigating D3's possibilities. 
-There was a really helpful [tutorial](http://bost.ocks.org/mike/map/) that got us kickstarted on the technology.
+There was a really helpful [tutorial](http://bost.ocks.org/mike/map/) that got us kickstarted on everything map related.
+Now we had to build the user interface on top of the map-layer. 
 
 
 ### Which languages, libraries, frameworks, tools did you use?
