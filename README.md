@@ -116,4 +116,5 @@ Last but not least, we used git for version control, working mostly on the maste
 ![alt tag](app/img/icons.png)
 
 We tried to have a minimal design, that the user can explore the drug data very easy. There are Icons, which display the different drugs. Every drug has their own color, that you can see the differents between them. For the design part, we used programs like Adobe Photoshop and Illustrator, to create the icons.
+
 The easiest way to show the data was in a map, so we creaded an interactive world map, where you can zoom in and out. We had the focus on Europe and United States of America, because we could find some good data. When you click on some specific country, it shows up a diagramm, where you can compare for example the canabis consume in different coutrys. You have the possibility to fix the diagram information for a better comparison.
