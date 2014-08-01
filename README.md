@@ -79,6 +79,7 @@ To distribute tasks we split up into three teams: Design, Code and Data
 #### Data
 
 #### Design
+Check the End of the Page, because we allready wrote something about the design part.
 
 #### Code
 
@@ -86,6 +87,11 @@ First we set up the basic development environment, downloading and setting up th
 To begin with the project we started off with investigating D3's possibilities. 
 There was a really helpful [tutorial](http://bost.ocks.org/mike/map/) that got us kickstarted on everything map related.
 Now we had to build the user interface on top of the map-layer. 
+
+
+
+Every week, we met us at the HTW campus to develop our interactive map and add new task to our todo-list. We tried to work in an agile work process, because it was the best way, to add new features to our map. Everyone had his own tasks, that's why we could work very accurately. We realized the project with the following frameworks and libraries. We choosed a pure javascript webapplication, because it was a good excercise, to improve our knowledge.
+
 
 
 ### Which languages, libraries, frameworks, tools did you use?
@@ -117,10 +123,6 @@ Last but not least, we used git for version control, working mostly on the maste
 
 ![alt tag](app/img/icons.png)
 
-- We tried to have a minimal design, that the user can explore the drug data very easy.
-- There are Icons, which display the different drugs.
-- Every drug has their own color, that you can see the differents between them.
-- The easiest way to show the data was in a map, so we creaded an interactive world map, where you can zoom in and out.
-- We had the focus on Europe and United States of America, because we could find some good data.
-- When you click on some specific country, it shows up a diagramm, where you can compare for example the canabis consume in different coutrys.
-- You have the possibility to fix the diagram information for a better comparison.
+We tried to have a minimal design, that the user can explore the drug data very easy. There are Icons, which display the different drugs. Every drug has their own color, that you can see the differents between them. For the design part, we used programs like Adobe Photoshop and Illustrator, to create the icons.
+
+The easiest way to show the data was in a map, so we creaded an interactive world map, where you can zoom in and out. We had the focus on Europe and United States of America, because we could find some good data. When you click on some specific country, it shows up a diagramm, where you can compare for example the canabis consume in different coutrys. You have the possibility to fix the diagram information for a better comparison.
