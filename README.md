@@ -52,10 +52,27 @@
 
 ### Which languages, libraries, frameworks, tools did you use?
 
- - [Backbone](http://backbonejs.org)
- - [Underscore](http://underscorejs.org)
- - [D3](http://d3js.org/)
- - [TopoJSON](https://github.com/mbostock/topojson)
+In order to quickly produce visual results we chose the browser of our environment of choice.
+
+We decided to use [SASS](http://sass-lang.com/)(SCSS Syntax) for Sylesheets and JavaScript for the application.
+For asset compilation and workflow optimization we chose [Grunt](http://gruntjs.com/) as Task Runner. Crucial for development were the following modules: [autoprefixer](https://github.com/ai/autoprefixer), [EJS](http://embeddedjs.com/) for templating, [grunt-contrib-livereload](https://github.com/gruntjs/grunt-contrib-livereload) for hot swapping changes in the stylesheets.
+
+Not all of us were familiar with JavaScript in the beginning. 
+This is why we chose not to use Coffee- or TypeScript. We know that this project was about sharing knowled and learning together. 
+
+For the general MVC structure of the application we used [Backbone](http://backbonejs.org).
+We gained the following benefits by doing so:
+
+* Merge data from different .json files into a single model
+* Structure our views and SVGs
+* Leverage [Underscore](http://underscorejs.org)'s collection utility functions (sort, filter, ..)
+
+To display data we chose to use, learn and love mbostock's [D3](http://d3js.org/). There have been plenty of examples on the internet related to SVG, maps and topojson to learn from. 
+
+To make our SVG map aware of topology we used [TopoJSON](https://github.com/mbostock/topojson).
+
+Last but not least, we used git for version control, working mostly on the master branch.
+
 
 ### Which considerations did you have in terms of design and interface?
 
