@@ -6,9 +6,14 @@
 
 ### What were your initial considerations on the user group, the use of it?
 
- - Item 1
- - Item 2
- - Item 3
+- We want to provide useful data in a descriptive and demonstative way so that users do not need to try figuring out what our application is all about. Therefore we filled the screen with just as much information as needed.
+- What we tried to do was to implement a way to tell the user a story about how drug use has changed over the years and maybe even let the him guess how future trends may be evolving. So it was necessary to obtain information about past and present drug uses.
+- To navigate through these information - and find exactly what he wants - we gave the user some tools: dragging, zooming and clicking.
+- By adding dragging and zooming to the application, we make sure that the user gets to the place he is looking for. Meanwhile clicking enables him to view the data in detail whether by clicking on a country or by clicking through the tabs/drugs.
+- One of our main goals was to create the possibility to compare data of differenct countries. So we added the concept of pinning the information cards, which are shown when clicking on a country, and thereby view data of multiple states at once. 
+- The added red vertical line, seen in the bar chart of any country's data and symbolizing the mean average of the selected drug in the selected country, helps to rationalize the shown data.
+- Adding these few concepts makes it relatively easy to use our application and therefore it does not require much skill or knowledge by the user. However, what it needs to properly use the application is a minor interest in the main topic of drugs or at least an open mind.
+- This means our major user group is defined by mostly young adults (18 - 35 years old) with said mindset.
 
 ### Which data did you choose? By which criteria?
 
